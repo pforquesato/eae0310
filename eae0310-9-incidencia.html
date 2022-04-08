@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>EAE-0310: ECONOMIA DO SETOR PÚBLICO</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 19C/FEA2 - pforquesato@usp.br" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# EAE-0310: ECONOMIA DO SETOR PÚBLICO
+### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 19C/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
+### Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo
+### Aula 9: Incidência de impostos<br/>2022/1
+
+---
+
+class: inverse, middle, center
+
+
+
+# Incidência de impostos
+
+---
+class: middle
+## Implicações de equidade da taxação
+
+Para entendermos se um imposto aumenta ou reduz a desigualdade, temos que entender quem *em última instância* paga por ele &amp;mdash; esse é o estudo da **incidência dos impostos**
+
+É claro que a lei determina quem formalmente paga a taxa, mas o mercado ajusta os preços pré-imposto e pós-impostos de acordo com a *reação comportamental* de consumidores e produtores
+
+Assim, mesmo que um imposto sobre a folha seja pago pela empresa, se ela reduz o salário de demanda como resposta, então na verdade quem está pagando o imposto é o trabalhador
+
+---
+class: middle
+
+&lt;img src="figs/iptu.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+Podemos brincar que o autor desse meme provavelmente não estudou economia, mas a pergunta é importante: o imposto sobre propriedade de imovel é progressivo "na letra da lei", mas qual é a incidência real dele?
+
+---
+class: middle
+## Implicações de equidade da taxação
+
+Algo importante às vezes pouco salientado é que **tax shifting** se dá *pelo mercado* &amp;mdash; não é (necessariamente) uma decisão intencional dos agentes, mas sim efeitos da mudança na curva de oferta ou demanda
+
+Se o preço (líquido da taxa) não mudar com a introdução do imposto, então a incidência real é igual à incidência formal
+
+Quando analisamos não apenas consumidores e produtores do bem específico, mas também de outros bens relacionados e *fatores de produção*, fazemos uma análise de **incidência em equilíbrio geral**
+
+---
+class: middle
+## Incidência em equilíbrio parcial
+
+Ainda assim, focaremos na *incidência em equilíbrio parcial*, pois é mais intuitiva e nos provê em geral uma boa aproximação
+
+Considere uma situação inicial de imposto `\(t = 0\)`, e adicionamos um imposto fixo (infinitesimal) a ser pago pelo consumidor `\(dt\)`
+
+Portanto, se antes a condição de equilíbrio era `\(S(p) = D(p)\)`, agora cria-se um **tax wedge**: a condição de equilíbrio se torna: `$$S(p) = D(p^c) = D(p + dt)$$` 
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-9-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+Incidência em equilíbrio parcial &amp;mdash; sem imposto, `\(p^p = p^c = p\)` (Saez) 
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-9-2.png" width="95%" /&gt;
+
+Já o impostro cria um *tax wedge*: agora `\(p^c = p + dt &gt; p = p^p\)`  (Saez) 
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-9-3.png" width="95%" /&gt;
+
+A redução no consumo faz as firmas atuarem em região com MC menor, e eventualmente o preço do produtor cai em resposta (Saez) 
+
+---
+class: middle
+## Incidência em equilíbrio parcial
+
+Uma forma de calcular a incidência é comparar a mudança no "preço sem imposto" dada a adição de uma taxa, i.e., `\(dp/dt\)`
+
+A condição de equilíbrio no mercado é `\(S(p) = D(p + dt)\)`. Derivando ambos os lados em relação a `\(t\)`:
+
+`$$S^{\prime}(p)\frac{dp}{dt} = D^{\prime}(p + dt)\left(1 + \frac{dp}{dt}\right)$$`
+
+`$$\Rightarrow \frac{dp}{dt} \left[ S^{\prime}(p) - D^{\prime}(p + dt)  \right] = D^{\prime}(p + dt)$$`
+`$$\therefore \ \frac{dp}{dt} = \frac{D^{\prime}(p + dt)}{S^{\prime}(p) - D^{\prime}(p + dt)}$$`
+---
+class: middle
+## Incidência em equilíbrio parcial
+
+Elasticidades são muito úteis em economia do setor público, pois geralmente são *estatísticas suficientes* para o comportamento dos produtores e consumidores (em mercados competitivos)
+
+Lembrem-se que `\(\epsilon_D = \frac{p + dt}{D(p + dt)} D^{\prime}(p + dt)\)` e `\(\epsilon_S = \frac{p}{S(p)} S^{\prime}(p)\)`
+
+Como `\(dt\)` é pequeno, podemos multiplicar "embaixo e em cima" por `\(p/Q\)`: 
+`$$\frac{dp}{dt} = \frac{D^{\prime}(p + dt) p/D(p)}{S^{\prime}(p)p/S(p) - D^{\prime}(p + dt)p/D(p)} = \frac{\epsilon_D}{\epsilon_S - \epsilon_D}$$`
+
+---
+class: middle
+## Incidência em equilíbrio parcial
+
+Note que dado `\(\frac{dp}{dt} = \frac{\epsilon_D}{\epsilon_S - \epsilon_D}\)` e `\(p^p = p\)`, temos que: `$$-1 \leq \frac{dp^p}{dt} \leq 0 \text{ e  } \frac{dp^c}{dt} = \frac{d(p + dt)}{dt} = 1 + \frac{dp}{dt} \in [0, 1]$$`
+
+Consumidores arcam com toda a incidência do imposto quando `\(dp/dt = 0\)` e portanto `\(dp^c/dt = 1\)`, o que acontece se `\(\epsilon_D = 0\)` e/ou `\(\epsilon_S = \infty\)`
+
+Produtores arcam com toda a incidência do imposto quando `\(dp^p/dt = -1\)`, isto é, se `\(\epsilon_D = - \infty\)` e/ou `\(\epsilon_S = 0\)`
+
+Regra geral: **o lado mais inelástico do mercado arca com maior parte dos impostos**
+
+---
+class: middle
+## Incidência em equilíbrio parcial
+
+A mudança no preço ao consumidor pelo imposto, `\(\rho \equiv dp^c/dt = 1 + dp/dt\)` é chamada de **pass-through** do imposto
+
+Acredita-se que no longo prazo boa parte das indústrias opere com custo marginal constante (por retornos constantes de escala)
+
+Isso implica uma curva de oferta (quase) infinitamente elástica e um pass-through próximo de 1 &amp;mdash; impostos sobre consumo seriam arcados quase inteiramente pelos consumidores
+
+A evidência empírica é consistente com pass-throughs entre 0.8-1.0 para impostos sobre bens de consumo e serviços
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-9-4.png" width="45%" /&gt;&lt;img src="figs/eae0310-9-4b.png" width="45%" /&gt;
+
+Quando a demanda é infinitamente inelástica, o pass-through `\(dp^c/dt\)` é 1 (**full shifting**). Quando é infinitamente elástica, a incidência se dá toda sobre o produtor [Gru16] 
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-9-5.png" width="85%" /&gt;
+
+E o inverso ocorre com a curva de oferta: quanto mais elástica, maior o pass-through [Gru16] 
+
+---
+class: middle
+## Incidência em mercados de fatores
+
+Essa análise vale também para mercados de fatores de produção: impostos sobre a folha, sobre oferta de trabalho, sobre capital
+
+A diferença é que a firma agora *demanda* esses fatores, cujos ofertantes são os domicílios
+
+Outra diferença é que mercados de fatores têm mais rigidez (como salário mínimo), o que pode afetar o equilíbrio de mercado: que parte paga oficialmente o imposto pode importar!
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-9-6.png" width="85%" /&gt;
+
+Com salário mínimo, a incidência legal do imposto pode importar &amp;mdash; quando as firmas pagam o imposto, parcela maior dele recai sobre elas [Gru16] 
+
+---
+class: middle
+## Incidência em monopólio
+
+Incidência em mercados não-competitivos é mais complicado. Mantém-se o resultado, entretanto, que não importa para a incidência econômica quem formalmente paga o imposto
+
+Dizemos que o peso-morto `\(D\)` é **de segunda-ordem** quando `\(\lim_{dt\rightarrow 0} \frac{D}{dt} = 0\)`
+
+Como veremos na aula que vem, em *mercados competitivos* o peso-morto é de segunda ordem (negligenciável) &amp;mdash; assim, a perda de excedente do consumidor, `\(\rho Qdt\)` (o **pass-through**), e a perda do produtor, `\((1 - \rho)Qdt\)`, somam a receita do governo `\(R(dt) = Qdt\)`
+
+---
+class: middle
+## Incidência em monopólio
+
+Quando há alguma imperfeição no mercado (no caso, poder de mercado), *o peso-morto não é mais de segunda-ordem*: então a perda de excedente do consumidor e do produtor somam *mais que* a receita
+
+De fato, a incidência no consumidor continua sendo `\(\rho\)`, pois é o aumento do preço que ele paga, `\(dp^c/dt\)`
+
+Mas agora a incidência no produtor é `\(1\)`: o monopolista absorve *toda* a taxação
+
+Importante: *quanto maior o excedente, mais espaço há para o imposto incidir sobre esse lado do mercado*
+
+---
+class: middle
+## Incidência em equilíbrio geral
+
+Se a análise de equilíbrio parcial nos dá uma boa intuição para a incidência da taxação, ela pode ser enganativa se não considerarmos os *efeitos de equilíbrio geral* da taxação
+
+Um imposto sobre a venda de cerveja afeta os preços não apenas da cerveja, mas também de álcools substitutos, e do capital e trabalho empregado no setor
+
+Imagine um imposto municipal sobre restaurantes: se a demanda for infinitamente elástica, os restaurantes pagam todo o imposto &amp;mdash; mas restaurantes não podem pagar imposto! *Apenas pessoas pagam impostos*
+
+---
+class: middle
+## Incidência em equilíbrio geral
+
+Quando dizemos que "restaurantes arcam com imposto", na verdade queremos dizer que *os fatores de produção* empregados na produção por restaurantes arcam com os impostos
+
+Se a oferta de trabalho para restaurantes for infinitamente elástica, e o capital no curto prazo infinitamente inelástico (pois o capital investido não é convertível), então a incidência se dá toda nos donos do restaurante
+
+Se temos vários bens, a incidência também vai depender de quão *intensivo* é o uso de cada fator na produção do bem taxado
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-9-7.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+[BC19] analisa o efeito de um corte no IVA na França de 14 p.p., encontrando **pass-through** de 9.7% (*incidência assimétrica*)
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-9-8.png" width="85%" /&gt;
+
+Eles encontram uma incidência de 19% nos salários, 60% no lucro, 13% no custo das matérias primas e apenas 8% foi revertido em redução nos preços ao consumidor [BC19] 
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-4-2.png" width="90%" /&gt;
+
+No mundo real, frequentemente a incidência econômica *depende sim* da incidência formal, por **racionalidade limitada**: nos EUA geralmente impostos "aparecem" só no caixa &amp;mdash; em um experimento, [CLK09] encontram que comparado com aparecer na tarjeta, o imposto "no caixa" só tem 35% de **saliência**
+
+---
+class: inverse, middle, center
+
+# Allcott, Lockwood, and Taubinsky (2019). “Should We Tax Sugar-Sweetened Beverages? An Overview of Theory and Evidence”
+
+---
+class: middle
+## Sin taxes
+
+**Sin taxes** são impostos com o objetivo (principal) não de arrecadar recursos, mas sim desincorajar comportamentos nocivos ao indivíduo e sociedade, como fumar ou beber álcool
+
+Uma sin tax em grande discussão na atualidade é a taxação de bebidas com açucar adicionado (SSB). Nos últimos anos 39 países ao redor do mundo implementaram essas taxas
+
+Problema: como SSBs são mais consumidos pelos mais pobres, essa taxação é regressiva (**incidência**)
+
+---
+class: middle
+## Sin taxes
+
+&gt; "A tax on soda and juice drinks would disproportionately increase taxes on low-income families in Philadelphia." Bernie Sanders, 2016 em [ALT19]
+
+Questão importante: o americano médio consome 6,9% do seu consumo total de energia por SSBs (154cal/dia)
+
+Também respondem por 23% do consumo de açucar do americano médio
+
+Por volta de metade dos americanos consome pelo menos uma bebida com açucar adicionado por dia &amp;mdash; no Brasil, são 60 litros por ano em média
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-9-10.png" width="85%" /&gt;
+
+O consumo de SSBs cai significantemente com o aumento da renda: tanto por *heterogeneidade de preferências*, quanto por maior conhecimento dos malefícios dos SSBs [ALT19]
+
+---
+class: middle
+## Sin taxes
+
+SSBs fazem mal à saúde por três canais (principais): obesidade, diabetes e doenças cardiovasculares
+
+Uma dose extra por dia de SSBs é associado a aumento de meio kg no peso a cada 4 anos, 13% maior risco de desenvolver diabetes tipo 2 e 17% maior de doenças coronárias
+
+SSBs estão associados a custos de R$2,9bi/ano no SUS e uma taxa de ¢1/oz pouparia 17bi de dólares nos EUA
+
+---
+class: middle
+## Razões econômicas para a taxação de SSBs
+
+SSBs são associadas a **externalidades fiscais**: nem todo o custo da má saúde recai sobre o indivíduo, devido a seguro de saúde ou provisão pública de saúde (Medicare, SUS)
+
+Há também externalidades fiscais *positivas*: um exemplo (trágico) é como obesidade faz as pessoas morrerem mais cedo, reduzindo custos em seguridade social
+
+Como nesse caso as externalidades e internalidaes são **heterogêneas**, temos que analisar se elas ocorrem mais em indivíduos mais ou menos elásticos ao preço 
+
+---
+class: middle
+## Internalidades
+
+Mas o principal motivo para taxar SSBs é mesmo abordar **internalidades**
+
+Note que os danos supracitados à saúde *NÃO* são motivo para taxar SSBs &amp;mdash; taxação não é para maximizar a saúde das pessoas (se não proibiríamos um monte de coisa!), e sim para resolver *falhas de racionalidade*
+
+Geralmente, as duas falhas mais evocadas são **falhas informacionais** e **inconsistência intertemporal** e falhas de auto-controle
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-9-11.png" width="85%" /&gt;
+
+Evidência de *falhas informacionais*: "nota" num questionário sobre nutrição é inversamente correlacionado com consumo de SSBs [ALT19]
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-9-12.png" width="85%" /&gt;
+
+E encontramos o mesmo resultado para uma medida de *falhas de auto-controle* [ALT19]
+
+---
+class: middle
+## Internalidades
+
+Internalidades (ao contrário de externalidades) *impactam o próprio consumidor*: se damos mais valor ao bem-estar dos mais pobres, devemos levar em conta que proporção das internalidades recaem sobre eles
+
+Como de fato internalidades são maiores entre os mais pobres, *a correção das internalidades é progressiva*; assim, não é *a priori* óbvio que taxar SSBs é pior para os mais pobres
+
+Depende da **elasticidade da demanda** &amp;mdash; se for muito inelástica, a perda de poder de compra é alta e redução de internalidades baixa, se for muito elástica vice-versa
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-9-13.png" width="85%" /&gt;
+
+Correção de internalidades é *progressivo*: informação nutricional e auto-controle (omitido) são altamente correlacionados com a renda familiar [ALT19]
+
+---
+class: middle
+## Incidência
+
+É importante também analisar a incidência do imposto: por exemplo, se o **pass-through** for zero, então é impossível corrigir ex-/internalides taxando SSBs
+
+No caso geral, como o pass-through afeta o imposto ótimo depende se a sociedade dá mais valor ao bem-estar dos produtores ou consumidores de SSBs
+
+Na prática, o pass-through sobre bens de consumo não-duráveis é bastante alto, e (nessa aplicação) considerações de incidência não afetam muito o resultado
+
+---
+class: middle
+## Estimativas empíricas
+
+Para estimar o imposto ótimo, eles precisam de estimativas empíricas das estatísticas relevantes
+
+Eles estimam a elasticidade-preço da demanda por SSBs como -1,4: bem elástica! Isso significa que taxar SSBs é uma forma bastante efetiva de alterar o comportamento dos consumidores
+
+Pesquisadores estimam o custo de saúde por SSBs em ¢1/oz, e o Dep. de Saúde americano estima que 85-88% desses custos são pagos por outros (externalidades): ¢0,8-0,9/oz de externalidades
+
+---
+class: middle
+## Estimativas empíricas
+
+Internalidades é mais difícil estimar empiricamente &amp;mdash; [ALT19] comparam com consumo de nutricionistas e estimam que pessoas comprariam 31-37% menos SSBs se tivessem informação boa sobre custos de saúde
+
+Isso corresponde a ¢0,91-2,14/oz de externalidades
+
+Mas essa internalidade é correlacionada com a renda! Em um survey sobre os danos de SSBs, erros de informação são 30% maiores em famílias com renda de 10.000 dólares/ano do que $100.000/ano 
+
+Dado um peso na função de bem-estar social razoável, internalidades serem concentrados nos mais pobres aumenta o imposto ótimo em 20% 
+
+---
+class: middle
+## Colocando tudo jundo
+
+Juntando tudo, [ALT19] calculam a taxação ótima de SSBs como ¢1,5/oz (R$0,75 por um refrigerante de 300ml)
+
+Isso é ¢0,8/oz de externalidade fiscal, ¢1/oz de internalidades `\(\times\)` 120% por causa da progressividade da internalidade, reduzido em ¢0,5/oz por causa da regressividade do imposto
+
+Se o formulador de políticas públicas for filosóficamente oposto a taxar internalidades (*paternalismo*), ainda há espaço para *sin taxes*, mas muito menor: ¢0,4/oz (R$0,25 por lata)
+
+---
+class: middle
+## Princípios da "taxação de pecado"
+
+[ALT19] sugerem 7 princípios dos *sin taxes*:
+
+1. O objetivo do imposto não é maximizar saúde, mas sim corrigir internalidades e externalidades
+2. Focar a ação em quem gera mais int-/externalidades &amp;mdash; por exemplo, se crianças tem menos controle próprio e consumo na infância gera hábito, então banir refrigerantes em colégios (p. ex.) faz sentido
+3. É melhor taxar gramas de açucar que ml de bebida (**princípio da focalização**)
+
+---
+class: middle
+## Princípios da "taxação de pecado"
+
+4. Só taxar bebidas diet e sucos se eles também causam danos de saúde não internalizados
+5. Regressividade importa, mas precisamos considerar também a *progressividade da correção de internalidades*
+6. O imposto deve ser o menos local possível, para evitar **leakage**, que diminui o efeito corretivo
+7. Sin taxes (pelo menos nos EUA) parece ser uma boa idéia; isto é, aumenta o bem-estar social, dadas preferências sociais razoáveis &amp;mdash; como as que racionalizam o governo como é atualmente
+
+Eles estimam que os ganhos com taxar SSBs são de $2,4-6,8 bilhões por ano
+
+
+---
+class:middle
+# Referências
+&lt;small&gt;
+[ALT19] H. Allcott, B. B. Lockwood, and D. Taubinsky. "Regressive sin
+taxes, with an application to the optimal soda tax". In: _The Quarterly
+Journal of Economics_ 134.3 (2019), pp. 1557-1626.
+
+[ALT19] H. Allcott, B. B. Lockwood, and D. Taubinsky. "Should we tax
+sugar-sweetened beverages? An overview of theory and evidence". In:
+_Journal of Economic Perspectives_ 33.3 (2019), pp. 202-27.
+
+[BC19] Y. Benzarti and D. Carloni. "Who really benefits from
+consumption tax cuts? Evidence from a large VAT reform in France". In:
+_American Economic Journal: Economic Policy_ 11.1 (2019), pp. 38-63.
+
+[CLK09] R. Chetty, A. Looney, and K. Kroft. "Salience and taxation:
+Theory and evidence". In: _American economic review_ 99.4 (2009), pp.
+1145-77.
+
+[Gru16] J. Gruber. _Public finance and public policy_. 5th ed.
+Macmillan, 2016.
+&lt;/small&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

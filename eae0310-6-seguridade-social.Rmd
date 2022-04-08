@@ -1,0 +1,473 @@
+---
+title: "EAE-0310: ECONOMIA DO SETOR PÚBLICO"
+author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 19C/FEA2 - pforquesato@usp.br"
+institute: "Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo"
+date: "Aula 6: Seguridade social<br/>2022/1"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      
+---
+class: inverse, middle, center
+
+```{r, load_refs, include=FALSE, cache=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "alphabetic",
+           cite.style = "alphabetic",
+           style = "markdown",
+           hyperlink = FALSE,
+           dashed = FALSE)
+myBib <- ReadBib("./esp_bib.bib", check = FALSE)
+```
+
+# Seguro social
+
+---
+class: middle
+## Seguridade social
+
+Discutimos já duas falhas de mercado que requerem (plausivelmente) intervenção estatal: bens não-excludentes e externalidades. Uma terceira é **restrições ao crédito**
+
+Notem que por mais que essa 3a receba menos atenção em micro, ela representa a maior parte dos gastos do Estado! No Brasil, o governo federal gasta ~12% do PIB (1/3 do orçamento) em seguro social
+
+Outros ~4% do PIB são gastos públicos em saúde, outra forma de seguro público
+
+---
+class: middle
+## Seguridade social
+
+Hoje em dia, quase todos os Estados oferecem várias formas de seguro social. No Brasil, o INSS oferece:
+
+1. Aposentadoria
+2. Seguro-desemprego
+3. Auxílio-doença, auxílio-acidente e auxílio-reclusão
+4. Benefício a pessoa com deficiência (BPC)
+5. Salário maternidade
+6. Pensão por morte
+
+Além destes, o SUS é uma forma de provisão pública de *seguro de saúde*
+
+---
+class: middle
+## Risco e seguro
+
+Programas de seguro social geralmente também têm *efeito redistributivo*, mas esse não é o seu objetivo central
+
+O objetivo é assegurar cidadãos **avessos ao risco** a choques de renda e permitir que *suavizem seu consumo* (seguro)
+
+Como *utilidade marginal da renda* é decrescente, maximizar a utilidade intertemporal equivale a igualar a utilidade marginal em diferentes períodos (ou **estados da natureza**)
+
+Por exemplo, ou gostaria sempre de transferir renda de *mundos possíveis* em que eu não bati o carro para os mundos possíveis em que eu bati &mdash; é exatamente isso que um seguro de carro faz
+
+---
+class: middle
+## Risco e seguro
+
+Formalmente, os consumidores vão maximizar a sua **utilidade esperada**, com a esperança tomada em relação aos possíveis estados da natureza
+
+Um **prêmio de seguro atuariamente justo** é aquele que custa exatamente o custo esperado do dano
+
+Na prática, a seguradora pode cobrar um **prêmio de risco**, que é a diferença entre a utilidade esperada e o *equivalente de certeza*
+
+Como os consumidores são avessos ao risco e a seguradora não é, transferir o risco do agente para a firma resulta em ganho de eficiência &mdash; há um excedente por ganhos de troca
+
+---
+class: middle
+## Risco e seguro
+
+Considere um evento adverso com probabilidade $q$ que implica um custo econômico $d$. O indivíduo com riqueza $W$ pode contratar um seguro com prêmio $p$ que paga $b$ caso o evento adverso ocorra
+
+Então a utilidade esperada do indivíduo é: $$\mathbb{E}U = (1 - q) u(W - p) + q u(W - p + b - d)$$
+
+O lucro esperado da seguradora (neutra ao risco) é: $\mathbb{E}\Pi = p - qb$
+
+Se há concorrência perfeita com livre-entrada, temos que $\mathbb{E}\Pi = 0$, ou seja $p = qb \iff b = p/q$ (*prêmio atuariamente justo*)
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '75%'}
+knitr::include_graphics("figs/eae0310-6-2.png")
+```
+
+Utilidade de um agente avesso ao risco em uma loteria $\mathbb{E}U(W)$ é menor que com seguro total $U(W_0)$. Assim, ele está disposto a pagar $W_0 - CE_A$ para evitar o risco, onde $CE_A$ é o **equivalente de certeza**  (Nicholson & Snyder, 2016)
+
+---
+class: middle
+## Risco e seguro
+
+Sob o prêmio atuariamente justo, o problema do agente se torna $$ \max_p \mathbb{E}U = (1 - q) u\left(W - p\right) + q u\left(W - p + \frac{p}{q} - d\right)$$
+
+Com CPO $d\mathbb{E}U/dp = 0$, ou seja $$- (1 - q) u^{\prime}\left(W - p\right) + q\left[ \frac{1}{q} - 1\right] u^{\prime} \left(W - p + \frac{p}{q} - d \right) = 0$$
+
+Isso é, o consumidor **suaviza seu consumo** entre os estados da natureza, se protegendo inteiramente do risco: $u^{\prime}\left(W - p\right) = u^{\prime} \left(W - p + p/q - d \right)$, o que é só possível se $p/q = d$
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '100%'}
+knitr::include_graphics("figs/eae0310-6-1.png")
+```
+
+Quando o prêmio de seguro é atuariamente justo, o comportamento ótimo de um agente avesso ao risco é sempre o seguro total `r Citep(myBib, "gruber")`
+
+---
+class: middle
+## Assimetria informacional no mercado de seguro
+
+Mas a pergunta mais relevante aqui para nós não é por que as pessoas compram seguros, mas sim por que o Estado precisaria prover eles
+
+E a resposta a isso não está na aversão ao risco, mas sim na **assimetria informacional**
+
+Consumidores em um mercado de seguro quase sempre têm maior informação sobre os seus riscos que a seguradora
+
+Se há grupos de maior e menor risco, o prêmio atuariamente justo pode ser maior que a disposição a pagar do grupo de menor risco, expulsando eles do mercado
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '90%'}
+knitr::include_graphics("figs/eae0310-6-3.png")
+```
+
+Se a seguradora consegue separar os tipos, o resultado é eficiente. Mas se há informação assimétrica, ocorre seleção adversa `r Citep(myBib, "gruber")`
+
+---
+class: middle
+## Assimetria informacional no mercado de seguro
+
+No limite, a **seleção adversa** de grupos de maior e maior risco pode *degringolar todo o mercado*
+
+Como vimos, se consumidores são avessos ao risco, estão dispostos a pagar um prêmio de risco além do prêmio atuariamente justo. Se for suficientemente alto para os agentes de menor risco, pode haver um **equilíbrio pooling**
+
+Seguradoras também podem tentar (e tentam) fazer **screening** do risco dos consumidores
+
+Elas podem oferecer um menu de prêmio-cobertura com opção que seja barata mas cubra poucos danos, e assim valha a pena apenas para agentes de menor risco (**equilíbrio separador**)
+
+---
+class: middle
+## Assimetria informacional no mercado de seguro
+
+Mas note que o equilíbrio separador *ainda é ineficiente!* Os consumidores de menor risco recebem pouca cobertura, quando o ótimo seria serem 100% cobertos
+
+A **seleção adversa** ocorre pois indivíduos de menor risco decidem sair do mercado. Uma forma então "simples" de resolver o problema é obrigá-los a comprar o seguro
+
+Note que no último caso, se todos comprassem, a firma teria lucro zero e o mercado seria eficiente (nesse caso os consumidores de menor risco estarão subsidiando o seguro dos de maior risco)
+
+Essa é a essência da intervenção governamental em seguridade social
+
+---
+class: middle
+## Seleção em mercados de seguros
+
+Podemos analisar o mercado de seguros com seleção adversa através de um gráfico de oferta e demanda com firmas perfeitamente competitivas competindo por preço em um único contrato de seguro `r Citep(myBib, "einav")`
+
+No "modelo de livro-texto", indivíduos são homogêneos em aversão ao risco, e portanto sua *disposição a pagar* pelo seguro é crescente no risco
+
+Assim, a diferença do modelo com seleção é que a curva de oferta e de demanda *não* são objetos independentes: o **tipo** de risco do agente determina tanto a sua demanda quanto o seu custo
+
+---
+class: middle
+## Seleção em mercados de seguros
+
+A ineficiência do mercado com seleção vem do fato da curva de MC estar **abaixo** da curva de AC: o consumidor marginal sempre tem um custo menor que os inframarginais
+
+Assim, produzir ao nível eficiente geraria prejuízo às operadoras &mdash; os indivíduos **de menor risco** são expulsos do mercado, ainda que valorem o seguro mais que seu custo individual
+
+Mesmo nesse modelo, a quantidade de falta de seguro e o peso morto podem variar muito
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '75%'}
+knitr::include_graphics("figs/eae0310-6-12.png")
+```
+
+Modelo "de livro-texto" de oferta e demanda (competitiva) com seleção adversa `r Citep(myBib, "einav")`
+
+---
+class: middle
+
+```{r, echo=FALSE, fig.show="hold", out.width="50%"}
+knitr::include_graphics("figs/eae0310-6-13.png")
+knitr::include_graphics("figs/eae0310-6-13b.png")
+```
+
+Casos extremos da seleção adversa: em (a) o resultado é eficiente; em (b) o mercado degringola `r Citep(myBib, "einav")`
+
+---
+class: middle
+## Seleção em mercados de seguros
+
+A solução canônica para a ineficiência gerada pela seleção adversa é obrigar a todos a comprar o seguro
+
+Mas isso só vale no "modelo de livro-texto"! Se adicionarmos custos de administração do seguro, então não necessariamente a solução ótima envolve seguro completo
+
+Além disso, se assumirmos *heterogeneidade de preferências*, então agentes mais avessos ao risco podem ser (i) mais cuidadosos; e (ii) dispostos a pagar mais (**seleção vantajosa**)
+
+Com custos de administração e seleção vantajosa, temos o *oposto* do caso usual: a ineficiência é uma sobre-oferta de seguro
+
+---
+class: middle
+
+```{r, echo=FALSE, fig.show="hold", out.width="50%"}
+knitr::include_graphics("figs/eae0310-6-14.png")
+knitr::include_graphics("figs/eae0310-6-14b.png")
+```
+
+Extensões ao "modelo de livro-texto": (a) com custo de administração provisão a todos já pode não ser eficiente; e (b) **seleção vantajosa** `r Citep(myBib, "einav")`
+
+---
+class: middle
+## Seguro público
+
+Vimos que a razão principal para o **seguro público** é resolver o problema de seleção adversa
+
+Além disso, se eu não tenho seguro de carro e bato em alguém, posso não ter dinheiro para cobrir seus danos, gerando uma *externalidade financeira* (por isso existe o DPVAT)
+
+Do lado oposto, o governo pode querer agir por *internalidades*
+
+**Dilema do samaritano**: governos podem não conseguir *se comprometer crivelmente* a não intervir no estado ruim da natureza caso o agente não compre seguro
+
+---
+class: middle
+## Seguro próprio
+
+Frequentemente consumidores de maior risco também são os mais necessitados (ou são de maior risco *por serem* necessitados), e a solução eficiente de mercado envolveria eles pagar muito mais
+
+Um risco é que o seguro público faça **crowding out** no seguro próprio
+
+Existem várias formas pelas quais famílias podem *suavizar o consumo* sem seguro formal: podem usar sua poupança, aumentar o trabalho do esposo, pegar emprestado de bancos ou familiares
+
+Na prática, famílias frequentemente agem de *forma miópica*, dando valor demais ao presente e poupando menos que o racional &mdash; governo pode agir para corrigir *internalidades*
+
+---
+class: middle
+
+```{r, echo=FALSE, fig.show="hold", out.width="50%"}
+knitr::include_graphics("figs/eae0310-6-4.png")
+knitr::include_graphics("figs/eae0310-6-4b.png")
+```
+
+Diferença na duração do desemprego por valor de seguro-desemprego &mdash; pobres (a) vs ricos (b) `r Citep(myBib, "chetty2008moral")`
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '90%'}
+knitr::include_graphics("figs/eae0310-6-5.png")
+```
+
+Trabalhadores demitidos recebem o FGTS e *aumentam* seu consumo, mesmo perdendo *renda permanente* (efeito **cash in hand**) `r Citep(myBib, "gerard2021job")`
+
+---
+class: middle
+## Risco moral
+
+O outro conceito essencial de informação assimétrica é o efeito comportamental que o seguro tem na tomada de risco dos consumidores (**risco moral**)
+
+`r Citep(myBib, "carvalho2018unintended")` estimam que 11-13% das demissões são influenciadas pela existência de seguro-desemprego
+
+Seguro de carro pode fazer as pessoas dirigirem de forma mais perigosa; pessoas com seguro contra roubo podem deixar a casa destrancada
+
+Sem risco moral o seguro ótimo seria total. Na realidade, o **nível ótimo de seguro** iguala o *benefício* de suavização do consumo com o *malefício* de gerar risco moral
+
+---
+class: middle
+## Seguro-desemprego ótimo com risco moral
+
+Consideremos o caso do seguro-desemprego: queremos suavizar o consumo de quem recebe choque negativo de emprego, mas se **taxa de reposição** for 100%, ninguém procuraria emprego
+
+Considere um indivíduo com probabilidade de estar desempregado $p$, que possui consumo $c_e = w - t$ quando empregado (onde $w$ é o salário e $t$ o imposto) e $c_u = b$ quando desempregado, com $b$ o benefício
+
+Então a sua utilidade é: $$\mathbb{E}U = (1 - p)u(c_e) + pu(c_u) = (1 - p)u(w - t) + pu(b)$$
+ 
+---
+class: middle
+## Seguro-desemprego ótimo com risco moral
+
+Governo tem **orçamento balanceado**: $(1 - p)\cdot t = p \cdot b$, ou $t = b \cdot p/(1-p)$
+
+A política que maximiza o bem-estar então resolve $$\max_b \mathbb{E}U = (1 - p)u\left( w - b\frac{p}{1 - p} \right) + pu(b)$$
+
+Sem risco moral, temos o mesmo resultado que antes, *seguro total*: $$pu^{\prime}(c_u) - (1 - p)\frac{p}{1 - p}u^{\prime}(c_e) = 0 \Rightarrow c_u = c_e$$ 
+ 
+---
+class: middle
+## Seguro-desemprego ótimo com risco moral
+
+Mas risco moral implica que $dp/db \neq 0$! Quanto maior a taxa de reposição dos salários, maior a probabilidade dos indivíduos estarem desempregados
+
+Isso gera uma **externalidade fiscal**: quanto maior o seguro-desemprego, maior a taxação que precisaremos para financiá-lo, tanto *mecanicamente*, mas também pelo *efeito comportamental*
+
+$$\max_b \mathbb{E}U = (1 - p)u\left( w - b\frac{p(b)}{1 - p(b)} \right) + pu(b)$$
+O resultado iguala o benefício de suavização com o malefício do risco moral &mdash; seguro total não é mais ótimo: $$\frac{u^{\prime}(c_u) - u^{\prime}(c_e)}{u^{\prime}(c_e)} = \frac{1}{1 - p}\epsilon_{p,b} \text{ onde }\epsilon_{p,b} = \frac{b}{p}\frac{dp}{db}$$ 
+
+---
+class: middle
+## Aposentadoria
+
+O sistema de previdência social cobra impostos sobre a folha de pagamentos da população ativa para transferir aos idosos
+
+A razão para essa transferência é que idosos, não podendo trabalhar, teriam nenhuma fonte de renda, e a poupança que fizeram no **ciclo de vida** pode acabar ("risco de viver demais")
+
+Qual a razão para intervenção governamental nesse mercado? Em princípio, o mercado financeiro pode vender *anuidades*
+
+Mas novamente temos o problema de **seleção adversa**: só vai comprar anuidade (versus uma poupança normal) quem tem boa saúde e espera viver muito tempo
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '50%', fig.align="center"}
+knitr::include_graphics("figs/adrelino.jpg")
+```
+
+
+---
+class: middle
+## Aposentadoria
+
+Como vimos, nessas situações o governo pode fazer melhor que o mercado, pois ele pode *obrigar* as pessoas a comprar, resolvendo o problema de seleção adversa
+
+Mas na prática a principal razão para a aposentadoria é atacar *internalidades*: o fato que as pessoas em geral não poupam o quanto precisariam para ter uma vida decente na velhice
+
+Pesquisas na Itália e Reino Unido estimam que cada $1 de previdência social reduz poupança privada (**crowding out**) em 30-40¢
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '100%'}
+knitr::include_graphics("figs/eae0310-6-6.png")
+```
+
+Aumento da previdência social nos EUA está associado com significativa redução na pobreza dentre idosos `r Citep(myBib, "gruber")`
+
+---
+class: middle
+## Reforma da previdência
+
+Toda década volta ao debate público o problema da sustentabilidade do setor previdenciário e reformas. A última foi em 2019
+
+A reforma entre outras coisas aumentou a idade mínima (65/62) e requer idade *+* tempo de contribuição (20/15)
+
+O pagamento agora é sobre a média dos salários (antes era dos 80% maiores): 60% + 2% por ano acima do mínimo
+
+A alíquota do INSS agora é progressiva: 7,5% para salário mínimo, até 22% (mas só até teto do INSS)
+
+---
+class: middle
+## Reforma da previdência
+
+Mas por que reformar? Muito se fala em "déficit previdenciário", mas do ponto de vista econômico isso é um tanto bobo
+
+Ao contrário da previdência privada, que é financiada por um fundo poupado pelo próprio trabalhador durante a vida, a previdência pública funciona *sem fundo constituído* (**regime de repartição**)
+
+Assim, não existe diferença *econômica* real entre a contribuição para o INSS e o financiamento do governo em geral (impostos)
+
+Problemas reais do sistema são três: progressividade, sustentabilidade e desincentivo ao trabalho
+
+---
+class: middle
+## Incidência
+
+Para calcular a *incidência* da aposentadoria precisamos calcular a **riqueza líquida previdenciária**: o valor presente dos benefícios *esperados* dividido pelo valor presente dos pagamentos
+
+Aposentadoria tem efeitos de **incidência intergeracional**: as primeiras gerações são as grande ganhadoras, e as últimas (se houverem) as grandes perdedoras
+
+Mulheres também têm SSW maior: elas pagam o mesmo mas se aposentam antes (recebem benefícios por mais tempo)
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-6-7.png")
+```
+
+**Sustentabilidade:** o Brasil transfere a idosos o mesmo que países com uma proporção muito maior de idosos na população `r Citep(myBib, "ipea2020politicas")`
+
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '70%'}
+knitr::include_graphics("figs/eae0310-6-8.png")
+```
+
+Transferências aos idosos se tornam insustentáveis com mudanças na pirâmide etária ([IBGE](https://educa.ibge.gov.br/professores/educa-atividades/20818-producao-textual-o-envelhecimento-da-populacao.html))
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '100%'}
+knitr::include_graphics("figs/eae0310-6-9.png")
+```
+
+**Desincentivo:** a previdência gera **taxação implícita** ao trabalho dos idosos  `r Citep(myBib, "gruber")`
+
+---
+class: middle
+## Seguro desemprego
+
+Recebe seguro desemprego no Brasil *trabalhadores formais* demitidos (involutariamente) sem justa causa que trabalharam 12 meses nos últimos 18 (1a solicitação), 9/12 (2a) ou nos 6 últimos meses (3a+)
+
+Valor é 80-50% da média dos últimos 3 meses de trabalho (**taxa de reposição**), com máximo de $1.909, e o trabalhador recebe por 3 (até 1 ano), 4 (até 2) ou 5 meses (mais de 2 anos de trabalho)
+
+A duração do seguro desemprego no Brasil é muito menor que a maioria dos países desenvolvidos, mas a taxa de reposição (até o teto) é comparável `r Citep(myBib, "gruber")`
+
+---
+class: middle
+## Seguro desemprego
+
+Como discutimos, o nivel ótimo de seguro desemprego é aquele que iguala (na margem) a *suavização do consumo* (benefício) com o *risco moral* (malefício)
+
+Meyer (1989) comparou aumentos no seguro-desemprego em estados americanos e encontrou que um aumento de 10% no benefício aumenta a duração do desemprego em 8%
+
+Mas qual o efeito normativo disso? Duração maior pode ser eficiente se gerar um **match melhor de qualidade de emprego**
+
+Famílias também podem suavizar o consumo sem suavizar a utilidade, se tiverem que gerar renda de forma mais custosa (p.ex., bicos noturnos ou em atividades degradantes)
+
+---
+class: middle
+
+```{r, echo=FALSE, fig.show="hold", out.width="50%"}
+knitr::include_graphics("figs/eae0310-6-10.png")
+knitr::include_graphics("figs/eae0310-6-10b.png")
+```
+
+Uma duração maior de seguro-desemprego faz as pessoas ficarem desempregadas por mais tempo (a), mas não parece ter efeito no salário 3 anos depois (b) `r Citep(myBib, "gerard2021informal")` 
+ 
+---
+class: middle
+## Seguro de saúde
+
+Os gastos com saúde no Brasil foram 9,2% do PIB (2017), sendo 3,9% gastos públicos (SUS) e 5,4% gastos privados (27% da população é coberta pelo setor privado)
+
+9% do PIB está na média da OCDE, mas os gastos públicos são bem menores que a média dos países desenvolvidos
+
+Mesmo nos EUA, na verdade por volta da metade dos gastos com saúde são públicos (Medicare e Medicaid) &mdash; mais que no Brasil!
+
+O governo pode intervir obrigando (e subsidiando) a compra de seguro de saúde (Alemanha) ou oferecendo diretamente o serviço (NHS, SUS) ou pelo governo ou concessionários
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-6-11.png")
+```
+
+Seguro de saúde gera *risco moral* da sobre-provisão de bens médicos(*) `r Citep(myBib, "gruber")`
+
+
+---
+class:middle
+# Referências
+<small>
+```{r refs, echo=FALSE, results="asis"}
+PrintBibliography(myBib)
+```
+</small>

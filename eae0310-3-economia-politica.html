@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>EAE-0310: ECONOMIA DO SETOR PÚBLICO</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 217/FEA2 - pforquesato@usp.br" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# EAE-0310: ECONOMIA DO SETOR PÚBLICO
+### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 217/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
+### Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo
+### Aula 3: Formulação de políticas públicas II - economia política<br/>2022/1
+
+---
+
+class: inverse, middle, center
+
+
+
+# Teoria da Escolha Social
+
+---
+class: middle
+## Teoria da escolha social
+
+Vimos na 1a semana que críticas à **comparabilidade interpessoal de utilidade** levaram à esperança que possamos definir uma *função de bem-estar social* partindo da *agregação de preferências* dos indivíduos, da mesma forma que definimos uma função de utilidade a partir das preferências individuais
+
+(Já adiantei que não dá &amp;mdash; *no caso geral* comparar utilidades é inevitável)
+
+A **teoria da escolha social** aborda esse problema central da economia política de como escolher políticas públicas que reflitam de forma razoável as preferências dos indivíduos em uma sociedade
+
+---
+class: middle
+## Agregando preferências
+
+Se `\(u\)` é uma função de utilidade, então para qualquer `\(f\)` estritamente crescente, `\(f \circ u\)` também é uma função de utilidade para as mesmas preferências
+
+Ou seja, na decisão individual a função de utilidade é supérflua, o que importa são as preferências (ou equivalentemente as curvas de indiferença): o problema de decisão (sem risco!) dos indivíduos é um problema *ordinal*, não *cardinal*
+
+Se tivermos `\(u^i\)` para cada pessoa `\(i\)` da sociedade, gostaríamos de dizer o mesmo sobre a função de bem-estar social `\(W = W(u^1, ..., u^I)\)`: que qualquer `\(\widetilde{W} = (f^1 \circ u^1, ..., f^I \circ u^I)\)` representa a mesma função de bem-estar social
+
+---
+class: middle
+## Agregando preferências
+
+Podemos criar uma teoria de bem-estar que não dependa dos valores de utilidade (minha utilidade de comer uma maçã é `\(10\)` ou `\(100\)`), mas apenas das preferências (prefiro maçã que pera)?
+
+Uma forma de interpretar o *teorema da impossibilidade de Arrow* (ver, e.g., [Roe98], cap. 1) é que ele diz: **Não!**
+
+Para construirmos uma função de bem-estar social (isto é, fazer análise normativa utilitarista), precisamos de mais informação sobre como as utilidades dos diferentes indivíduos se comparam entre si **ou** restrições no conjunto admissível de preferências
+
+---
+class: middle
+## Comparação interpessoal de utilidade
+
+Mas quão pouco razoável é comparar utilidade entre pessoas, afinal?
+
+Uma visão estrita da impossibilidade de CIU diria que não podemos afirmar que Nero queimar Roma é ruim, pois não podemos comparar o ganho de utilidade dele com a perda de utilidade de todos os romanos
+
+De forma mais banal, cotidianamente comparamos utilidade dos outros, para decidir, por exemplo, para quem dar um chocolate
+
+Na prática, em funções de bem-estar social economistas "se escondem" dessas dificuldades filosóficas assumindo funções de utilidade iguais para todos
+
+---
+class: middle
+## Paradoxo de Condorcet
+
+O método mais simples de eleição é o **voto majoritário** dois-a-dois &amp;mdash; mas embora ele satisfaça propriedades 1-3, ele não é um ordenamento completo
+
+Há formatos de preferências para as quais não há vencedor único do voto majoritário: a sociedade não consegue escolher entre políticas ou candidatos `\(x\)` e `\(y\)` &amp;mdash; esse é o **paradoxo de Condorcet** (1785)
+
+Uma alocação que vence todas as outras alocações em um voto majoritário dois-a-dois é chamada de **vencedor de Condorcet** &amp;mdash; vamos mostrar que não é sempre que existe um vencedor de Condorcet (mas ele é sempre uma boa escolha quando existe)
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-5-1.png" width="90%" /&gt;
+
+O voto majoritário (quando funciona) &amp;mdash; `\(M\)` é um **vencedor de Condorcet** [Gru16]
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-5-2.png" width="85%" /&gt;
+
+Mas às vezes não funciona... (o **paradoxo de Condorcet**) [Gru16]
+
+---
+class: middle
+## Condorcet e Arrow
+
+O *paradoxo de Condorcet* é um paradoxo pois se esperaria que a transitividade das preferências individuais geraria preferências sociais transitivas (o que é em si uma *falácia de composição*)
+
+O *Teorema da Impossibilidade de Arrow* é apenas uma generalização do paradoxo de Condorcet: *ciclos* desse tipo aparecem para **qualquer** regra de escolha social "razoável", não apenas para o voto majoritário
+
+O TIA também é um balde de água fria no estudo de agregação de preferências (eleições): dadas condições bastante razoáveis para um processo eleitoral, não existe nenhum sistema que seja inteiramente satisfatório
+
+---
+class: middle
+## Teorema da impossibilidade de Arrow
+
+Considere as seguintes 4 propriedades (plausivelmente) desejáveis em uma *regra de escolha social*:
+
+1. **Unanimidade:** [ou Propriedade de Pareto] se todo indivíduo prefere política `\(x\)` à política `\(y\)`, então a sociedade também prefere `\(x\)` a `\(y\)`
+2. **Independência das alternativas irrelevantes:** as prefererências *sociais* entre `\(x\)` e `\(y\)` devem depender apenas das preferências *individuais* sobre `\(x\)` e `\(y\)` (e não, digamos, `\(z\)`)
+3. **Domínio irrestrito:** os indivíduos podem ter quaisquer preferências sobre as políticas públicas
+4. **Ordenação completa:** para todas as políticas `\(x\)` e `\(y\)`, a sociedade ou prefere `\(x\)` a `\(y\)` ou `\(y\)` a `\(x\)`
+
+---
+class: middle
+## Teorema da impossibilidade de Arrow
+
+**Teorema da impossibilidade de Arrow:** Suponha que há pelo menos 3 opções de políticas. Qualquer *regra de escolha social* que satisfaça 1-4 é ditadorial, ou seja, existe algum indivíduo que a preferência social vai ser sempre o que ele preferir
+
+Note que a ditadura funciona *precisamente* porque nesse caso não é necessário comparar utilidades (o que importa é apenas a do ditador)
+
+Podemos "evitar" essa conclusão pessimista do TIA restringindo que tipo de funções de utilidade as pessoas podem ter
+
+---
+class: middle
+## Teorema de Gibbard-Satterthwaite
+
+Até aqui assumimos que as pessoas revelam suas preferências de forma sincera (e já estava difícil!)
+
+Mas no mundo real, temos uma dificuldade extra: em geral as pessoas vão ter incentivos para reportar preferências diferentes (o "voto útil", ou escolher um candidato para o 2o turno com maior chance)
+
+Será que é possível desenhar sistemas eleitorais que garantam que as pessoas vão *votar sinceramente*?
+
+Não! &amp;mdash; **Teorema de Gibbard-Satterthwaite:** Se uma regra de votação com três ou mais alternativas não é ditadorial, então ela permite *voto estratégico* (é manipulável) 
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-5-8.png" width="50%" /&gt;&lt;img src="figs/eae0310-5-8b.png" width="50%" /&gt;
+
+Considere uma eleição por lista, em que a alternativa favorita ganha 3 pontos, a segunda 2, a terceira 1 ponto e a quarta zero (*contagem de Borda*)
+
+Então o resultado com *voto sincero* é: `\((a:3, b:6, c:7, d:2)\)`. Mas Alice tem incentivos de mentir e *votar estrategicamente* como no 2o painel, quando os pontos são `\((a:2, b:7, c:6, d:3)\)` &amp;mdash; assim, o resultado é `\(b\)`, que Alice prefere ao resultado com voto sincero `\(c\)`: a contagem de Borda é **manipulável** [(Wiki)](https://en.wikipedia.org/wiki/Gibbard%E2%80%93Satterthwaite_theorem)
+
+---
+class: inverse, middle, center
+
+# Economia Política
+
+---
+class: middle
+## Teorema do eleitor mediano
+
+Daqui em diante vamos restringir nossa atenção a casos em que existe *vencedor de Condorcet* e tentar dizer algo sobre qual será. A restrição mais comum sobre as preferências dos eleitores é de **single-peaked preferences**
+
+Preferências single-peaked são aquelas que: (i) todo eleitor tem uma política preferida `\(x^*\)`; e (ii) se `\(y\)` é mais próximo de `\(x^*\)` que `\(z\)`, então o eleitor prefere `\(y\)` a `\(z\)` 
+
+O **teorema do eleitor mediano** diz que se as preferências dos eleitores forem single-peaked, então existe um *vencedor de Condorcet*, e ele será o ponto ótimo para o eleitor com política preferida na mediana da distribuição `\(x^*_m\)` (o **eleitor mediano**)
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-5-3.png" width="90%" /&gt;
+
+Em (b), as preferências em vermelho não são single-peaked: não há vencedor de Condorcet [Gru16]
+
+---
+class: middle
+## Democracia representativa
+
+Até aqui, analisamos voto sobre políticas públicas diretamente, mas no mundo real eleitores votam em representantes
+
+Downs (1957) dá uma predição muito forte sobre como se dará a eleição: ambos os candidatos oferecerão a política desejada pelo eleitor mediano e vencerão metade das vezes &amp;mdash; nenhuma outra estratégia é um *equilíbrio de Nash*!
+
+Mas isso só vale com 2 candidatos e quando a política pública é unidimensional &amp;mdash; no mundo real o resultado não se aplica diretamente, mas vale a intuição de que candidatos *deveriam* tender a convergir para o centro
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-5-7.png" width="75%" /&gt;
+
+Imagine que eleitores se distribuem uniformemente com política preferida entre 0% e 50% de gastos militares. Então o único equilíbrio de Nash é com os dois candidatos prometendo a política favorita do mediano: 25% [Gru16]
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-5-4.png" width="85%" /&gt;
+
+Há épocas em que o *eleitor mediano* explica bem a política, mas recentemente a polarização tem aumentado [Gru16]
+
+
+---
+class: middle
+## Lobbying
+
+Lobbying é o gasto de recursos por **grupos de interesse** para influenciar políticos
+
+Ele não é de todo ruim: lobbies conhecem bastante sobre um assunto e podem ajudar a informar políticos sobre assuntos que estes não conheçam tão bem
+
+Também há lobbies (plausivelmente) positivos: Todos pela Educação, SOS Mata Atlântica, etc
+
+Mas lobbies recompensam políticos que apoiam suas visões, especialmente com contribuições de campanha, e nisso o lobby transforma *poder econômico* em *poder político*
+
+---
+class: middle
+## Lobbying
+
+O **teorema do valor mediano** ignora intensidade das preferências &amp;mdash; se 49% da população dá um valor de `$`1000 para uma política com custo `$`200, mas 51% dá valor `$`0, então ela não é implementada, mesmo que eficiente
+
+Lobby então pode ser uma forma dos eleitores com valor alto demonstrarem a intensidade das suas preferências, e aumentar eficiência. Porém:
+
+&gt; As Vilfredo Pareto pointed out, in a famous passage, if "a certain measure A is the case of the loss of one franc to each of a thousand  persons,  and of a thousand franc gain to one  individual, the latter will expend a great  deal of energy, whereas the former will resist  weakly; and it is likely that, in the end, the person who is attempting to secure the thousand francs via A will be successful.
+
+---
+class: middle
+## Corrupção
+
+A economia política estuda também situações quando o governo não quer (ou não consegue) agir no interesse público, que chamamos de **falhas de governo**
+
+Talvez a principal dessas falhas de governo seja *corrupção* &amp;mdash; mas note que se a corrupção é apenas transferência de rendas econômicas para políticos e outros agentes, ela não gera ineficiências
+
+Considere dois cenários: (i) o salário de político A é `$`30, mas ele recebe `$`10 por superfaturamento de combustível; e (ii) o salário do político A é `$`40
+
+Ou mesmo: (i) monopolista B faz obra com custo econômico `$`800, recebe do governo `$`1000 e paga `$`200 a acionistas; ou (ii) ela paga ao contrário `$`200 de propina
+
+---
+class: middle
+## Corrupção
+
+Na prática, corrupção (quase) nunca é pura transferência de rendas: atividades ilegais geralmente envolvem gerar peso morto para a sua ocultação
+
+Corrupção também está frequentemente ligada a escolha de políticas públicas que favorecem *special interests* contra o bem comum &amp;mdash; além disso, estimula investimentos com baixo custo-benefício que sejam fáceis de corromper
+
+Outro custo econômico da corrupção é que ela incentiva maior burocracia (*red tape*) no serviço público: se abrir uma firma demora 90 dias, há um espaço para pedir propina para fazer isso em 10
+
+---
+class: middle
+## Corrupção
+
+No mundo real, a corrupção tem efeitos negativos relevantes: [FFM12] encontram que nos municípios brasileiros em que corrupção foi encontrada em auditorias, notas são 0,35 std menores e taxas de abandono são maiores 
+
+Ainda assim, é importante dimensionar corretamente a importância da corrupção para a produtividade do setor público
+
+[BPV09] mostram que na Itália disperdício *ativo* (corrupção) representa apenas 17% do disperdício geral do setor público, o resto sendo disperdício *passivo* (falta de esforço, incompetência, falta de autonomia, evitar reclamações ou investigações)
+
+---
+class: middle
+## Corrupção
+
+Uma forma de manter em cheque a corrupção é **accountability eleitoral**: se políticos querem manter seus mandatos, eles vão evitar se corromper caso isso lhes custe votos
+
+Analisando auditorias aleatórias da CGU, [FF08] mostra que de fato informação sobre corrupção diminui drasticamente as chances de reeleição
+
+Ademais, políticos com incentivos eleitorais (que podem se reeleger) roubam 27% a menos que aqueles que não podem [FF11]
+
+[CD14] mostram que, nos EUA, estados com capitais distantes dos grandes centros urbanos (menos *accountability*) têm mais casos de corrupção
+
+---
+class: inverse, middle, center
+
+# Acemoglu &amp; Robinson (2013). "Economics versus Politics: Pitfalls of Policy Advice"
+
+---
+class: middle
+## Third-best
+
+Vimos que a alocação do 2o Teorema do Bem-estar é chamado de **first-best**. No mundo real, não possuímos *transferências lump-sum* (por assimetrias informacionais), então em geral temos que nos contentar com o **second-best** 
+
+A literatura de economia política introduz uma nova complicação: alocações econômicas podem ser restritas em relação ao melhor possível não apenas por diferenças informacionais, mas também por *restrições políticas*
+
+Chamamos as alocações que maximizam o bem-estar social dados os instrumentos disponíveis e as possibilidades políticas de **third-best** 
+
+---
+class: middle
+## Boa economia pode ser má política
+
+[AR13] argumentam que sugestões de política pública que ignorem as suas consequências políticas podem gerar mais malefícios que ganhos, mesmo que levem a ganhos de eficiência econômica
+
+Na presença de considerações de economia política, *análise de custo-benefício* não é suficiente!
+
+Ao desenvolver políticas públicas devemos identificar situações em que economia e política entram em conflito
+
+Não levar isso em conta é boa parte da razão do insucesso das prescrições de políticas para o desenvolvimento na segunda metade do século 20
+
+---
+class: middle
+## Boa economia pode ser má política
+
+Pense num administrador ("benevolente") tomando decisão de política pública em dois períodos
+
+Se não há conexão entre os períodos, então ele apenas vai escolher em cada momento a política que maximize o bem-estar social instantâneo
+
+Mas em geral decisões no primeiro período vão alterar a **correlação de forças** no segundo período
+
+Então devemos levar em conta que: (i) poder econômico e político está conectado; e (ii) muita concentração de poder político em um grupo pode ter efeitos deletérios 
+
+---
+class: middle
+## Boa economia pode ser má política
+
+Nesse sentido, devemos evitar políticas públicas que dêem mais poder aos grupos já dominantes ou enfraqueçam grupos que contrabalanceam estes
+
+Exemplo: a quebra de monopólios sindicais pode aumentar a eficiência ao reduzir falhas de mercado(*), mas enfraquece sindicatos que contrabalanceiam politicamente o poder dos mais ricos
+
+Outro perigo é que remover falhas de mercado que geram renda econômica a certos grupos pode alterar as **restrições de compatibilidade de incentivos políticas** &amp;mdash; a falta de renda para distribuir a grupos de suporte enfraquece o governo e gera instabilidade institucional
+
+---
+class: middle
+## Rendas econômicas e organização política
+
+*Rendas econômicas* geram incentivos para organização política (geralmente chamado pejorativamente de **comportamento rent-seeking**)
+
+Do ponto de vista negativo, rent-seeking faz empresas e indivíduos direcionarem recursos de investimentos econômicos para o *lobby político* 
+
+Mas nem sempre essa organização política é negativa para a sociedade: economistas devem levar em conta quando formulando políticas públicas como políticas econômicas afetam os incentivos para organização política de diferentes grupos
+
+---
+class: middle
+## Rendas econômicas e organização política
+
+&gt; Because elites know that violence will reduce their own rents, they have incentives not to fight. Furthermore, each elite understands that other elites face similar incentives. In this way, the political system of a natural state manipulates the economic system to produce rents that then secure political order.
+
+&gt; [T]he appropriate counterfactual from eliminating rents is not a competitive market economy... but a society in disorder and violence.
+
+[Nor+13] apud [AR13]
+
+---
+class: middle
+## Sindicatos
+
+O propósito (econômico) de sindicatos é criar poder de monopólio na oferta de trabalho e assim gerar *rendas econômicas* para os seus membros (potencialmente a custo de maior desemprego)
+
+Sindicatos também podem gerar outras distorções, como impedir avanços tecnológicos (e.g. cobrador ou frentista): por isso, uma recomendação usual de política por muito tempo foi restringir poder dos sindicatos
+
+Mais recentemente se tem dado valor ao seu papel de contrabalancear **poder de monopsônio** dos empregadores e como redistribuição de renda (*falácia do 2o TBE*)
+
+---
+class: middle
+## Sindicatos
+
+Mas sindicatos não apenas barganham por maiores salários, mas também são ativos politicamente &amp;mdash; contrabalanceando (apenas em parte!) o poder político disproporcional de **grupos de interesses** empresariais
+
+Por exemplo, sindicatos têm sido extremamente importantes historicamente (e ainda hoje) no estabelecimento e consolidação das democracias ocidentais
+
+Como sindicatos são formas de organização institucional dos trabalhadores, eles facilitam a **ação coletiva** e evitam comportamento *free rider* na política
+
+---
+class: middle
+## Sindicatos
+
+&gt; I think we can’t separate economic and political factors... The (...) struggle was over wages, but in struggling for wages, the working class won a political victory (Lula em Keck, 1992, apud [AR13])
+
+Nos EUA, por exemplo, políticas "anti-union" reduziram à metade a proporção de trabalhadores sindicalizados desde 1950: hoje se acredita que isso é parte essencial da explicação do aumento de desigualdade naquele país
+
+Mais discutivelmente, pode ser parte da explicação para o aumento estratosférico na remuneração dos CEOs e na deregulamentação financeira que levou à crise de 2008
+
+---
+class: middle
+## Riqueza natural
+
+A economia política já prevê que a forma de acesso às riquezas naturais é importante: Botswana com diamantes profundos (GDP pc 15k PPP) vs Sierra Leone com diamantes fluviais (GDP pc 1.7k PPP)
+
+Mas escolhas econômicas também importam! Diamantes fluviais geram um **problema dos comuns** (semana que vem)
+
+Uma solução possível é atribuir *direitos exclusivos de propriedade* (Sierra Leone), outro possível é deixar pequenos mineradores se organizar em cooperativas e similares (Austrália)
+
+---
+class: middle
+## Riqueza natural
+
+Geralmente economistas favorecem a primeira opção como mais eficiente(*)
+
+Mas isso ignora os efeitos políticos! Comunas favorecem a organização dos trabalhadores para manter e aumentar as suas *rendas econômicas* &amp;mdash; inclusive politicamente, com a busca de **poder político de jure** (e.g. sufrágio)
+
+Enquanto no 1o caso, o valor gigantesco dos direitos exclusivos de propriedade sobre as riquezas naturais dá incentivos aos seus donos de usar de força militar e rígido controle político (*autocracia*) para manter seu monopólio
+
+---
+class: middle
+## Desigualdade
+
+Economia política também é outra razão pela qual o 2o TBE é uma falácia &amp;mdash; mudanças na distribuição de renda afetam a correlação de forças na sociedade, e mudam quais alocações são politicamente factíveis no futuro
+
+Nos EUA, deregulamentação do setor financeiro no início razoável (economicamente) aumentou drasticamente o poder político do setor, que pode então influir politicamente para mudanças mais drásticas (**slippery slope**)
+
+Entre 1980 e 2005, lucro no setor financeiro cresceu 800%, e doações de campanha subiram para $260mi (2,6x mais que o 2o maior doador, setor de saúde)
+
+---
+class: middle
+## Privatização (na Russia)
+
+A visão dominante na década de 90 era que a privatização das estatais russas não era apenas bom economicamente, mas também politicamente (*good economics is good politics*)
+
+&gt; [A]t least in Russia, political influence over economic life was the fundamental cause of economic inefficiency, and the principal objective of economic reform was, therefore, to depoliticize economic life... Privatization fosters depoliticization because it robs politicians of control over firms. (Boycko et al, 1995, apud [AR13])
+
+Mas esse processo gerou uma classe oligárquica, o que também gerou resistência ao processo de reformas e retorno do autoritarianismo, terminando em um *state-led crony capitalism*
+
+---
+class: middle
+## Restrições políticas de compatibilidade de incentivos
+
+Políticas economicamente ineficientes podem ser importantes por sustentar possíveis coalizões políticas governantes
+
+[Acemoglu et al (2008)](https://voxeu.org/article/central-bank-independence-failures-successes-and-seesaw-effect) argumenta que independência do Banco Central só funciona para casos "intermediários" de instituições &amp;mdash; quando elas são boas, é supérfluo, quando são ruins, há resistência e não funciona
+
+[AR13] dão o exemplo de reformas do FMI em Ghana: duas semanas depois de acatadas, o presidente sofreu um golpe militar e elas foram revertidas (*seesaw effect*)
+
+Mais polêmico, pode se argumentar algo parecido sobre a corrupção estatal no Brasil, que possibilitava uma coalizão governamental estável e democrata
+
+---
+class:middle
+# Referências
+&lt;small&gt;
+[AR13] D. Acemoglu and J. A. Robinson. "Economics versus politics:
+Pitfalls of policy advice". In: _Journal of Economic perspectives_ 27.2
+(2013), pp. 173-92.
+
+[BPV09] O. Bandiera, A. Prat, and T. Valletti. "Active and passive
+waste in government spending: evidence from a policy experiment". In:
+_American Economic Review_ 99.4 (2009), pp. 1278-1308.
+
+[CD14] F. R. Campante and Q. Do. "Isolated capital cities,
+accountability, and corruption: Evidence from US states". In: _American
+Economic Review_ 104.8 (2014), pp. 2456-81.
+
+[FF08] C. Ferraz and F. Finan. "Exposing corrupt politicians: the
+effects of Brazil's publicly released audits on electoral outcomes".
+In: _The Quarterly journal of economics_ 123.2 (2008), pp. 703-745.
+
+[FF11] C. Ferraz and F. Finan. "Electoral accountability and
+corruption: Evidence from the audits of local governments". In:
+_American Economic Review_ 101.4 (2011), pp. 1274-1311.
+&lt;/small&gt;
+
+---
+class:middle
+# Referências
+&lt;small&gt;
+[FFM12] C. Ferraz, F. Finan, and D. B. Moreira. "Corrupting learning:
+Evidence from missing federal education funds in Brazil". In: _Journal
+of Public Economics_ 96.9-10 (2012), pp. 712-726.
+
+[Gru16] J. Gruber. _Public finance and public policy_. 5th ed.
+Macmillan, 2016.
+
+[Nor+13] D. C. North, J. J. Wallis, S. B. Webb, et al. _In the shadow
+of violence: Politics, economics, and the problems of development_.
+Cambridge University Press, 2013.
+
+[Roe98] J. E. Roemer. _Theories of distributive justice_. Harvard
+University Press, 1998.
+&lt;/small&gt;
+
+&lt;!-- class: middle --&gt;
+&lt;!-- ## A impossibilidade do liberal Paretiano --&gt;
+
+&lt;!-- Já que estamos falando de teoremas de impossibilidade, esse é um interessante de Amartya Sen em 1970. Considere a seguinte Propriedade 5: --&gt;
+
+&lt;!-- &lt;ol start="5"&gt; --&gt;
+&lt;!-- &lt;li&gt;&lt;b&gt;Liberalismo:&lt;/b&gt; existe pelo menos uma escolha (um "direito individual", e.g. não ler um livro ofensivo) que se a pessoa escolhe x sobre y, então a sociedade escolhe x sobre y&lt;/li&gt; --&gt;
+&lt;!-- &lt;/ol&gt; --&gt;
+
+&lt;!-- **Impossibilidade do liberal Paretiano:** Não há regra de escolha social que satisfaça simultaneamente condições 1 (unanimidade), 4 (ordenação completa) e 5 (liberalismo) --&gt;
+
+&lt;!-- Esse teorema mostra que podemos sempre achar preferências que coloquem em choque o princípio da *unanimidade* com os direitos individuais --&gt;
+
+&lt;!-- --- --&gt;
+&lt;!-- class: middle --&gt;
+&lt;!-- ## A impossibilidade do liberal Paretiano --&gt;
+
+&lt;!-- Pense no seguinte caso: há 2 pessoas: um libidinoso e um puritano. Eles têm que decidir o que fazer com um livro sexualmente explícito --&gt;
+
+&lt;!-- O sujeito libidinoso quer ler o livro, mas prefere ainda mais que o puritano o leia (e se escandalize). O puritano não quer ler o livro, mas prefere que ele leia (sem gostar) que o libidinoso leia (e goste) --&gt;
+
+
+&lt;!-- O paradoxo de Sen só pode surgir quando indivíduos  --&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

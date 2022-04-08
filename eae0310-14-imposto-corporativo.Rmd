@@ -1,0 +1,436 @@
+---
+title: "EAE-0310: ECONOMIA DO SETOR PÚBLICO"
+author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 19C/FEA2 - pforquesato@usp.br"
+institute: "Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo"
+date: "Aula 14: Impostos corporativos<br/>2022/1"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+
+---
+class: inverse, middle, center
+
+```{r, load_refs, include=FALSE, cache=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "alphabetic",
+           cite.style = "alphabetic",
+           style = "markdown",
+           hyperlink = FALSE,
+           dashed = FALSE)
+myBib <- ReadBib("./esp_bib.bib", check = FALSE)
+```
+
+# Impostos corporativos
+
+---
+class: middle
+## Corporações
+
+**Corporações** são entidades com fins lucrativos possuídas por acionistas com *responsabilidade limitada*: se a corporação fale, o acionista perde o valor do seu ativo, mas não é responsável por dívidas não pagas
+
+Corporações são "pessoas jurídicas", mas isso obviamente não existe &mdash; empresas não pagam impostos, *apenas pessoas pagam*
+
+De forma análoga ao setor público, firmas têm um **problema de agência**, pela separação entre *propriedade e controle*: o dono da firma são os acionistas, mas os controladores os CEOs
+
+---
+class: middle
+## Corporações
+
+O problema de agência vem do fato do mal alinhamento de interesses entre proprietários e controladores
+
+Embora a economia neoclássica tradicional veja o objetivo da corporação a maximização dos lucros dos *shareholders*, vimos que isso apenas maximiza o bem-estar social sob suposições fortes
+
+Vários países como a Alemanha têm uma estrutura de direito empresarial focada nos interesses dos *stakeholders*: todos impactados pela atuação da empresa, como os trabalhadores, os consumidores e a comunidade local
+
+---
+class: middle
+## Financiamento
+
+Empresas financiam investimentos produtivos por 3  mecanismos: *dívida* (debt), *participação* (equity) e *lucros retidos*
+
+O financiamento por dívida promete um pagamento fixo para qualquer realização econômica da firma (fora o *default*, quando as dívidas têm prioridade)
+
+A empresa também pode vender participação, que paga uma proporção do lucro realizado &mdash; isso gera um problema de *risco moral*
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '90%'}
+knitr::include_graphics("figs/eae0310-14-4.png")
+```
+
+Formas de financiamento do investimento e remuneração do capital, com financiamento interno (azul) ou externo (laranja) `r Citep(myBib, "gruber")`
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '70%'}
+knitr::include_graphics("figs/eae0310-14-16.png")
+```
+
+Como a tributação corporativa afeta cada forma de estrutura de capital da firma &mdash; financiamento por dívida é abatido da taxação do lucro `r Citep(myBib, "gruber")`
+
+---
+class: middle
+## Lucro
+
+A corporação se engaja em atividades econômicas e gera uma *receita* por vendas, que retirando os *custos contábeis*: trabalho, insumos, depreciação do capital e pagamento de juros e aluguel, resta o *lucro contábil*
+
+No Brasil, o lucro é taxado pela IRPJ (15%) e CSLL (9%), mas empresas podem escolher ser taxadas diretamente no faturamento (Simples e lucro presumido)
+
+Há três destinos que empresas podem dar ao lucro operacional: distribuir dividendos, recomprar ações (o que gera ganhos de capital) ou reter os lucros
+
+---
+class: middle
+## Depreciação
+
+A princípio, a taxação sobre o lucros econômico deveria descontar os gastos com todos os fatores: trabalho, insumos, terra, e também capital &mdash; o custo do capital é a sua **taxa de depreciação**: sua perda de valor no tempo
+
+O problema é que diferentes ativos possuem diferentes maturidades, e a depreciação econômica é pouco observável, já que raramente há mercados bem desenvolvidos de máquinas usadas
+
+Por isso há *regras de depreciação*: linear, acelerada, ou imediata &mdash; o importante é lembrar que quanto mais rápida a dedutibilidade da depreciação, maior o benefício fiscal
+
+---
+class: middle
+## Taxação corporativa
+
+Quando taxamos uma empresa, taxamos *as pessoas* que compõem essa empresa: trabalhadores, acionistas e potencialmente consumidores: quem vai arcar com o imposto depende da **incidência**
+
+Então por que taxar a empresa e não so fatores diretamente?
+
+O principal motivo prático é que é mais fácil de arrecadar: corporações são grandes e bastante visíveis. Elas possuem contabilidade detalhada e, frequentemente, pública
+
+---
+class: middle
+## Taxação de renda jurídica
+
+Do ponto de vista teórico a taxação de lucros também é desejável: se uma firma ganha **lucros econômicos**, gostaríamos de taxá-los inteiramente, já que essa taxação não distorce comportamento (são *rendas econômicas*)
+
+Afinal, a composição de fatores e quantidade produzida que maximiza o lucro $\Pi$ é a mesma que maximiza $(1 - \tau_L)\Pi$
+
+Mas isso só vale se taxarmos o lucro *econômico* (levando em conta o **custo de oportunidade** dos fatores), enquanto a taxação corporativa é sobre o lucro *contábil* (que leva em conta preços)
+
+---
+class: middle
+## Taxação de renda jurídica
+
+Como $\Pi = p F(k, l) - wl - rk$, um imposto sobre o lucro $\tau_L$ gera a função objetivo: $$(1 - \tau_L)\Pi = (1 - \tau_L)p F(k, l) - wl - rk + \tau_L(wl + rk)$$
+
+Ou seja, uma taxação do lucro é uma taxação da receita operacional com abatimento da despesa com trabalho e remuneração do capital
+
+Esse tipo de taxação é não distorcionária, já que não altera os incentivos da firma (CPOs) &mdash; na prática, raramente esse abatimento é perfeito, como vimos com as dificuldades de se calcular depreciação econômica
+
+---
+class: middle
+## Taxação de renda jurídica
+
+A taxação corporativa aumenta a *base tributária* e evita elisão/evasão fiscal: se taxarmos apenas rendas, donos de empresas podem maquiar o seu consumo pessoal como gastos da empresa, nunca realizando a renda e portanto nunca sendo taxado
+
+E a taxação direta do lucro da empresa evita o benefício fiscal advindo da cobrança de impostos apenas na realização, já que empresas podem se financiar por lucros retidos indefinidamente sem nunca distribuir o lucro
+
+E de fato a evidência parece apontar lucros retidos como a principal fonte de financiamento das firmas
+
+---
+class: middle
+## Incidência da taxação corporativa
+
+Se quereremos taxar estrangeiros acionistas de empresas locais, e essa é a única forma: não podemos taxar a sua renda diretamente, pois é realizada fora do país, mas a atuação da empresa é local
+
+Por isso, a grande diferença entre a taxação na firma e no indivíduo se dá por *economia internacional*: a 1a afeta a lucratividade relativa entre ativos nacionais e internacionais, enquanto a 2a não
+
+Como isso vai afetar a *incidência* do imposto depende das nossas suposições sobre a mobilidade local e internacional do capital (e portanto da elasticidade da oferta de capital)
+
+---
+class: middle
+## Incidência da taxação corporativa
+
+Os efeitos da taxação de dividendos dependem da forma de financiamento da empresa: se ela se financia emitindo ações, os tributos diminuem o preço da ação e tornam o financiamento do investimento mais caro
+
+Se, por outro lado, a empresa financia o investimento com lucros retidos, os dividendos não afetam a sua escolha
+
+Já a taxação do lucro, se for sobre lucro econômico, então não há efeito comportamental da taxação, e a incidência se dá toda sobre os acionistas no curto prazo &mdash; mas no longo prazo depende da mobilidade do capital
+
+---
+class: middle
+
+```{r, echo=FALSE, fig.show="hold", out.width = '50%'}
+knitr::include_graphics("figs/eae0310-14-5.png")
+knitr::include_graphics("figs/eae0310-14-6.png")
+```
+
+Efeitos de uma taxação corporativa sem e com dedução para capital: no 1o caso, ela diminui o produto marginal do capital, diminuindo o investimento; no 2o, o abatimento de gastos com capital edepreciação diminuem o custo de financiamento, com efeito potencialmente ambíguo `r Citep(myBib, "gruber")`
+
+---
+class: middle
+## Incidência da taxação corporativa
+
+Se o capital tem **mobilidade internacional perfeita**, então a taxa de lucro tem que ser homogênea, $r^{\text{BR}} = r^*$, e após a taxação igualmente $(1-\tau_c) r^{\text{BR}} = r^*$. Ou seja, há fuga de capital até a taxa de retorno aumentar ao nível internacional: *incidência toda no trabalho*
+
+Se o capital não é móvel internacionalmente, mas sim *nacionalmente*, então a taxa de lucro no setor corporativo deve igualar o **setor não corporativo**: *incidência no capital corporativo e não corporativo*
+
+Mas se o setor corporativo tem lucros anormais (capital não perfeitamente móvel), ele absorve toda a taxação
+
+---
+class: middle
+## Concorrência internacional
+
+Essa característica da taxação corporativa gera o potencial de **concorrência internacional** e políticas de *beggar-thy-neighbor*
+
+Países sofrem uma pressão para reduzir os seus tributos corporativos em uma *corrida até o fundo*, já que impostos corporativos menores atraem o capital internacional de outros países num jogo de soma zero
+
+Necessidade de organismos internacionais de cooperação: em 2021, 141 países concordaram em estruturar um imposto corporativo mínimo global de 15%
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-14-1.png")
+```
+
+A concorrência internacional e lobby das grandes empresas reduziu drasticamente a taxação corporativa no final do século passado nos EUA (e na maioria das economias centrais) (Saez)
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-14-2.png")
+```
+
+E essa redução está associada a uma diminuição na progressividade do sistema tributário, especialmente no topo da distribuição de renda (Saez)
+
+---
+class: middle
+## Efeitos da taxação corporativa
+
+A evidência é que de fato trabalhadores absorvem parte significativa da taxação corporativa, entre 35-75% em diferentes situações, e 20% para donos de terra (apenas 40% para capitalistas) em taxação estadual nos EUA
+
+Estudos recentes também estimam elasticidade significativa dos impostos corporativos em investimento, $-0.5$: eles não são puramente taxação de lucros econômicos
+
+Ao contrário da taxação de dividendos, que parece ter poucos efeitos reais e incidir principalmente nos acionistas, a taxação corporativa tem efeitos mais complexos
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '100%'}
+knitr::include_graphics("figs/eae0310-14-7.png")
+```
+
+Nos EUA, redução de 1p.p. na alíquota corporativa efetiva para empresas com produção doméstica (azul) aumentou investimento em 4,7% do capital instalado e diminui dívida em 5,3%, em comparação com empresas com pouca produção doméstica (pontilhado) `r Citep(myBib, "ohrn2018effect")`
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '70%'}
+knitr::include_graphics("figs/eae0310-14-8.png")
+```
+
+Na Alemanha, aumentos na taxação corporativa são associados a significativas reduções nos salários reais: trabalhadores absorvem por volta de metade da incidência do imposto (especialmente trabalhadores novos e menos qualificados) `r Citep(myBib, "fuest2018higher")`
+
+---
+class: middle
+## Impacto no financiamento da firma
+
+Um resultado clássico de finanças corporativas é o **teorema de Modigliani-Miller:** sem taxação, falência ou informação assimétria, para o valor da firma é irrelevante a *estrutura de capital* (i.e., tanto faz *debt* ou *equity*)
+
+Mas como os juros de dívidas são quase sempre dedutíveis do imposto, e pagamentos de dividendos não é, isso gera uma *preferência fiscal* pelo financiamento por dívida
+
+Ainda assim, várias firmas preferem emitir ações para se financiar, para diminuir o risco de falência e mitigar **conflito de interesses** entre acionistas e detentores de dívida
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '100%'}
+knitr::include_graphics("figs/eae0310-14-17.png")
+```
+
+Quanto maior a proporção de dívida no financiamento da firma, maior o *conflito de interesses* entre detentores de dívida e acionistas &mdash; como acionistas "têm pouco a perder", eles tomam riscos exagerados; em expectativa disso, potenciais credores cobram taxas de juros elevadas de firmas com pouco capital acionário `r Citep(myBib, "gruber")`
+
+---
+class: middle
+## Impacto no financiamento da firma
+
+A evidência empírica parece concordar com esse efeito: aumentos no imposto corporativo estadual nos EUA de 13% levou a crescimento de 4,5% na proporção de dívida na estrutura de capital das empresas
+
+Outra questão de **finanças corporativas** é por que firmas pagam qualquer dividendo, quando poderia reinvestir o dinheiro (ou recomprar ações) e aumentar o valor da firma, remunerando dessa forma os investidores
+
+A visão dominante é que é novamente um **problema de agência**: como os acionistas não conseguem controlar perfeitamente os administradores, preferem "tirar o dinheiro das suas mãos", mesmo que isso custe algo em maior tributação
+
+---
+class: middle
+## Taxação de dividendos
+
+O efeito da taxação dos dividentos no investimento depende da forma de financiamento da firma: a visão original é de que isso encareceria o financiamento por *equity*, o que limitaria o investimento
+
+Mas essa visão decorre de um modelo que não explica por que dividendos existem! No modelo de agência, taxar divendos *aumentaria* o investimento
+
+A visão moderna (e que é corroborada nos dados) é que investimento das empresas se dá majoritariamente por *lucros retidos*: assim, taxação de dividendos tem pouco efeito no nível de investimento [[Artigo no Jornal da USP]](https://jornal.usp.br/artigos/afinal-a-taxacao-de-dividendos-reduz-o-investimento/)
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '70%'}
+knitr::include_graphics("figs/eae0310-14-3.png")
+```
+
+Nos EUA, o único efeito do corte de 23p.p. na taxação de dividendos em 2003 foi maior pagamento de dividendos a acionistas, comparando um grupo de empresas afetada (C-corps) com empresas não afetadas (S-corps) `r Citep(myBib, "yagan2015capital")`
+
+---
+class: middle
+## Simples Nacional
+
+Em quase todos os países, empresas pequenas têm um regime tributário benéfico &mdash; no Brasil, é o Simples Nacional, que substitui quase todos os tributos das empresas por uma taxação única sobre o faturamento
+
+`r Citep(myBib, "monteiro2012coming")` estima efeito do Simples de 13p.p. (quase 50%) na formalização de lojas de varejo, mas nenhum efeito em outros setores
+
+Como há um teto para a participação no Simples, o programa pode gerar "achatamento" do tamanho das firmas, gerando ineficiências econômicas
+
+---
+class: middle
+## Impostos sobre a folha
+
+Uma forma de taxação híbrida entre imposto de renda e tributo corporativo são impostos sobre a folha. A princípio são equivalentes a imposto de renda, mas na prática a incidência tende a ser maior sobre a firma
+
+Em 2011, o governo federal aprovou a desoneração temporária na folha, que substitui a tributação na folha por imposto sobre faturamento para vários setores, na prática dando benefícios tributários da ordem de 0,5% do PIB para eles
+
+Todos os estudos (ver `r Citep(myBib, "leandro2021payroll")` e citações) apontam efeito desprezível em emprego e salários, mas ainda assim a desoneração se mantém até 2023 (pelo menos)
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-14-9.png")
+```
+
+Ainda assim, reduções *específicas* no imposto sobre a folha podem funcionar para estimular o emprego em subgrupos onde o desemprego é maior: um corte no imposto na folha para jovens na Suécia (2007-2009) diminuiu a taxa de desemprego entre jovens em até 5p.p. (33%) `r Citep(myBib, "saez2019payroll")`
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-14-10.png")
+```
+
+Firmas com mais jovens receberam um *"tax windfall"* e aumentaram seu emprego $4.6\%$, vendas e lucros após a reforma, comparando com firmas pouco afetadas `r Citep(myBib, "saez2019payroll")`
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-14-11.png")
+```
+
+Esse aumento das firmas aumentou o salário líquido dos trabalhadores (em geral) em $1.9-2.6\%$, mas o salário bruto continuou o mesmo por causa da redução do imposto sobre a folha `r Citep(myBib, "saez2019payroll")`
+
+---
+class: inverse, middle, center
+
+# Gabriel Zucman (2014). "Taxing across Borders: Tracking Personal Wealth and Corporate Profits"
+
+---
+class: middle
+## Paraísos fiscais
+
+Na aula passada vimos como os "ultra-ricos" usam de **paraísos fiscais** para evadir impostos sobre o capital, mas talvez ainda mais relevante seja o seu uso por *corporações multinacionais*
+
+[World missing profits database](https://missingprofits.world/) (Zucman et al, 2021) estima que 14% da receita da taxação corporativa no Brasil seja evadida por paraísos fiscais (23% nos EUA)
+
+18% de todo lucro realizado por empresas americanas (dentro ou fora dos EUA) é hoje realizado em paraísos fiscais, e paga quase nenhum imposto (em média 3%) [[Artigo no Valor]](https://www.pedroforquesato.com/files/paraisos.jpeg)
+
+---
+class: middle
+## Taxação corporativa internacional
+
+A pedido da Liga das Nações, Bruins, Einaudi, Seligman, and Stamp proporam em 1923 três princípios para a tributação corporativa internacional:
+
+1. Taxação corporativa deve ser paga no país de atividade da empresa (**source-based taxation**)
+2. Em relações comerciais (internacionais) intrafirma, as corporações devem usar **arms-length pricing**: "comercializar" entre si os bens como se "a preço de mercado(*)" e calcular seu lucro separadamente
+3. Taxação internacional, ao contrário de comércio internacional, seria tratado por *acordos bilaterais*, e não multilateralmente
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-14-12.png")
+```
+
+Se até a década de 70 a proporção de lucros de empresas americanas realizada fora dos EUA era pequena, ela aumentou significativamente nas últimas décadas (*globalização*), chegando a 35% em 2010 &mdash; mas 2/3 dessa proporção é realizada em paraísos fiscais `r Citep(myBib, "zucman")`
+
+---
+class: middle
+## Taxação corporativa internacional
+
+Essa multitude de acordos bilaterais gerou um queijo suíço de *loopholes* que as gigantes multinacionais utilizam para evitar impostos (como o "sanduíche holandês-duplo irlandês")
+
+Outra prática comum é transferir ativos intangíveis (patentes e marcas) para paraísos fiscais e cobrar royalties de lá para o seu uso nos países de atividade econômica
+
+Multinacionais também podem manipular a realização dos seus lucros usando empréstimos entre subsidiárias e *transfer pricing*, já que os preços dos insumos comercializados intrafirma raramente existe em mercado
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '90%'}
+knitr::include_graphics("figs/eae0310-14-13.png")
+```
+
+Embora a alíquota nominal de taxação corporativa nos EUA seja de 35%, por causa de elisão fiscal para paraísos fiscais e outros *loopholes*, a alíquota efetiva é de 20%, com apenas 16% paga ao governo americano `r Citep(myBib, "zucman")`
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-14-14.png")
+```
+
+A proporção dos ativos americanos com dono registrado em paraísos fiscais (hedge funds, mutual funds, shell companies) subiu de 2% até a década de 80 para 9% em 2010 `r Citep(myBib, "zucman")`
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-14-15.png")
+```
+
+Em países em desenvolvimento a situação é ainda pior: Zucman estima que na América Latina 22% da riqueza é mantida fora do país sede, e em países como a Rússia e do Oriente Médio chega a mais da metade `r Citep(myBib, "zucman")`
+
+---
+class: middle
+## Evasão e elisão fiscal
+
+Não apenas essa elisão fiscal torna o sistema tributário menos progressivo, mas gera enormes ineficiências: multinacionais gastam bilhões (com benefício marginal social nulo) manipulando o sistema para evitar o pagamento impostos
+
+A proporção do PIB arrecadada pelo imposto corporativo se manteve nos EUA em 3%, pois a proporção da renda nacional paga como lucro corporativo subiu de 9% em 1980 para 14% em 2010
+
+Se os EUA resolvessem o problema de evasão fiscal por paraísos fiscais, isso aumentaria a carga tributária do 0,1% mais rico em 18%
+
+---
+class: middle
+## Reformas
+
+Em 2021 foi aprovado um plano, com assinatura de 141 países, de estabelecer um imposto corporativo mínimo global de 15% &mdash; ainda bem abaixo do Brasil e a maioria das grandes economias, mas bem acima de paraísos fiscais
+
+Isso vem com o enfraquecimento da *source-based taxation* e *arms-length pricing*: novas propostas de pagamento dos impostos corporativos com base em alguma fórmula das vendas, emprego e capital
+
+O problema óbvio é que diferentes fórmulas beneficiam diferentes países &mdash; mas de qualquer forma, a solução para esse problema tem que ser global
+
+---
+class:middle
+# Referências
+<small>
+```{r refs, echo=FALSE, results="asis"}
+PrintBibliography(myBib, start=1, end=5)
+```
+</small>
+
+---
+class:middle
+# Referências
+<small>
+```{r refs2, echo=FALSE, results="asis"}
+PrintBibliography(myBib, start=6)
+```
+</small>

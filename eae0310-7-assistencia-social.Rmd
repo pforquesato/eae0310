@@ -1,0 +1,496 @@
+---
+title: "EAE-0310: ECONOMIA DO SETOR PÚBLICO"
+author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 19C/FEA2 - pforquesato@usp.br"
+institute: "Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo"
+date: "Aula 7: Assistência social<br/>2022/1"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      
+---
+class: inverse, middle, center
+
+```{r, load_refs, include=FALSE, cache=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "alphabetic",
+           cite.style = "alphabetic",
+           style = "markdown",
+           hyperlink = FALSE,
+           dashed = FALSE)
+myBib <- ReadBib("./esp_bib.bib", check = FALSE)
+```
+
+# Assistência social
+
+---
+class: middle
+## Assistência social
+
+Como vimos, pela utilidade marginal decrescente da riqueza, é razoável que redistribuir dinheiro dos ricos para apoiar os pobres aumente o bem-estar social
+
+Mesmo que a sociedade queira reduzir a pobreza, o setor privado não consegue resolver o problema pelo menos problema de **free rider** que vimos antes &mdash; de certa forma, *assistência social é um bem público*
+
+Assistência social pode ser em dinheiro ou **em espécie** &mdash; o mais óbvio é comida (p.ex. food stamps), mas também pode ser educação, saúde, e moradia de graça
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-7-2.png")
+```
+
+Distribuição mundial de renda &mdash; 85% vivem com menos de USD30 (PPP) por dia e 98,5% com menos de $100/dia [(WID)](https://ourworldindata.org/extreme-poverty)
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-7-3.png")
+```
+
+O progresso histórico é notável... [(WID)](https://ourworldindata.org/extreme-poverty)
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-7-1.png")
+```
+
+... mas esse progresso, especialmente nas últimas décadas, é bastante desigual [(WID)](https://ourworldindata.org/extreme-poverty)
+
+---
+class: middle
+
+<iframe src="https://ourworldindata.org/grapher/share-of-population-in-extreme-poverty?country=BGD~BOL~MDG~IND~CHN~ETH~COD" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+---
+class: middle
+
+<iframe src="https://ourworldindata.org/grapher/share-healthy-diet-unaffordable?country=KEN~BGD~IND~NGA~BRA~ZAF~RWA~USA~GBR~FRA" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-7-5.png")
+```
+
+Onde estão os extremamente pobres [(WID)](https://ourworldindata.org/extreme-poverty)
+
+---
+class: middle
+
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-vGIhk_RhMoUJerytiO8YSINlGzDfT47vhY7bltL-MjiggyhgHV7mX6i3w5BBbYIHQgOMaDpxMh_v/pubchart?oid=473456845&amp;format=interactive"></iframe>
+
+Evolução da pobreza no Brasil (1977-1998) `r Citep(myBib, "barros2000desigualdade")` 
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '90%'}
+knitr::include_graphics("figs/eae0310-7-6.png")
+```
+
+Evolução da pobreza no Brasil (2001-2018) `r Citep(myBib, "ipea2020politicas")`
+
+---
+class: middle
+
+```{r, echo=FALSE, fig.show="hold", out.width="50%"}
+knitr::include_graphics("figs/eae0310-7-9.png")
+knitr::include_graphics("figs/eae0310-7-9b.png")
+```
+
+Variação de renda por percentil de renda entre: (a) 2012-2015; (b) 2015-2018 `r Citep(myBib, "barbosa2020distribuiccao")` 
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '90%'}
+knitr::include_graphics("figs/eae0310-7-4.png")
+```
+
+Incidência da pobreza (menos de USD 3,20 per capita PPP) por grupos no Brasil (Cadernos ODS/IPEA)
+
+---
+class: middle
+## Risco moral da assistência social
+
+Transferência de dinheiro dos ricos para os pobres não é de graça, pois gera um **efeito comportamental** &mdash; a taxação desistimula o trabalho dos ricos
+
+Se a transferência for *means-tested* (todas no Brasil são), então também gera um **imposto implícito** sobre os mais pobres
+
+O nível ótimo de transferência então vai depender de comparar esse efeito de risco moral com o benefício gerado por transferir renda de agentes com utilidade marginal da riqueza baixa para aqueles com UMg alta
+
+Além disso, na prática temos que levar em conta também *custos administrativos*
+
+---
+class: middle
+## Risco moral da assistência social
+
+Okun usou a analogia de levar dinheiro de uma pessoa para a outra com um balde com buracos (*leaky bucket*) &mdash; isso gera um **trade-off eficiência e equidade**
+
+As perguntas que ficam são: 
+
+1. qual o tamanho dos furos? (*economia positiva*); e
+2. quanta água estamos dispostos a perder para levar o balde de um lado para o outro? (*economia normativa*)
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '90%'}
+knitr::include_graphics("figs/eae0310-7-12.png")
+```
+
+Efeito comportamental de um programa de eliminação da (extrema) pobreza, como o BSP `r Citep(myBib, "gruber")`
+
+---
+class: middle
+## Risco moral da assistência social
+
+É importante portanto considerar sempre os *efeitos comportamentais* no cálculo do custo orçamentário da política assistencial
+
+Se calcularmos apenas o **custo contábil** do programa (número de famílias que ganham hoje menos que a linha de extrema pobreza vezes a distância para a linha), vamos subestimar o custo real da assistência
+
+Nesse caso extremo do BSP, uma estimativa mais realista seria a quantidade de famílias que ganham menos que a faixa vezes o valor da faixa (89 reais per capita/mês) &mdash $X$ na figura
+
+Ainda assim seria um *limite inferior* dos custos do programa, pois ignora famílias como a $Y$ na figura
+
+---
+class: middle
+## Risco moral da assistência social
+
+Talvez à primeira vista pareça que o problema é exarcebado pela taxa de redução do benefício de 100% (*imposto implícito*)
+
+Mas não: uma taxa de redução menor não necessariamente reduz o *efeito comportamental* (e, portanto, o **peso morto**)
+
+Esse é **triângulo de ferro** do assistencialismo: não há como alterar o valor do benefício e a taxa de redução de forma ao mesmo tempo (i) encoraje mais trabalho; (ii) redistribua mais renda; e (iii) tenha menor custo
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '100%'}
+knitr::include_graphics("figs/eae0310-7-13.png")
+```
+
+Fazer o benefício cair gradualmente com a renda não necessariamente ajuda `r Citep(myBib, "gruber")`
+
+---
+class: middle
+## Potenciais soluções
+
+O risco moral advém da *informação assimétrica*: o governo apenas observa a renda dos indivíduos, que depende do seu comportamento, não a sua capacidade de geração de renda (que ele gostaria de usar)
+
+Uma solução é **tagging**: direcionar a assistência baseando em características "não-comportamentais" dos indivíduos que estão relacionadas com sua capacidade de geração de renda
+
+Por exemplo, direcionar a idosos ou pessoas com deficiências (como o BPC, mas ele também é *means-tested*); crianças (como o PBF, mas idem, ou propostas como a do Naércio) ou mães solteiras (como nos EUA)
+
+---
+class: middle
+## Potenciais soluções
+
+Outra possibilidade é tentar fazer os indivíduos *revelarem o seu tipo* através de **"mecanismos de provação"**: características dos programas que fazem que eles não sejam atrativos
+
+Um exemplo é obrigar desempregados a procurar emprego ou fazer treinamento &mdash; isso pode ser custoso demais para quem não realmente precisa daquele dinheiro
+
+Outro exemplo são **transferências em espécie**: alguém não pobre terá bem mais uso para dinheiro que para uma cesta básica ou moradia popular
+
+Isso gera um paradoxo que piorar a situação dos pobres pode de fato melhorar a situação deles, pois evita que parte do orçamento do programa vá a quem não necessita
+
+---
+class: middle
+## Potenciais soluções
+
+Uma possibilidade final é *deixar o trabalho mais atrativo* &mdash; aumentar a renda do trabalho dos indivíduos faz com que eles estejam menos dispostos a deixar de trabalhar pela assistência
+
+Talvez a principal forma pela qual o governo pode fazer isso é **subsidiando o trabalho**
+
+O governo pode fazer isso diretamente, transferindo renda para quem trabalha (EITC, nos EUA, ou abono salarial aqui), como um **imposto de renda negativo**
+
+Mas subsídios a *bens complementares ao trabalho* (creche, transporte público, etc) também tem o mesmo efeito 
+
+---
+class: middle
+## Assistência social no Brasil
+
+No Brasil, são dois os principais programas de transferência de renda para alívio da pobreza: o Programa Bolsa Família (PBF) e o Benefício de Prestação Continuada (BPC)
+
+O PBF envolve: 
+1. Um benefício básico, de 89 reais, pago a famílias com renda per capita até R$89 por mês 
+2. Até 5 benefícios variáveis, de 41 reais, pagos à famílias com renda per capita até R$178, um por criança (<16), grávida ou recém-nascido
+3. Até 2 benefícios de 48 reais para adolescentes (16-17) com restrição de renda acima
+4. Benefício para Superação da Extrema Pobreza (BSP) complementa a renda até R$89 per capita por mês
+
+---
+class: middle
+## Assistência social no Brasil
+
+O PBF é um programa de **transferência condicionada** a frequência escolar, vacinação, pré-natal e acompanhamento médico
+
+O BPC é a garantia de um salário mínimo por mês ao idoso com idade $\geq$ 65 anos ou à pessoa com deficiência de qualquer idade, desde que a renda per capita domiciliar seja menor que 1/4 do SM (R$275)
+
+Já o BPC é uma transferência não-condicionada. Ambos os programas são **means-tested**: só recebe quem tiver uma renda abaixo de um limiar
+
+Isso gera uma **taxação implícita** sobre o trabalho dos recipientes
+
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '90%'}
+knitr::include_graphics("figs/eae0310-7-7.png")
+```
+
+Efeito das políticas assistenciais na evolução da pobreza `r Citep(myBib, "ipea2020politicas")`
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-7-8.png")
+```
+
+Proporção da população com renda per capita menor que limites do PBF 1 e 2 e BPC `r Citep(myBib, "barbosa2020distribuiccao")` 
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '90%'}
+knitr::include_graphics("figs/eae0310-7-10.png")
+```
+
+Isso acontece porque a cobertura dos programas sociais condicionais e *means-tested* dificilmente é universal (Cadernos ODS/IPEA)
+
+---
+class: middle
+## Programa Bolsa Família
+
+Predecessores do PBF foram primeiro implementados em 1995, no DF e Campinas, e em 2001 no plano nacional, como 4 programas separados
+
+Em 2016, as despesas com o PBF representaram 0,44% do PIB (30x menos que a previdência e por volta do gasto com a ZFM)
+
+Existe uma enorme literatura examinando os efeitos (em geral benéficos) colaterais do programa `r Citep(myBib, "ribeiro2017bolsa")`
+
+`r Citep(myBib, "gerard2021cash")` encontram que o PBF *aumentou* o emprego local, por multiplicadores fiscais
+
+
+---
+class: middle
+
+```{r, echo=FALSE, fig.show="hold", out.width="50%"}
+knitr::include_graphics("figs/eae0310-7-11.png")
+knitr::include_graphics("figs/eae0310-7-11b.png")
+```
+
+O PBF cresceu rapidamente tanto em número de beneficiados (mi de famílias) (a) quanto valor médio pago (R$/2018) (b) `r Citep(myBib, "de2019efeitos")` 
+
+---
+class: middle
+## Programa Bolsa Família
+
+A evidência aponta na direção que o PBF aumentou a matrícula, retenção e progressão de série das crianças nas escolas 
+
+O programa também está associado a maior uso do serviço de saúde e vacinação, e menor mortalidade infantil `r Citep(myBib, "rasella2013effect")`
+
+`r Citep(myBib, "chioda2016spillovers")` acham redução de 6,5% no crime próximo a escolas com a expansão do PBF para 16-17 anos
+
+A mesma expansão aumentou em 1p.p. a matrícula de adolescentes em escolas `r Citep(myBib, "chitolina2016impact")`
+
+---
+class: inverse, middle, center
+
+# Banerjee, Niehaus & Suri (2019). "Universal Basic Income in the Developing World"
+
+
+---
+class: middle
+## Renda básica universal
+
+Uma proposta de política que tem ganho o debate público recentemente é a **renda básica universal**
+
+A RBU se diferencia de programas *means-tested* pois *não* é **focalizada**: é transferida para todos os indivíduos da economia
+
+Vem daí o nome "universal" &mdash; na prática, ela provavelmente teria ainda algum tipo de focalização, mas muito menos que programas como o PBF
+
+Quando o programa é universal, se torna essencial entender efeitos de **equilíbrio geral**
+
+---
+class: middle
+## Renda básica universal
+
+Quais são os prós e os contras de RBU versus transferências focalizadas?
+
+Os *contras* são claros: focalizar diminui o custo do programa (ou seja, dá para aumentar a transferência) e o torna mais progressivo
+
+Nesse caso, estamos transferindo dinheiro para quem tem *utilidade marginal* maior, gerando eficiência
+
+Mas com **mercados imperfeitos**, nem isso é tão óbvio: talvez queiramos redistribuir para quem possamos aliviar mais essas imperfeições (exemplo importante é restrição ao crédito)
+
+---
+class: middle
+## Dinheiro ou bens
+
+Uma hesitação comum em relação a programas de transferência de renda (ao invés de em espécie) é que serão mal gastos em **bens de tentação**, como álcool e tabaco
+
+Na verdade, a evidência é que transferências *reduzem* o consumo desses bens em 0.18sd
+
+No mundo real, cada domicílio precisa de coisas diferentes: alguns precisam pagar educação, outros comida, outros ainda querem investir no negócio familiar
+
+Dinheiro dá flexibilidade para cada família gastar onde a sua utilidade marginal *particular* é maior
+
+---
+class: middle
+## Restrições sobre os pobres
+
+Como adiantado, uma restrição importantíssima dos pobres é *restrições ao crédito* &mdash; isso limita o investimento e gera **armadilhas de pobreza**
+
+A necessidade de dinheiro imediato evita investimentos que aumentem a produtividade, como educação, mesmo que tenham *valor presente líquido positivo*
+
+Pobres também têm **restrições de seguro**: isso faz com que sejam especialmente avessos ao risco e invistam menos que o ótimo
+
+---
+class: middle
+## Restrições sobre os pobres
+
+Finalmente, pobreza é extremamente *custoso psicologicamente* e torna tomar boas decisões mais difícil
+
+[Pesquisas](https://www.youtube.com/watch?v=hd-WWdl8A5s&t=1s) mostram que no semi-árido nordestino as pessoas têm piores capacidades cognitivas quando estão com medo da seca
+
+Pessoas pobres também são mais pessimistas sobre as suas capacidades e sobre as possibilidades de melhorar de vida (**armadilha do pessimismo**) &mdash; há evidência que políticas com mentoria têm maior efeito
+
+Transferências no Kenya reduziram cortisol (relacionado ao stress); na Indonésia, transferências reduziram em 18% taxa de suicídio
+
+---
+class: middle
+## Outras formas de focalização
+
+Mesmo caso queiramos focalizar a política, há formas potencialmente melhores que focalizar em renda
+
+Uma alternativa para a focalização por renda é a **focalização por proxy** &mdash; o governo faz uma pesquisa com as propriedades das famílias (geladeira, TV, banheiro) e usa isso para fazer uma *proxy* da renda da pessoa
+
+O benefício é que é mais difícil para famílias mentir sobre as posses que sobre a renda (quase sempre informal)
+
+Mas mesmo isso não é certo: experimento de resposta incentivada na Índia viu respondentes subreportar suas posses em 15% (sem alterações na avaliação de posses do questionante)
+
+---
+class: middle
+## Outras formas de focalização
+
+Por outro lado, focalização por proxy pode gerar *erros de medida*, potencialmente mais sérios dado que são domicílios pobres e com pouca informação
+
+Estudos no México mostram que 10% dos domicílios são pobres de acordo com o marido, mas não a esposa, e 8% vice-versa (!)
+
+Em Ghana, quando esposos são perguntados separadamente sobre consumo, há vários itens consumidos que uma das partes desconhece
+
+---
+class: middle
+## Outras formas de focalização
+
+Outras possibilidades são **focalização comunitária**: quando vamos a uma comunidade e perguntamos para os moradores locais quem é mais necessitado
+
+Ou **auto-seleção**, que já vimos no caso dos *mecanismos de provação*
+
+Em países em desenvolvimento, o maior exemplo desse último é o programa de garantia de emprego rural na Índia
+
+Certamente, apenas aqueles mais necessitados vão se dispor a trabalhar o dia inteiro na agricultura
+
+---
+class: middle
+## Problemas com a focalização
+
+Há 4 problemas centrais com a focalização: primeiro, como já vimos, gera um *desincentivo* por gerar um *imposto implícito* sobre a geração de renda
+
+A RBU resolve isso, pois (pelo menos na sua forma pura) é uma **transferência lump-sum** &mdash; por ser universal, a família continua recebendo mesmo se aumente a renda
+
+O segundo problema são *custos administrativos* muito mais altos da transferência focalizada &mdash; embora no PBF seja relativamente baixo, ~5%, ainda assim é relevante
+
+---
+class: middle
+## Problemas com a focalização
+
+O terceiro problema é *a própria focalização*: não é claro que programas focalizados realmente alcancem quem nós queremos alcançar
+
+Há grande evidência de que **distribuição intra-familiar** é importante: 75% das crianças e mulheres mal-nutridas na África estão em domicílios acima do quintil mais baixo de renda e metade fora dos 2 quintis
+
+Além disso, transferências de renda são redistribuidas por redes de suporte e podem gerar redistribuição final muito diferente da do papel (p. ex., aposentadoria no Brasil alivia a renda dos filhos e netos dos beneficiários)
+
+---
+class: middle
+## Erros de exclusão
+
+Qualquer método de focalização terá **erros de exclusão** (erro tipo I) e **erros de inclusão** (erro do tipo II)
+
+Estudos na Indonesia e Peru estimam que para incluir 80% dos pobres (erro de exclusão = 20%) tem que se gerar um erro de inclusão de 22-31%
+
+Na África erros de exclusão são por volta de 25%, e já vimos que no Brasil apenas 2/3 da população pobre recebe PBF
+
+Pobreza também é *dinâmica*: em um painel de 8 anos de domicílios na Índia, apenas 22% dos indivíduos são "sempre pobres" e 12% "nunca pobres", com os outros 65% entrando e saindo da pobreza ao longo do tempo
+
+---
+class: middle
+## Problemas com a focalização
+
+O último problema potencial da focalização é de **economia política**
+
+Os beneficiários de um programa formam a *base de apoio político* para ele
+
+Expandir a massa de beneficiários pode tornar o programa politicamente sustentável, especialmente quando o poder de ação política da massa mais pobre é baixo
+
+O orçamento não é fixo: na China, aumentar a abrangência de um programa de transferência em 1% aumenta o seu orçamento em 1/3
+
+---
+class: middle
+## Economia política
+
+Ao contrário, transferir renda para alguns membros da comunidade e não outros (talvez apenas um pouco menos necessitados) pode gerar divisão social e descontentamento
+
+Focalização também gera potencial para **corrupção**, quando agentes locais influenciam quem entraria ou não no escopo do programa
+
+Prefeitos podem manipular cadastros dos programas para "comprar" votos ou remunerar apoiadores políticos
+
+Quanto mais simples as regras do programa (em especial sem focalização), menos espaço para corrupção existe
+
+---
+class: middle
+## O quiz de Mankiw
+
+Considere uma economia desigual em que a média de renda seja $50.000. Economistas propõem duas alternativas de combater a pobreza:
+
+(a) Uma transferência de $10.000/ano para todos (RBU), paga com uma taxação uniforme de 20% da renda
+
+(b) Uma transferência *means-tested* de `$`10.000/ano apenas para quem não tem renda alguma, caindo em ¢20/`$` para quem recebe mais. Essa política é paga com taxação de 20% da renda apenas de quem ganha mais que a média
+
+Qual vocês prefeririam?
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-7-14.png")
+```
+
+Uma RBU paga com taxação proporcional é *economicamente equivalente* a uma transferência *means-tested* (Saez)
+
+---
+class:middle
+# Referências
+<small>
+```{r refs, echo=FALSE, results="asis"}
+PrintBibliography(myBib, start=1, end=5)
+```
+</small>
+
+---
+class:middle
+# Referências
+<small>
+```{r refs2, echo=FALSE, results="asis"}
+PrintBibliography(myBib, start=6)
+```
+</small>
