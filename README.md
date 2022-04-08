@@ -37,7 +37,3 @@ The course is entirely in Portuguese (PT-BR).
 [[Week 13]](https://www.pedroforquesato.com/eae0310/eae0310-13-imposto-riqueza.html)
 
 [[Week 14]](https://www.pedroforquesato.com/eae0310/eae0310-14-imposto-corporativo.html)
-
-## Problem sets
-
-[[Problem set 1]](https://www.pedroforquesato.com/eae0310/files/eae0310_lista_1_nova2.pdf)
