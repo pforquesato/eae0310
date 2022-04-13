@@ -1,6 +1,6 @@
 ---
 title: "EAE-0310: ECONOMIA DO SETOR PÚBLICO"
-author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 19C/FEA2 - pforquesato@usp.br"
+author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 217/FEA2 - pforquesato@usp.br"
 institute: "Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo"
 date: "Aula 6: Seguridade social<br/>2022/1"
 output:
@@ -456,6 +456,15 @@ O governo pode intervir obrigando (e subsidiando) a compra de seguro de saúde (
 ---
 class: middle
 
+```{r, echo=FALSE, out.width = '100%'}
+knitr::include_graphics("figs/eae0310-6-15.png")
+```
+
+Por volta de 20% dos hospitais que atendem o SUS são privados e 30% filantrópicos: apenas metade são públicos &mdash; entre esses, são principalmente municipais entre os hospitais menores, e estaduais e federais entre os maiores (e que fazem atendimentos de maior complexidade) `r Citep(myBib, "botega2020perfil")`
+
+---
+class: middle
+
 ```{r, echo=FALSE, out.width = '80%'}
 knitr::include_graphics("figs/eae0310-6-11.png")
 ```
@@ -468,6 +477,15 @@ class:middle
 # Referências
 <small>
 ```{r refs, echo=FALSE, results="asis"}
-PrintBibliography(myBib)
+PrintBibliography(myBib, start=1, end=5)
+```
+</small>
+
+---
+class:middle
+# Referências
+<small>
+```{r refs2, echo=FALSE, results="asis"}
+PrintBibliography(myBib, start=6)
 ```
 </small>
