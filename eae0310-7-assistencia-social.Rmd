@@ -1,6 +1,6 @@
 ---
 title: "EAE-0310: ECONOMIA DO SETOR PÚBLICO"
-author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 19C/FEA2 - pforquesato@usp.br"
+author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 217/FEA2 - pforquesato@usp.br"
 institute: "Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo"
 date: "Aula 7: Assistência social<br/>2022/1"
 output:
@@ -353,6 +353,18 @@ Como adiantado, uma restrição importantíssima dos pobres é *restrições ao 
 A necessidade de dinheiro imediato evita investimentos que aumentem a produtividade, como educação, mesmo que tenham *valor presente líquido positivo*
 
 Pobres também têm **restrições de seguro**: isso faz com que sejam especialmente avessos ao risco e invistam menos que o ótimo
+
+
+---
+class: middle
+
+```{r, echo=FALSE, fig.show="hold", out.width="50%"}
+knitr::include_graphics("figs/eae0310-7-15.png")
+knitr::include_graphics("figs/eae0310-7-15b.png")
+```
+
+`r Citep(myBib, "balboni2022people")` examinam um programa de transferência de riqueza para os "ultra-pobres" em Bangladesh. O grupo de controle (b) está em uma **armadilha de pobreza** &mdash; mas transferências *acima de um valor* em (a) rompem essa armadilha, e geram riqueza em 2011 igual ou maior que em 2007
+
 
 ---
 class: middle
