@@ -470,6 +470,15 @@ O julgamento da constitucionalidade das cotas pelo STF impulsionou a Lei das Cot
 class: middle
 
 ```{r, echo=FALSE, out.width="90%"}
+knitr::include_graphics("figs/eae0310-5-9.png")
+```
+
+Proporção de alunos de escola pública (a) e PPI (b) em instituições federais de ensino superior &mdash; o efeito da implementação da Lei das Cotas, entre 2012 e 2016, é evidente em eliminar a cauda inferior da distribuição `r Citep(myBib, "senkevics2019perfil")`
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width="90%"}
 knitr::include_graphics("figs/eae0310-3-15.png")
 ```
 
