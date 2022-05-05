@@ -183,6 +183,16 @@ knitr::include_graphics("figs/eae0310-8-6.png")
 
 Desigualdade antes e depois de impostos e transferências no Brasil [(SEAE/2017)](https://www.gov.br/fazenda/pt-br/centrais-de-conteudos/publicacoes/boletim-de-avaliacao-de-politicas-publicas/arquivos/2017/efeito_redistributivo_12_2017.pdf)  
 
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '85%'}
+knitr::include_graphics("figs/eae0310-8-20.png")
+```
+
+`r Citep(myBib, "silveira2020impactos")`
+
 ---
 class: middle
 ## Definição da renda tributável
