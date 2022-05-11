@@ -94,6 +94,15 @@ E a riqueza é distribuída de forma bastante desigual: os 10% mais ricos têm p
 ---
 class: middle
 
+```{r, echo=FALSE, out.width = '70%'}
+knitr::include_graphics("figs/eae0310-12-1.jpg")
+```
+
+O Brasil é um dos 5 países do mundo que os 80% mais pobres têm menos riqueza que o 0,001% mais rico (1/100.000), ou seja, 2.000 pessoas (o tamanho da FEA) têm mais riqueza que 160 milhões de brasileiros juntos
+
+---
+class: middle
+
 ```{r, echo=FALSE, out.width = '60%'}
 knitr::include_graphics("figs/eae0310-12-6.png")
 ```

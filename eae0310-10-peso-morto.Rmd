@@ -291,6 +291,39 @@ No ótimo, o imposto deve manter a taxa marginal de substituição técnica entr
 
 A intuição é que qualquer imposto sobre a produção distorce a produção *e o consumo*, então deve ser pior que um que distorce apenas o consumo
 
+
+---
+class: middle
+## Imposto sobre valor adicionado
+
+Impostos sobre o consumo (*indiretos*) podem ser cobrados sobre vendas, recolhendo uma taxa $t$ (proporcional ou fixa) sobre a venda *do bem final*
+
+Mas nas últimas décadas se tornou muito mais comum o **imposto sobre valor adicionado** (IVA): com *compliance* perfeito e sem isenções, o IVA é equivalente a um imposto sobre vendas &mdash; a sua vantagem vem de dificultar a evasão fiscal
+
+A vantagem do IVA é que cada produtor na cadeia produtiva desconta o imposto pago *upstream*, o que dá incentivo para **third-party reporting**
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '85%'}
+knitr::include_graphics("figs/eae0310-8-1.png")
+```
+
+Funcionamento de um imposto sobre vendas e um IVA de 20% `r Citep(myBib, "gerard2018value")` 
+
+---
+class: middle
+## Imposto sobre valor adicionado
+
+O IVA pode ser uma ferramenta poderosa de combater evasão fiscal em transações *business-to-business* (B2B), pois a empresa *downstream* ganha dinheiro reportando a transação ao governo
+
+Mas isso não funciona para a transação para os consumidores! 
+
+Foi para tentar evitar esse "buraco" no IVA que o governo de SP introduziu a Nota Fiscal Paulista (NFP)
+
+`r Citep(myBib, "naritomi2019consumers")` encontrou que a NFP aumenta a receita de impostos do ICMS paulista em 9,3%
+
+
 ---
 class:middle
 # Referências
