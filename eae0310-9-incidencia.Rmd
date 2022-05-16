@@ -1,6 +1,6 @@
 ---
 title: "EAE-0310: ECONOMIA DO SETOR PÚBLICO"
-author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 19C/FEA2 - pforquesato@usp.br"
+author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 217/FEA2 - pforquesato@usp.br"
 institute: "Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo"
 date: "Aula 9: Incidência de impostos<br/>2022/1"
 output:
@@ -44,11 +44,21 @@ class: middle
 knitr::include_graphics("figs/iptu.png")
 ```
 
-Podemos brincar que o autor desse meme provavelmente não estudou economia, mas a pergunta é importante: o imposto sobre propriedade de imovel é progressivo "na letra da lei", mas qual é a incidência real dele?
+Podemos brincar que o autor desse meme claramente não estudou economia, mas a pergunta é importante: o imposto sobre propriedade é para taxar riqueza, mas é quem tem riqueza que paga **de fato** o imposto sobre propriedade?
 
 ---
 class: middle
-## Implicações de equidade da taxação
+## Incidência
+
+A primeira regra de incidência é que *sob as hipóteses de micro*, a **incidência formal** não importa para a **incidência econômica** dos impostos
+
+Se quem desembolsa o dinheiro é o consumidor ou a firma, ou a firma ou o trabalhador, isso não deveria importar na forma como o preço de mercado se ajusta ao imposto, pois não afeta os incentivos dos agentes
+
+Mas `r Citep(myBib, "saez2012earnings")` mostram que na Grécia, mudanças no imposto sobre a folha incidem apenas em quem paga de fato por ele (ou seja, a incidência econômica é igual à incidência formal) &mdash; vamos ver no fim da aula outro exemplo em que essa regra falha
+
+---
+class: middle
+## Incidência
 
 Algo importante às vezes pouco salientado é que **tax shifting** se dá *pelo mercado* &mdash; não é (necessariamente) uma decisão intencional dos agentes, mas sim efeitos da mudança na curva de oferta ou demanda
 
@@ -64,12 +74,12 @@ Ainda assim, focaremos na *incidência em equilíbrio parcial*, pois é mais int
 
 Considere uma situação inicial de imposto $t = 0$, e adicionamos um imposto fixo (infinitesimal) a ser pago pelo consumidor $dt$
 
-Portanto, se antes a condição de equilíbrio era $S(p) = D(p)$, agora cria-se um **tax wedge**: a condição de equilíbrio se torna: $$S(p) = D(p^c) = D(p + dt)$$ 
+Portanto, se antes a condição de equilíbrio era $S(p) = D(p)$, agora cria-se um **tax wedge**: a condição de equilíbrio se torna: $$S(p^p) = D(p^c) = D(p^p + dt)$$ 
 
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '80%', fig.align = 'center'}
+```{r, echo=FALSE, out.width = '70%', fig.align = 'center'}
 knitr::include_graphics("figs/eae0310-9-1.png")
 ```
 
@@ -78,16 +88,16 @@ Incidência em equilíbrio parcial &mdash; sem imposto, $p^p = p^c = p$ (Saez)
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '95%'}
+```{r, echo=FALSE, out.width = '85%'}
 knitr::include_graphics("figs/eae0310-9-2.png")
 ```
 
-Já o impostro cria um *tax wedge*: agora $p^c = p + dt > p = p^p$  (Saez) 
+Já o impostro cria um **tax wedge**: agora $p^c = p^p + dt > p^p$  (Saez) 
 
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '95%'}
+```{r, echo=FALSE, out.width = '85%'}
 knitr::include_graphics("figs/eae0310-9-3.png")
 ```
 
@@ -97,48 +107,44 @@ A redução no consumo faz as firmas atuarem em região com MC menor, e eventual
 class: middle
 ## Incidência em equilíbrio parcial
 
-Uma forma de calcular a incidência é comparar a mudança no "preço sem imposto" dada a adição de uma taxa, i.e., $dp/dt$
+A condição de equilíbrio no mercado é $S(p^p) = D(p^p + dt)$. Derivando ambos os lados em relação a $t$:
 
-A condição de equilíbrio no mercado é $S(p) = D(p + dt)$. Derivando ambos os lados em relação a $t$:
+$$S^{\prime}(p^p)\frac{dp^p}{dt} = D^{\prime}(p^p + dt)\left(1 + \frac{dp^p}{dt}\right)$$
 
-$$S^{\prime}(p)\frac{dp}{dt} = D^{\prime}(p + dt)\left(1 + \frac{dp}{dt}\right)$$
-
-$$\Rightarrow \frac{dp}{dt} \left[ S^{\prime}(p) - D^{\prime}(p + dt)  \right] = D^{\prime}(p + dt)$$
-$$\therefore \ \frac{dp}{dt} = \frac{D^{\prime}(p + dt)}{S^{\prime}(p) - D^{\prime}(p + dt)}$$
+$$\Rightarrow \frac{dp^p}{dt} \left[ S^{\prime}(p^p) - D^{\prime}(p^p + dt)  \right] = D^{\prime}(p^p + dt)$$
+$$\therefore \ \frac{dp^p}{dt} = \frac{D^{\prime}(p^p + dt)}{S^{\prime}(p^p) - D^{\prime}(p^p + dt)}$$
 ---
 class: middle
 ## Incidência em equilíbrio parcial
 
 Elasticidades são muito úteis em economia do setor público, pois geralmente são *estatísticas suficientes* para o comportamento dos produtores e consumidores (em mercados competitivos)
 
-Lembrem-se que $\epsilon_D = \frac{p + dt}{D(p + dt)} D^{\prime}(p + dt)$ e $\epsilon_S = \frac{p}{S(p)} S^{\prime}(p)$
+Definindo $p^c = p^p + dt$, lembrem-se que $\epsilon_S = \frac{p^p}{S(p^p)} S^{\prime}(p^p)$ e: $$\epsilon_D = \frac{p^c}{D(p^c)} D^{\prime}(p^c) = \frac{p^p + dt}{D(p^p + dt)} D^{\prime}(p^p + dt)$$
 
 Como $dt$ é pequeno, podemos multiplicar "embaixo e em cima" por $p/Q$: 
-$$\frac{dp}{dt} = \frac{D^{\prime}(p + dt) p/D(p)}{S^{\prime}(p)p/S(p) - D^{\prime}(p + dt)p/D(p)} = \frac{\epsilon_D}{\epsilon_S - \epsilon_D}$$
+$$\frac{dp^p}{dt} = \frac{D^{\prime}(p^p + dt) p/D(p)}{S^{\prime}(p^p)p/S(p) - D^{\prime}(p^p + dt)p/D(p)} = \frac{\epsilon_D}{\epsilon_S - \epsilon_D}$$
 
 ---
 class: middle
 ## Incidência em equilíbrio parcial
 
-Note que dado $\frac{dp}{dt} = \frac{\epsilon_D}{\epsilon_S - \epsilon_D}$ e $p^p = p$, temos que: $$-1 \leq \frac{dp^p}{dt} \leq 0 \text{ e  } \frac{dp^c}{dt} = \frac{d(p + dt)}{dt} = 1 + \frac{dp}{dt} \in [0, 1]$$
+Note que dado $\frac{dp^p}{dt} = \frac{\epsilon_D}{\epsilon_S - \epsilon_D}$ e $p^c = p^p + dt$, temos que: $$-1 \leq \frac{dp^p}{dt} \leq 0 \text{ e  } \frac{dp^c}{dt} = \frac{d(p^p + dt)}{dt} = 1 + \frac{dp^p}{dt} \in [0, 1]$$
 
-Consumidores arcam com toda a incidência do imposto quando $dp/dt = 0$ e portanto $dp^c/dt = 1$, o que acontece se $\epsilon_D = 0$ e/ou $\epsilon_S = \infty$
+Consumidores arcam com toda a incidência do imposto quando $dp^p/dt = 0$ e portanto $dp^c/dt = 1$, o que acontece se $\epsilon_D = 0$ ou $\epsilon_S = \infty$
 
-Produtores arcam com toda a incidência do imposto quando $dp^p/dt = -1$, isto é, se $\epsilon_D = - \infty$ e/ou $\epsilon_S = 0$
+Produtores arcam com toda a incidência do imposto quando $dp^p/dt = -1$, isto é, se $\epsilon_D = - \infty$ ou $\epsilon_S = 0$
 
 Regra geral: **o lado mais inelástico do mercado arca com maior parte dos impostos**
 
 ---
 class: middle
-## Incidência em equilíbrio parcial
+## Pass-through
 
-A mudança no preço ao consumidor pelo imposto, $\rho \equiv dp^c/dt = 1 + dp/dt$ é chamada de **pass-through** do imposto
+A mudança no preço ao consumidor pelo imposto, $\rho \equiv dp^c/dt = 1 + dp^p/dt$ é chamada de **pass-through** do imposto
 
-Acredita-se que no longo prazo boa parte das indústrias opere com custo marginal constante (por retornos constantes de escala)
+Acredita-se que no longo prazo boa parte das indústrias opere com custo marginal constante (por retornos constantes de escala): uma curva de oferta (quase) infinitamente elástica
 
-Isso implica uma curva de oferta (quase) infinitamente elástica e um pass-through próximo de 1 &mdash; impostos sobre consumo seriam arcados quase inteiramente pelos consumidores
-
-A evidência empírica é consistente com pass-throughs entre 0.8-1.0 para impostos sobre bens de consumo e serviços
+Isso implica um **pass-through** $\approx 1$: impostos sobre consumo seriam arcados quase inteiramente pelos consumidores &mdash; a evidência empírica é consistente com pass-throughs entre 0.8-1.0 para a maioria dos impostos sobre bens de consumo
 
 ---
 class: middle
@@ -163,42 +169,43 @@ E o inverso ocorre com a curva de oferta: quanto mais elástica, maior o pass-th
 class: middle
 ## Incidência em mercados de fatores
 
-Essa análise vale também para mercados de fatores de produção: impostos sobre a folha, sobre oferta de trabalho, sobre capital
+A mesma análise vale também para mercados de fatores de produção: impostos sobre a folha são aplicados à firma, mas podem ser **shifted backward** para o trabalhador &mdash; novamente, o lado mais inelástico do mercado absorve mais a incidência
 
 A diferença é que a firma agora *demanda* esses fatores, cujos ofertantes são os domicílios
 
-Outra diferença é que mercados de fatores têm mais rigidez (como salário mínimo), o que pode afetar o equilíbrio de mercado: que parte paga oficialmente o imposto pode importar!
+Quando há salário mínimo, a incidência formal do imposto novamente vai importar, pois vai definir o "valor líquido" desse piso de preços
+
 
 ---
 class: middle
+## Incidência em mercados não-competitivos
 
-```{r, echo=FALSE, out.width = '85%'}
-knitr::include_graphics("figs/eae0310-9-6.png")
-```
-
-Com salário mínimo, a incidência legal do imposto pode importar &mdash; quando as firmas pagam o imposto, parcela maior dele recai sobre elas `r Citep(myBib, "gruber")` 
-
----
-class: middle
-## Incidência em monopólio
-
-Incidência em mercados não-competitivos é mais complicado. Mantém-se o resultado, entretanto, que não importa para a incidência econômica quem formalmente paga o imposto
+Incidência em mercados não-competitivos é mais complicado, mas ainda assim no modelo não importa para a incidência econômica quem formalmente paga o imposto
 
 Dizemos que o peso-morto $D$ é **de segunda-ordem** quando $\lim_{dt\rightarrow 0} \frac{D}{dt} = 0$
 
-Como veremos na aula que vem, em *mercados competitivos* o peso-morto é de segunda ordem (negligenciável) &mdash; assim, a perda de excedente do consumidor, $\rho Qdt$ (o **pass-through**), e a perda do produtor, $(1 - \rho)Qdt$, somam a receita do governo $R(dt) = Qdt$
+Como veremos na aula que vem, em *mercados competitivos* o peso-morto é de segunda ordem (negligenciável) &mdash; assim, a perda de excedente do consumidor, $\rho dt \cdot Q$ (onde $\rho$ é o **pass-through**), e a perda do produtor, $(1 - \rho)dt \cdot Q$, somam (aproximadamente) a receita do governo $R(dt) = Qdt$
 
 ---
 class: middle
-## Incidência em monopólio
+## Incidência em mercados não-competitivos
 
-Quando há alguma imperfeição no mercado (no caso, poder de mercado), *o peso-morto não é mais de segunda-ordem*: então a perda de excedente do consumidor e do produtor somam *mais que* a receita
+Quando há alguma imperfeição no mercado (no caso, poder de mercado), *o peso-morto não é mais de segunda-ordem*: então a perda de excedente do consumidor e do produtor somam **mais que** a receita do governo
 
-De fato, a incidência no consumidor continua sendo $\rho$, pois é o aumento do preço que ele paga, $dp^c/dt$
+De fato, a incidência no consumidor continua sendo $\rho$, pois é o aumento do preço que ele paga, $dp^c/dt$ &mdash; mas agora a incidência no produtor é $1$: o monopolista absorve um montante igual a *toda* taxação `r Citep(myBib, "weyl2013pass")`  
 
-Mas agora a incidência no produtor é $1$: o monopolista absorve *toda* a taxação
+Talvez pareça contraintuivo que quanto maior poder de mercado, mais a incidência se dá no produtor &mdash; mas note que *quanto maior o excedente, mais espaço há para o imposto incidir sobre esse lado do mercado*
 
-Importante: *quanto maior o excedente, mais espaço há para o imposto incidir sobre esse lado do mercado*
+---
+class: middle
+## Incidência em mercados não-competitivos
+
+Outra característica importante incidência em mercados não-competitivos é que *o pass-through pode ser maior que um*
+
+No monopólio, veja que como $MR = p + \Delta p \cdot Q = p \left(1 + \frac{\Delta p}{p}Q \right)$, temos que:
+
+$$MR = p \left( 1 + \frac{1}{\epsilon_D}\right) = MC \Rightarrow p = \frac{MC + dt}{\left( 1 + \frac{1}{\epsilon_D}\right)}$$
+O imposto pode ser entendido como um aumento no custo marginal, que é potencializado pelo **mark-up** de monopólio: se $\epsilon_D = -2$, por exemplo, $p$ aumenta por $2dt$
 
 ---
 class: middle
@@ -218,7 +225,7 @@ Quando dizemos que "restaurantes arcam com imposto", na verdade queremos dizer q
 
 Se a oferta de trabalho para restaurantes for infinitamente elástica, e o capital no curto prazo infinitamente inelástico (pois o capital investido não é convertível), então a incidência se dá toda nos donos do restaurante
 
-Se temos vários bens, a incidência também vai depender de quão *intensivo* é o uso de cada fator na produção do bem taxado
+Se temos vários bens, a incidência também vai depender de quão *intensivo* é o uso de cada fator na produção do bem taxado (em relação aos outros)
 
 ---
 class: middle
@@ -227,7 +234,7 @@ class: middle
 knitr::include_graphics("figs/eae0310-9-7.png")
 ```
 
-`r Citep(myBib, "benzarti2019really")` analisa o efeito de um corte no IVA na França de 14 p.p., encontrando **pass-through** de 9.7% (*incidência assimétrica*)
+`r Citep(myBib, "benzarti2019really")` analisa o efeito de um corte no IVA na França de 14 p.p., encontrando **pass-through** de 9.7%, que é o oposto do que esperaríamos dado a discussão de que a incidência de impsotos em consumo se dá quase inteiramente sobre o consumidor &mdash; há evidência de *incidência assimétrica* de aumentos e reduções de impostos, pelo menos no curto/médio prazo
 
 ---
 class: middle
@@ -248,6 +255,17 @@ knitr::include_graphics("figs/eae0310-4-2.png")
 No mundo real, frequentemente a incidência econômica *depende sim* da incidência formal, por **racionalidade limitada**: nos EUA geralmente impostos "aparecem" só no caixa &mdash; em um experimento, `r Citep(myBib, "chetty2009salience")` encontram que comparado com aparecer na tarjeta, o imposto "no caixa" só tem 35% de **saliência**
 
 ---
+class: middle
+
+```{r, echo=FALSE, fig.show="hold", out.width="45%"}
+knitr::include_graphics("figs/eae0310-9-14.png")
+knitr::include_graphics("figs/eae0310-9-14b.png")
+```
+
+Da mesma forma, ao nível estadual, aumentos na *excise tax*, que aparece na tarjeta, são relacionados com quedas no consumo de cerveja, mas aumentos na *sales tax*, que não aparece (só no caixa) muito menos `r Citep(myBib, "chetty2009salience")`
+
+
+---
 class: inverse, middle, center
 
 # Allcott, Lockwood, and Taubinsky (2019). “Should We Tax Sugar-Sweetened Beverages? An Overview of Theory and Evidence”
@@ -264,7 +282,7 @@ Problema: como SSBs são mais consumidos pelos mais pobres, essa taxação é re
 
 ---
 class: middle
-## Sin taxes
+## Danos para a saúde de refrigerantes
 
 > "A tax on soda and juice drinks would disproportionately increase taxes on low-income families in Philadelphia." Bernie Sanders, 2016 em `r Citep(myBib, "allcott2019regressive")`
 
@@ -277,7 +295,7 @@ Por volta de metade dos americanos consome pelo menos uma bebida com açucar adi
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '85%'}
+```{r, echo=FALSE, out.width = '75%'}
 knitr::include_graphics("figs/eae0310-9-10.png")
 ```
 
@@ -285,13 +303,13 @@ O consumo de SSBs cai significantemente com o aumento da renda: tanto por *heter
 
 ---
 class: middle
-## Sin taxes
+## Danos para a saúde de refrigerantes
 
 SSBs fazem mal à saúde por três canais (principais): obesidade, diabetes e doenças cardiovasculares
 
 Uma dose extra por dia de SSBs é associado a aumento de meio kg no peso a cada 4 anos, 13% maior risco de desenvolver diabetes tipo 2 e 17% maior de doenças coronárias
 
-SSBs estão associados a custos de R$2,9bi/ano no SUS e uma taxa de ¢1/oz pouparia 17bi de dólares nos EUA
+SSBs estão associados a custos de R$2,9bi/ano no SUS e estudos estimam que uma taxa de ¢1/oz pouparia 17-23 bilhões de dólares nos EUA em dez anos com redução de custos médicos
 
 ---
 class: middle
@@ -316,7 +334,7 @@ Geralmente, as duas falhas mais evocadas são **falhas informacionais** e **inco
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '85%'}
+```{r, echo=FALSE, out.width = '75%'}
 knitr::include_graphics("figs/eae0310-9-11.png")
 ```
 
@@ -325,7 +343,7 @@ Evidência de *falhas informacionais*: "nota" num questionário sobre nutrição
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '85%'}
+```{r, echo=FALSE, out.width = '75%'}
 knitr::include_graphics("figs/eae0310-9-12.png")
 ```
 
@@ -339,16 +357,16 @@ Internalidades (ao contrário de externalidades) *impactam o próprio consumidor
 
 Como de fato internalidades são maiores entre os mais pobres, *a correção das internalidades é progressiva*; assim, não é *a priori* óbvio que taxar SSBs é pior para os mais pobres
 
-Depende da **elasticidade da demanda** &mdash; se for muito inelástica, a perda de poder de compra é alta e redução de internalidades baixa, se for muito elástica vice-versa
+Vai depender da **elasticidade da demanda** &mdash; se for muito inelástica, a perda de poder de compra é alta e redução de internalidades baixa, se for muito elástica vice-versa
 
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '85%'}
+```{r, echo=FALSE, out.width = '75%'}
 knitr::include_graphics("figs/eae0310-9-13.png")
 ```
 
-Correção de internalidades é *progressivo*: informação nutricional e auto-controle (omitido) são altamente correlacionados com a renda familiar `r Citep(myBib, "allcott2019regressive")`
+Correção de internalidades é *progressivo*: informação nutricional e auto-controle [omitido] são altamente correlacionados com a renda familiar `r Citep(myBib, "allcott2019regressive")`
 
 ---
 class: middle
@@ -411,14 +429,32 @@ class: middle
 6. O imposto deve ser o menos local possível, para evitar **leakage**, que diminui o efeito corretivo
 7. Sin taxes (pelo menos nos EUA) parece ser uma boa idéia; isto é, aumenta o bem-estar social, dadas preferências sociais razoáveis &mdash; como as que racionalizam o governo como é atualmente
 
-Eles estimam que os ganhos com taxar SSBs são de $2,4-6,8 bilhões por ano
-
+Eles estimam que nos EUA os ganhos de bem-estar com a taxação de SSBs são de $2,4-6,8 bilhões de dólares por ano
 
 ---
 class:middle
 # Referências
 <small>
 ```{r refs, echo=FALSE, results="asis"}
-PrintBibliography(myBib)
+PrintBibliography(myBib, start=1, end=5)
 ```
 </small>
+
+
+---
+class:middle
+# Referências
+<small>
+```{r refs2, echo=FALSE, results="asis"}
+PrintBibliography(myBib, start=6)
+```
+</small>
+
+<!-- --- -->
+<!-- class: middle -->
+
+<!-- ```{r, echo=FALSE, out.width = '75%'} -->
+<!-- knitr::include_graphics("figs/eae0310-9-6.png") -->
+<!-- ``` -->
+
+<!-- Com salário mínimo, a incidência legal do imposto pode importar &mdash;  `r Citep(myBib, "gruber")`  -->

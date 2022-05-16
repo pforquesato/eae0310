@@ -4,7 +4,7 @@
     <title>EAE-0310: ECONOMIA DO SETOR PÚBLICO</title>
     <meta charset="utf-8" />
     <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 217/FEA2 - pforquesato@usp.br" />
-    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -12,10 +12,18 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # EAE-0310: ECONOMIA DO SETOR PÚBLICO
+]
+.author[
 ### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 217/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
+]
+.institute[
 ### Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo
+]
+.date[
 ### Aula 8: Introdução à taxação<br/>2022/1
+]
 
 ---
 
@@ -56,6 +64,12 @@ A taxação de renda do capital toma várias formas:
 3. *Taxação de ganhos de capital* geralmente é empregada para combater elisão fiscal por recompra de ações
 4. *Taxação de riqueza* também é (quase) equivalente a uma taxação sobre o lucro advindo daquela riqueza &amp;mdash; aqui entra também imposto sobre propriedade e herança
 
+---
+class: middle
+
+&lt;img src="figs/eae0310-8-23.png" width="55%" /&gt;
+
+O governo pode recolher (e recolhe) recursos em diversos pontos do fluxo circular da renda [Mus59]
 
 ---
 class: middle
@@ -63,10 +77,9 @@ class: middle
 
 A **taxa marginal de imposto** é a proporção de impostos pagos num real adicional de *rendimento tributável* (em geral é a alíquota máxima que o indivíduo atinge)
 
-O rendimento tributável menos *deduções* forma a base de cálculo do imposto, onde recai as alíquotas
+O rendimento tributável menos *deduções* forma a base de cálculo do imposto, onde recai as alíquotas &amp;mdash; como cada nova alíquota só recai sobre renda *adicional*, a *taxa média de imposto* (alíquota efetiva) geralmente vai ser bem menor que a taxa marginal
 
-Como cada nova alíquota só recai sobre renda *adicional*, a **taxa média de imposto** (alíquota efetiva) geralmente vai ser bem menor que a taxa marginal
-
+Se a taxação **média** aumenta com a renda, dizemos que o imposto é *progressivo*, se é igual dizemos que é *proporcional*, e se diminui, *regressivo*
 
 ---
 class: middle
@@ -122,17 +135,18 @@ class: middle
 
 A dificuldade, é claro, está em definir *quais são essas dimensões relevantes*: cor de pele, cor de cabelo, altura, sexo, estado civil, renda &amp;mdash; algumas dessas a sociedade julga justo diferenciar políticas públicas a respeito, outras não
 
-Já a **equidade vertical** lida com o tratamento justo de indivíduos desiguais: indivíduos com maior renda devem pagar mais impostos
+Já a **equidade vertical** lida com o tratamento justo de indivíduos desiguais: indivíduos com maior renda devem pagar mais impostos, por ter maior capacidade de pagar, mas quão mais?
 
 ---
 class: middle
-## Progressividade dos impostos
+## Igual sacrifício
 
-Se a *taxação média* aumenta com a renda, dizemos que o imposto é **progressivo**
 
-Se ela é igual para diferentes faixas de renda dizemos que é **proporcional**, e se a taxação média diminui com a renda, dizemos que o imposto é **regressivo**
+Isso gerou a ideia de **igual sacrifício**: devemos taxar indivíduos de renda diferente tal que eles tenham a mesma perda de utilidade (mesmo "sacrifício")
 
-A *equidade vertical* (capacidade de pagar) diz que pessoas mais ricas devem pagar mais impostos, mas se o sistema tributário deve ser proporcional ou progressivo (e quão progressivo), diferentes autores tiveram diferentes opiniões
+Mas a igualdade do sacrifício pode ser *absoluta*, *proporcional* ou *marginal*: já vimos que esse último, o **Princípio do Sacrifício Equimarginal** foi defendido por Edgeworth, e gera igualdade completa(*)
+
+Ele tem a vantagem interessante de minimizar o sacrifício total da sociedade, ou o que é equivalente, maximizar a soma das utilidades: sua relação com o utilitarismo fez com que se tornasse o paradigma dominante
 
 ---
 class: middle
@@ -505,6 +519,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

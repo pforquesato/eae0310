@@ -1,6 +1,6 @@
 ---
 title: "EAE-0310: ECONOMIA DO SETOR PÚBLICO"
-author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 19C/FEA2 - pforquesato@usp.br"
+author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 217/FEA2 - pforquesato@usp.br"
 institute: "Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo"
 date: "Aula 12: Taxação de poupança<br/>2022/1"
 output:
@@ -180,7 +180,7 @@ Na *belle époque* a riqueza herdade era a grande maioria (~70%), caiu no pós-g
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '90%'}
+```{r, echo=FALSE, out.width = '80%'}
 knitr::include_graphics("figs/eae0310-12-9.png")
 ```
 
@@ -318,6 +318,15 @@ Taxas de retorno variam bastante entre indivíduos e ao longo do tempo, e são c
 ---
 class: middle
 
+```{r, echo=FALSE, out.width = '70%'}
+knitr::include_graphics("figs/eae0310-12-15.png")
+```
+
+Algo não levado em conta nos modelos vistos, mas que é um fato estilizado importante, é que pessoas mais ricas têm não apenas riqueza maior, mas uma taxa de retorno da riqueza também maior, o que tende a aumentar a desigualdade de riqueza ao longo do tempo `r Citep(myBib, "fagereng2020heterogeneity")`
+
+---
+class: middle
+
 ```{r, echo=FALSE, fig.show="hold", out.width="50%"}
 knitr::include_graphics("figs/eae0310-12-14.png")
 knitr::include_graphics("figs/eae0310-12-14b.png")
@@ -385,6 +394,7 @@ knitr::include_graphics("figs/eae0310-12-12.png")
 ```
 
 Em 1999 a Dinamarca cortou subsídios para previdência privada dos ricos (azul), mas não da classe média (vermelho): a contribuição a esse tipo de previdência caiu fortemente nesse grupo (tratamento) comparado ao controle `r Citep(myBib, "gruber")` apud `r Citep(myBib, "chetty2014active")`
+
 
 ---
 class:middle

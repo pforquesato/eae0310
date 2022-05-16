@@ -3,8 +3,7 @@
   <head>
     <title>EAE-0310: ECONOMIA DO SETOR PÚBLICO</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 19C/FEA2 - pforquesato@usp.br" />
-    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 217/FEA2 - pforquesato@usp.br" />
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -13,9 +12,9 @@
 class: center, middle, inverse, title-slide
 
 # EAE-0310: ECONOMIA DO SETOR PÚBLICO
-### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 19C/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
+### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 217/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
 ### Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo
-### Aula 10: Peso morto e taxação ótima de consumo<br/>2022/1
+### Aula 10: Peso morto e taxação de consumo<br/>2022/1
 
 ---
 
@@ -23,74 +22,87 @@ class: inverse, middle, center
 
 
 
-# Peso morto dos impostos
+# Custos de eficiência da taxação
 
 ---
 class: middle
-## Efeitos comportamentais
+## Custos de eficiência da taxação
 
-Na aula passada, discutindo o efeito redistributivo da taxação (*incidência*) é sobre *preços*, enquanto a discussão de eficiência da taxação é sobre *quantidade*
+Discutimos o efeito redistributivo da taxação: a **incidência** da taxação indireta, que é causada por alterações *no preço* dos produtos
 
-O custo de eficiência é medido pelo **peso morto** (excess burden) gerado pela taxação
+Já o *custo de eficiência* da taxação é medido pelo **peso morto** (excess burden) gerado e é relacionado com alterações *na quantidade* comercializada
 
 O peso morto advém do fato do imposto alterar os *preços relativos* que agentes econômicos se deparam, alterando seu comportamento &amp;mdash; por exemplo, ao deixar o consumo mais caro relativo ao lazer (não tributável), desestimula o trabalho
 
 ---
 class: middle
-## Peso morto
+## Variação equivalente
 
-O peso morto é definido como a perda de bem-estar (em medida monetária) gerada pelo imposto que vai além da arrecadação do imposto
 
-É óbvio que se eu der `$`1 para o governo, eu tenho (*ceteris paribus*) uma perda de bem-estar de `$`1 &amp;mdash; mas na verdade será maior que isso, pois transferir renda entre agentes econômicos é custoso (*leaky bucket*)
+Seja `\(e \left( p_0, V(p_1, Y) \right)\)` a renda necessária para alcançar a preços iniciais `\(p_0\)` a mesma utilidade que o indivíduo tem a preços após os impostos `\(p_1\)` (utilidade que é menor, já que `\(p_1 &gt; p_0\)`)
 
-Essa diferença entre a **variação equivalente** (quanto de perda de renda teria efeito igual na utilidade do agente ao imposto) e a receita governamental é o peso-morto
+Então a **variação equivalente** é quanto de perda de renda teria efeito igual na utilidade do agente que a introdução do imposto:
+
+`$$EV = e \left( p_0, V(p_1, Y) \right) - Y$$`
+
+Uma EV de 100 significa que introduzir o imposto sobre o consumo de dado bem tem efeito igual para o consumidor que tirar 100 reais de renda dele
+
+---
+class: middle
+## Taxação lump-sum e peso morto
+
+É natural que se alguém der `$`1 para o governo, ele terá uma perda de bem-estar de (pelo menos) `$`1 &amp;mdash; mas na verdade será maior que isso, pois transferir renda entre agentes econômicos é custoso (*leaky bucket*)
+
+Essa diferença é **peso morto**: a perda de renda equivalente à perda de bem-estar (em medida monetária) gerada pelo imposto que é *além da arrecadação do imposto*:
+
+`$$EB = |EV| - R(t) = - \left( e \left( p_0, V(p_1, Y) \right) - Y \right) - t x(p_1, Y)$$` 
+
+*Taxação lump-sum* não gera peso morto &amp;mdash; isso fica claro pela definição de variação equivalente: `$$e \left(p_0, V(p_0, Y - T)\right) = Y - T \text{ e portanto } EV = - T = - R(t)$$`
 
 ---
 class: middle
 ## Peso morto
 
-**Importante:** o que gera peso morto é o *efeito substituição*! *Efeito renda* (por exemplo, RBU) não gera peso morto
+**O que gera peso morto é o efeito substituição** &amp;mdash; *efeito renda* não gera peso-morto
 
-Um jeito simples de ver isso é notar que *impostos lump-sum* também geram efeito renda
+De fato, *impostos lump-sum* também geram efeito renda &amp;mdash; sem alteração nos preços relativos, a variação equivalente é apenas a transferência de recursos (peso morto se mede pela **demanda compensada**)
 
-O peso morto vem da *alteração dos preços relativos*: transferências universais não alteram o preço relativo (p. ex. entre consumo e lazer)
-
-De uma perspectiva "mais técnica", peso morto se mede pela **demanda compensada** (ou hicksiana)
+O peso morto vem da *alteração dos preços relativos*: transferências universais não alteram o preço relativo (p. ex. entre consumo e lazer) &amp;mdash; efeito renda move a curva de demanda, não gera um **tax wedge**
 
 ---
 class: middle
 ## Efeitos comportamentais
 
-No fundo, a ineficiência econômica vem do fato de existir objetos econômicos relevantes que o governo não consegue observar e tributar: é uma *falha informacional*
+No fundo, a ineficiência econômica vem do fato de existir objetos econômicos relevantes que o governo não consegue observar e tributar: é uma **falha informacional**
 
 Se o governo pudesse observar todas as idiosincracidades dos indivíduos, poderia condicionar a tributação a variáveis imutáveis ("habilidade") e redistribuir perfeitamente sem gerar alterações comportamentais
 
-No mercado de consumo, quando o preço do consumidor e produtor não são iguais (*tax wedge*), há **trocas mutuamente benéficas** (e, sob nossas hipóteses, portanto socialmente benéficas) que não são realizadas
+No mercado de consumo, quando o preço do consumidor e produtor não são iguais (**tax wedge**), há *trocas mutuamente benéficas* (e no mercado competitivo então socialmente benéficas) que não são realizadas
 
 ---
 class: middle
 
-&lt;img src="figs/eae0310-9-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;img src="figs/eae0310-9-1.png" width="75%" style="display: block; margin: auto;" /&gt;
 
 Um mercado em equilíbrio sem distorções &amp;mdash; todas as *trocas mutuamente benéficas* são realizadas (Saez) 
 
 ---
 class: middle
 
-&lt;img src="figs/eae0310-9-3.png" width="95%" /&gt;
+&lt;img src="figs/eae0310-9-3.png" width="85%" /&gt;
 
 Com o imposto, há agora consumidores com disposição a pagar pelo bem maior que o custo marginal de sua produção, e ainda assim a troca não se realiza: a quantidade comercializada se reduz em `\(dQ\)` (Saez) 
 
 ---
 class: middle
 
-&lt;img src="figs/eae0310-10-1.png" width="95%" /&gt;
+&lt;img src="figs/eae0310-10-1.png" width="85%" /&gt;
 
 A redução na quantidade comercializada cria o **triângulo de Harberger**: uma área de perda de excedentes que excede a receita do governo (Saez) 
 
 ---
 class: middle
-## Peso morto
+## Triângulo de Harberger
 
 O **triângulo de Harberger** é um triângulo, e sob as condições do gráfico de oferta e demanda (equilíbrio parcial, sem efeito renda) podemos calcular a sua área por simples geometria
 
@@ -108,7 +120,7 @@ O triângulo de Harberger nesse exemplo tem área `\(\frac{1}{2} 10 \times 0,50 
 
 ---
 class: middle
-## Peso morto
+## A fórmula do peso morto
 
 `$$\text{EB} = \frac{1}{2}\frac{\epsilon_S \epsilon_D}{\epsilon_S - \epsilon_D} \frac{Q}{p} \times (dt)^2$$`
 O peso morto aumenta com o valor absoluto das elasticidades `\(\epsilon_S &gt; 0\)` e `\(- \epsilon_D &gt; 0\)` : *mais eficiente taxar bens inelásticos*
@@ -141,7 +153,7 @@ class: middle
 
 &lt;img src="figs/eae0310-10-4.png" width="50%" /&gt;
 
-Quando aumentamos a taxa de um imposto já existente, o peso morto é de *primeira ordem* (trapézio), não mais de *segunda ordem* (triângulo) [Gru16]
+Quando aumentamos a taxa de um imposto já existente, o peso morto é de *primeira ordem* (trapézio), não mais de *segunda ordem* (triângulo) &amp;mdash; isso se dá pelas distorções pré-existentes, e vale também para qualquer outra ineficiência de mercado, como poder de monopólio [Gru16]
 
 ---
 class: middle
@@ -187,7 +199,36 @@ Mesmo com tudo isso, o imposto só foi retirado em 1851, quase 160 anos depois d
 ---
 class: inverse, middle, center
 
-# Taxação ótima de consumo
+# Imposto sobre consumo
+
+---
+class: middle
+## Imposto sobre valor adicionado
+
+Impostos sobre o consumo (*indiretos*) podem ser cobrados sobre vendas, recolhendo uma taxa `\(t\)` (proporcional ou fixa) sobre a venda *do bem final*
+
+Mas nas últimas décadas se tornou muito mais comum o **imposto sobre valor adicionado** (IVA): com *compliance* perfeito e sem isenções, o IVA é equivalente a um imposto sobre vendas &amp;mdash; a sua vantagem vem de dificultar a evasão fiscal
+
+A vantagem do IVA é que cada produtor na cadeia produtiva desconta o imposto pago *upstream*, o que dá incentivo para **third-party reporting**
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-8-1.png" width="85%" /&gt;
+
+Funcionamento de um imposto sobre vendas e um IVA de 20% [GN18] 
+
+---
+class: middle
+## Imposto sobre valor adicionado
+
+O IVA pode ser uma ferramenta poderosa de combater evasão fiscal em transações *business-to-business* (B2B), pois a empresa *downstream* ganha dinheiro reportando a transação ao governo
+
+Mas isso não funciona para a transação para os consumidores! 
+
+Foi para tentar evitar esse "buraco" no IVA que o governo de SP introduziu a Nota Fiscal Paulista (NFP)
+
+[Nar19] encontrou que a NFP aumenta a receita de impostos do ICMS paulista em 9,3%
 
 ---
 class: middle
@@ -275,35 +316,6 @@ No ótimo, o imposto deve manter a taxa marginal de substituição técnica entr
 
 A intuição é que qualquer imposto sobre a produção distorce a produção *e o consumo*, então deve ser pior que um que distorce apenas o consumo
 
-
----
-class: middle
-## Imposto sobre valor adicionado
-
-Impostos sobre o consumo (*indiretos*) podem ser cobrados sobre vendas, recolhendo uma taxa `\(t\)` (proporcional ou fixa) sobre a venda *do bem final*
-
-Mas nas últimas décadas se tornou muito mais comum o **imposto sobre valor adicionado** (IVA): com *compliance* perfeito e sem isenções, o IVA é equivalente a um imposto sobre vendas &amp;mdash; a sua vantagem vem de dificultar a evasão fiscal
-
-A vantagem do IVA é que cada produtor na cadeia produtiva desconta o imposto pago *upstream*, o que dá incentivo para **third-party reporting**
-
----
-class: middle
-
-&lt;img src="figs/eae0310-8-1.png" width="85%" /&gt;
-
-Funcionamento de um imposto sobre vendas e um IVA de 20% [GN18] 
-
----
-class: middle
-## Imposto sobre valor adicionado
-
-O IVA pode ser uma ferramenta poderosa de combater evasão fiscal em transações *business-to-business* (B2B), pois a empresa *downstream* ganha dinheiro reportando a transação ao governo
-
-Mas isso não funciona para a transação para os consumidores! 
-
-Foi para tentar evitar esse "buraco" no IVA que o governo de SP introduziu a Nota Fiscal Paulista (NFP)
-
-[Nar19] encontrou que a NFP aumenta a receita de impostos do ICMS paulista em 9,3%
 
 
 ---

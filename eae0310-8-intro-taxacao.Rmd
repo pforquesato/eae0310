@@ -58,6 +58,14 @@ A taxação de renda do capital toma várias formas:
 3. *Taxação de ganhos de capital* geralmente é empregada para combater elisão fiscal por recompra de ações
 4. *Taxação de riqueza* também é (quase) equivalente a uma taxação sobre o lucro advindo daquela riqueza &mdash; aqui entra também imposto sobre propriedade e herança
 
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '55%'}
+knitr::include_graphics("figs/eae0310-8-23.png")
+```
+
+O governo pode recolher (e recolhe) recursos em diversos pontos do fluxo circular da renda `r Citep(myBib, "musgrave")`
 
 ---
 class: middle
@@ -65,10 +73,9 @@ class: middle
 
 A **taxa marginal de imposto** é a proporção de impostos pagos num real adicional de *rendimento tributável* (em geral é a alíquota máxima que o indivíduo atinge)
 
-O rendimento tributável menos *deduções* forma a base de cálculo do imposto, onde recai as alíquotas
+O rendimento tributável menos *deduções* forma a base de cálculo do imposto, onde recai as alíquotas &mdash; como cada nova alíquota só recai sobre renda *adicional*, a *taxa média de imposto* (alíquota efetiva) geralmente vai ser bem menor que a taxa marginal
 
-Como cada nova alíquota só recai sobre renda *adicional*, a **taxa média de imposto** (alíquota efetiva) geralmente vai ser bem menor que a taxa marginal
-
+Se a taxação **média** aumenta com a renda, dizemos que o imposto é *progressivo*, se é igual dizemos que é *proporcional*, e se diminui, *regressivo*
 
 ---
 class: middle
@@ -128,17 +135,18 @@ class: middle
 
 A dificuldade, é claro, está em definir *quais são essas dimensões relevantes*: cor de pele, cor de cabelo, altura, sexo, estado civil, renda &mdash; algumas dessas a sociedade julga justo diferenciar políticas públicas a respeito, outras não
 
-Já a **equidade vertical** lida com o tratamento justo de indivíduos desiguais: indivíduos com maior renda devem pagar mais impostos
+Já a **equidade vertical** lida com o tratamento justo de indivíduos desiguais: indivíduos com maior renda devem pagar mais impostos, por ter maior capacidade de pagar, mas quão mais?
 
 ---
 class: middle
-## Progressividade dos impostos
+## Igual sacrifício
 
-Se a *taxação média* aumenta com a renda, dizemos que o imposto é **progressivo**
 
-Se ela é igual para diferentes faixas de renda dizemos que é **proporcional**, e se a taxação média diminui com a renda, dizemos que o imposto é **regressivo**
+Isso gerou a ideia de **igual sacrifício**: devemos taxar indivíduos de renda diferente tal que eles tenham a mesma perda de utilidade (mesmo "sacrifício")
 
-A *equidade vertical* (capacidade de pagar) diz que pessoas mais ricas devem pagar mais impostos, mas se o sistema tributário deve ser proporcional ou progressivo (e quão progressivo), diferentes autores tiveram diferentes opiniões
+Mas a igualdade do sacrifício pode ser *absoluta*, *proporcional* ou *marginal*: já vimos que esse último, o **Princípio do Sacrifício Equimarginal** foi defendido por Edgeworth, e gera igualdade completa(*)
+
+Ele tem a vantagem interessante de minimizar o sacrifício total da sociedade, ou o que é equivalente, maximizar a soma das utilidades: sua relação com o utilitarismo fez com que se tornasse o paradigma dominante
 
 ---
 class: middle
