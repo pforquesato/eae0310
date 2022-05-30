@@ -4,6 +4,7 @@
     <title>EAE-0310: ECONOMIA DO SETOR PÚBLICO</title>
     <meta charset="utf-8" />
     <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 217/FEA2 - pforquesato@usp.br" />
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -11,10 +12,18 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # EAE-0310: ECONOMIA DO SETOR PÚBLICO
+]
+.author[
 ### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 217/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
+]
+.institute[
 ### Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo
+]
+.date[
 ### Aula 9: Incidência de impostos<br/>2022/1
+]
 
 ---
 
@@ -159,30 +168,29 @@ A diferença é que a firma agora *demanda* esses fatores, cujos ofertantes são
 
 Quando há salário mínimo, a incidência formal do imposto novamente vai importar, pois vai definir o "valor líquido" desse piso de preços
 
+---
+class: middle
+## Incidência em mercados competitivos
+
+Embora importante, **o peso-morto é relativamente pequeno**: Harberger (1959) estimou o peso-morto da taxação corporativa em ~8% da receita; estimativas para impostos indiretos são parecidas (3-5%)
+
+Portanto *em mercados competitivos* podemos ignorá-lo (é de *segunda ordem*) no cálculo do custo de bem-estar para consumidores e produtores
+
+Assim, a perda de excedente do consumidor se torna `\(\rho dt \cdot Q\)` (onde `\(\rho\)` é o **pass-through**), e a perda do produtor `\((1 - \rho)dt \cdot Q\)` &amp;mdash; ambos somam (aproximadamente) a receita do governo `\(R(dt) = Qdt\)`
 
 ---
 class: middle
-## Incidência em mercados não-competitivos
+## Incidência em monopólio
 
-Incidência em mercados não-competitivos é mais complicado, mas ainda assim no modelo não importa para a incidência econômica quem formalmente paga o imposto
+Quando há alguma imperfeição anterior, poder de monopólio ou imposto inicial, **o peso-morto não é mais negligenciável**: então a perda de excedente do consumidor e do produtor somam **mais que** a receita do governo
 
-Dizemos que o peso-morto `\(D\)` é **de segunda-ordem** quando `\(\lim_{dt\rightarrow 0} \frac{D}{dt} = 0\)`
-
-Como veremos na aula que vem, em *mercados competitivos* o peso-morto é de segunda ordem (negligenciável) &amp;mdash; assim, a perda de excedente do consumidor, `\(\rho dt \cdot Q\)` (onde `\(\rho\)` é o **pass-through**), e a perda do produtor, `\((1 - \rho)dt \cdot Q\)`, somam (aproximadamente) a receita do governo `\(R(dt) = Qdt\)`
-
----
-class: middle
-## Incidência em mercados não-competitivos
-
-Quando há alguma imperfeição no mercado (no caso, poder de mercado), *o peso-morto não é mais de segunda-ordem*: então a perda de excedente do consumidor e do produtor somam **mais que** a receita do governo
-
-De fato, a incidência no consumidor continua sendo `\(\rho\)`, pois é o aumento do preço que ele paga, `\(dp^c/dt\)` &amp;mdash; mas agora a incidência no produtor é `\(1\)`: o monopolista absorve um montante igual a *toda* taxação [WF13]  
+De fato, a incidência no consumidor continua sendo `\(\rho\)`, pois é o aumento do preço que ele paga, `\(dp^c/dt\)` &amp;mdash; mas agora a incidência no produtor é `\(1\)`: o monopolista absorve um montante igual a *toda* receita do governo [WF13]  
 
 Talvez pareça contraintuivo que quanto maior poder de mercado, mais a incidência se dá no produtor &amp;mdash; mas note que *quanto maior o excedente, mais espaço há para o imposto incidir sobre esse lado do mercado*
 
 ---
 class: middle
-## Incidência em mercados não-competitivos
+## Incidência em monopólio
 
 Outra característica importante incidência em mercados não-competitivos é que *o pass-through pode ser maior que um*
 
@@ -492,6 +500,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

@@ -71,7 +71,7 @@ class: middle
 ## Impostos e tomada de risco
 
 $$\mathbb{E} \left\{ u^{\prime}(W_{\text{ex-post}})(x - r) \right\} = 0$$
-O imposto sobre riqueza $\tau$ só entra na decisão do agente por $W_{\text{ex-post}}$: se a aversão absoluta ao risco for decrescente, o que é quase unânime empiricamente, então taxação de riqueza diminui a *quantidade* do ativo arriscado
+O imposto sobre riqueza $\tau$ só entra na decisão do agente por $W_{\text{ex-post}}$: se a aversão absoluta ao risco for decrescente, o que é quase unânime empiricamente, então taxação de riqueza diminui a *quantidade* do ativo arriscado **REVER**
 
 Mas para garantir que a *proporção* do ativo arriscado cai com taxação de riqueza, precisaríamos de aversão relativa ao risco decrescente, o que é mais discutível empiricamente (a maioria dos modelos assume RRA constante)
 

@@ -42,7 +42,7 @@ class: middle
 ## Variação equivalente
 
 
-Seja $e \left( p_0, V(p_1, Y) \right)$ a renda necessária para alcançar a preços iniciais $p_0$ a mesma utilidade que o indivíduo tem a preços após os impostos $p_1$ (utilidade que é menor, já que $p_1 > p_0$)
+Seja $e \left( p_0, V(p_1, Y) \right)$ (*função dispêndio*) a renda necessária para alcançar a preços iniciais $p_0$ a mesma utilidade $\bar{u} = V(p_1, Y)$ que o indivíduo tem a preços após os impostos $p_1 = p_0 + t$ (utilidade que é menor, já que $p_1 > p_0$)
 
 Então a **variação equivalente** é quanto de perda de renda teria efeito igual na utilidade do agente que a introdução do imposto:
 
@@ -54,7 +54,7 @@ Uma EV de 100 significa que introduzir o imposto sobre o consumo de dado bem tem
 class: middle
 ## Taxação lump-sum e peso morto
 
-É natural que se alguém der `$`1 para o governo, ele terá uma perda de bem-estar de (pelo menos) `$`1 &mdash; mas na verdade será maior que isso, pois transferir renda entre agentes econômicos é custoso (*leaky bucket*)
+É natural que se alguém der `$`1 para o governo, ele terá uma perda de bem-estar de `$`1 &mdash; mas na verdade será maior que isso, pois transferir renda entre agentes econômicos é custoso (*leaky bucket*)
 
 Essa diferença é **peso morto**: a perda de renda equivalente à perda de bem-estar (em medida monetária) gerada pelo imposto que é *além da arrecadação do imposto*:
 
@@ -64,13 +64,23 @@ $$EB = |EV| - R(t) = - \left( e \left( p_0, V(p_1, Y) \right) - Y \right) - t x(
 
 ---
 class: middle
-## Peso morto
+## Peso morto e variação equivalente
 
-**O que gera peso morto é o efeito substituição** &mdash; *efeito renda* não gera peso-morto
+Esse peso morto surge **pela diminuição da quantidade**: os agentes respondem "fugindo" do imposto, mas isso tem um custo em termos de bem-estar que não gera arrecadação (ao contrário da transferência lump-sum)
 
-De fato, *impostos lump-sum* também geram efeito renda &mdash; sem alteração nos preços relativos, a variação equivalente é apenas a transferência de recursos (peso morto se mede pela **demanda compensada**)
+A definição de peso morto como variação equivalente é útil pois tem uma interpretação clara: é o quanto de perda  de renda *excessiva* (além da arrecadação do governo) que seria *equivalente* ao imposto implementado
 
-O peso morto vem da *alteração dos preços relativos*: transferências universais não alteram o preço relativo (p. ex. entre consumo e lazer) &mdash; efeito renda move a curva de demanda, não gera um **tax wedge**
+Então um peso morto de 10% quer dizer que para cada R$1,00 arrecadado, os consumidores e produtores estariam dispostos a pagar em vez disso R$1,10 se fosse sem distorcer preços (transferência lump-sum)
+
+---
+class: middle
+## Efeito substituição e efeito renda
+
+É importante ter sempre em mente que **o que gera perda de bem-estar é o efeito substituição**: efeito renda não gera peso morto
+
+De fato, transferências lump-sum também geram efeito renda, mas sem alteração nos preços relativos a variação equivalente é apenas a transferência de recursos (a perda de bem-estar do setor privado é igual à arrecadação)
+
+O peso morto vem da **alteração dos preços relativos**: transferências universais não alteram o preço relativo (p. ex. entre consumo e lazer), e não geram um **tax wedge**
 
 ---
 class: middle
@@ -176,9 +186,7 @@ class: middle
 
 `r Citep(myBib, "oates")` estuda o caso do imposto sobre janelas instituído por William III na Inglaterra (1696)
 
-Como é difícil avaliar o valor das propriedades (e era muito mais), ele decidiu usar como *proxy* o número de janelas (indicador de *capacidade de pagar*)
-
-Isso faria sentido (**tagging**, que vimos na aula 7) se o número de janelas não fosse alterável &mdash; mas é
+Como é difícil avaliar o valor das propriedades (e era muito mais), ele decidiu usar como *proxy* o número de janelas (indicador de *capacidade de pagar*): isso faria sentido (**tagging**) se o número de janelas não fosse alterável &mdash; mas é
 
 Também era injusto do ponto de vista de **equidade horizontal**: uma casa no campo muito mais barata que uma na cidade certamente teria bem mais janelas
 
@@ -188,9 +196,7 @@ class: middle
 
 > "In order to reduce the window tax, every window... was built up, and all source of ventilation was thus removed. The smell in this house was overpowering, and offensive to an unbearable extent. There is no evidence that the fever was imported into this house, but it was propagated from it to other parts of town, and 52 inhabitants were killed" Carlisle, 1781, apud `r Citep(myBib, "oates")`
 
-Pior ainda, a tributação possuía **notches**: pontos em que o imposto médio pago sobe descontinuamente, gerando distorções ainda maiores
-
-Não havia imposto até 9 janelas, 6p/janela *no total de janelas* até 14 janelas, etc
+Pior ainda, a tributação possuía **notches**: pontos em que o imposto médio pago sobe descontinuamente, gerando distorções ainda maiores: não havia imposto até 9 janelas, 6p/janela *no total de janelas* até 14 janelas, etc
 
 ---
 class: middle
@@ -207,26 +213,34 @@ class: middle
 
 `r Citep(myBib, "oates")` encontram que o peso morto gerado pela taxação *em famílias localizadas "no notch"* foi terríveis 62% da receita: para cada £1 arrecadado pelo governo, elas pagavam £1,62-equivalente em perda de utilidade
 
-Isto é, elas estariam dispostas a pagar £1,62 de transferência lump-sum por £1 arrecadado para acabar com essa taxação
-
-Em geral, o peso morto foi 13,4% da arrecadação &mdash; ainda 3-4x maior que outros tipos de impostos
+Isto é, elas estariam dispostas a pagar £1,62 de transferência lump-sum por £1 arrecadado para acabar com essa taxação &mdash; em geral, o peso morto foi 13,4% da arrecadação: ainda 3-4x maior que outros tipos de impostos
 
 Mesmo com tudo isso, o imposto só foi retirado em 1851, quase 160 anos depois da instalação, o que demonstra que impostos muito eficientes podem durar muito tempo por motivos políticos
 
 ---
 class: inverse, middle, center
 
-# Imposto sobre consumo
+# Imposto ótimo sobre consumo
+
+---
+class: middle
+## Imposto sobre insumos
+
+Um dos resultados mais importantes de taxação ótima é o **resultado de eficiência produtiva** de Diamond-Mirrlees (1971)
+
+Ele diz que um governo que precise arrecadar impostos em um mundo de concorrência perfeita e retornos constantes de escala *nunca taxará bens intermediários e importações*
+
+No ótimo, o imposto deve manter a taxa marginal de substituição técnica entre insumos igual em todos os seus usos produtivos: qualquer imposto sobre a produção distorce a produção **e** o consumo, então deve ser pior que um que distorce apenas o consumo
 
 ---
 class: middle
 ## Imposto sobre valor adicionado
 
-Impostos sobre o consumo (*indiretos*) podem ser cobrados sobre vendas, recolhendo uma taxa $t$ (proporcional ou fixa) sobre a venda *do bem final*
+Taxação de consumo (impostos indiretos) podem ser cobrados sobre vendas, recolhendo uma taxa $t$ (proporcional ou fixa) sobre a venda *do bem final*
 
-Mas nas últimas décadas se tornou muito mais comum o **imposto sobre valor adicionado** (IVA): com *compliance* perfeito e sem isenções, o IVA é equivalente a um imposto sobre vendas &mdash; a sua vantagem vem de dificultar a evasão fiscal
+Mas nas últimas décadas se tornou muito mais comum o **imposto sobre valor adicionado** (IVA, ou VAT em inglês): com *compliance* perfeito e sem isenções, o IVA é equivalente a um imposto sobre vendas
 
-A vantagem do IVA é que cada produtor na cadeia produtiva desconta o imposto pago *upstream*, o que dá incentivo para **third-party reporting**
+A sua vantagem vem de dificultar a evasão fiscal: cada produtor na cadeia produtiva desconta o imposto pago *upstream*, o que dá incentivo para **third-party reporting**
 
 ---
 class: middle
@@ -243,9 +257,7 @@ class: middle
 
 O IVA pode ser uma ferramenta poderosa de combater evasão fiscal em transações *business-to-business* (B2B), pois a empresa *downstream* ganha dinheiro reportando a transação ao governo
 
-Mas isso não funciona para a transação para os consumidores! 
-
-Foi para tentar evitar esse "buraco" no IVA que o governo de SP introduziu a Nota Fiscal Paulista (NFP)
+Mas isso não funciona para a transação para os consumidores &mdash; foi para tentar evitar esse "buraco" no IVA que o governo de SP introduziu a Nota Fiscal Paulista (NFP)
 
 `r Citep(myBib, "naritomi2019consumers")` encontrou que a NFP aumenta a receita de impostos do ICMS paulista em 9,3%
 
@@ -253,9 +265,9 @@ Foi para tentar evitar esse "buraco" no IVA que o governo de SP introduziu a Not
 class: middle
 ## Taxação ótima de consumo
 
-Até aqui, embora estejamos analisando efeitos de bem-estar, o estudo da incidência e peso-morto dos impostos ainda está no reino da *economia positiva*
+Até aqui, embora estavamos analisando efeitos de bem-estar, o estudo da incidência e peso-morto dos impostos ainda estava no reino da *economia positiva*
 
-Mas não dá para parar aí: o nosso interesse em última análise é aconselhar políticos em como desenhar sistemas de tributação melhores (que é parte da *análise normativa*)
+Mas o nosso interesse em última análise é aconselhar políticos em como desenhar sistemas de tributação melhores, que é parte da *análise normativa*
 
 Esse é o campo de estudo da **taxação ótima**: quais são as características de um sistema tributário que maximize o bem-estar da população, dadas as restrições informacionais (i.e., no *second-best*)
 
@@ -263,7 +275,7 @@ Esse é o campo de estudo da **taxação ótima**: quais são as característica
 class: middle
 ## Taxação ótima de consumo
 
-O estudo da taxação ótima de bens começou com Frank Ramsey, que fez várias descobertas relevantes em matemática, filosofia e economia antes da sua morte trágica aos 26 anos
+O estudo da taxação ótima de consumo começou com Frank Ramsey, que fez várias descobertas relevantes em matemática, filosofia e economia antes da sua morte trágica aos 26 anos
 
 Em 1926 Pigou propôs o problema para ele: como podemos arrecadar uma dada quantidade de receita por tributos $R$ causando o mínimo de distorções na economia?
 
@@ -273,9 +285,11 @@ O resultado ficou conhecido como **regra de Ramsey** (ou *regra da elasticidade 
 class: middle
 ## Regra de Ramsey
 
-O problema de Ramsey é minimizar a soma de peso-morto dos diferentes mercados dada uma receita mínima do governo. Supondo que há apenas bens $A$ e $B$: $\min_{(t_k)_{k=1}^K} \sum_{k=1}^K EB_k$ sujeito a $\sum_{k=1}^K R_k = \bar{R}$.
+O problema de Ramsey é minimizar a soma de peso-morto dos diferentes mercados dada uma receita mínima do governo. Supondo que há apenas bens $A$ e $B$: 
 
-Vimos ainda nessa aula que $\text{EB}_k = \frac{1}{2}\frac{\epsilon_S^k \epsilon_D^k}{\epsilon_S^k - \epsilon_D^k} \frac{Q_k}{p_k} (t_k)^2$. Portanto, temos o Lagrangiano: $$\min_{(t_k)_{k=1}^K} \sum_{k=1}^K \frac{1}{2}\frac{\epsilon_S^k \epsilon_D^k}{\epsilon_S^k - \epsilon_D^k} \frac{Q_k}{p_k} (t_k)^2 + \lambda \cdot \left( \sum_{k=1}^K Q_k t_k - \bar{R} \right)$$
+$$\min_{(t_k)_{k=1}^K} \sum_{k=1}^K EB_k \text{ sujeito a } \sum_{k=1}^K R_k = \bar{R}$$
+
+Vimos ainda nessa aula que $\text{EB}_k = \frac{1}{2}\frac{\epsilon_S^k \epsilon_D^k}{\epsilon_S^k - \epsilon_D^k} \frac{Q_k}{p_k} (t_k)^2$. Portanto: $$\min_{(t_k)_{k=1}^K} \sum_{k=1}^K \frac{1}{2}\frac{\epsilon_S^k \epsilon_D^k}{\epsilon_S^k - \epsilon_D^k} \frac{Q_k}{p_k} (t_k)^2 + \lambda \cdot \left( \sum_{k=1}^K Q_k t_k - \bar{R} \right)$$
 
 ---
 class: middle
@@ -283,9 +297,9 @@ class: middle
 
 A condição de primeira ordem para bem $k$ é:
 
-$$[t_k]: \frac{\epsilon_S^k \epsilon_D^k}{\epsilon_S^k - \epsilon_D^k} \frac{Q_k}{p_k} t_k = - \lambda Q_k \Rightarrow t_k = \lambda \left( \frac{1}{|\epsilon_D|} + \frac{1}{|\epsilon_S|} \right)$$
+$$[t_k]: \frac{\epsilon_S^k \epsilon_D^k}{\epsilon_S^k - \epsilon_D^k} \frac{Q_k}{p_k} t_k = - \lambda Q_k \Rightarrow \frac{t_k}{p_k} = \lambda \left( \frac{1}{|\epsilon_D|} + \frac{1}{|\epsilon_S|} \right)$$
 
-Se assumirmos que $p_k = 1$. Aqui $\lambda$ é o **valor marginal dos fundos públicos** &mdash; como a taxação é distorciva, se o dinheiro com o governo não tiver valor social maior que na mão dos indivíduos privados, o imposto ótimo é zero
+Aqui $\lambda$ é o **valor marginal dos fundos públicos** &mdash; como a taxação é distorciva, se o dinheiro com o governo não tiver valor social maior que na mão dos indivíduos privados, o imposto ótimo é zero
 
 Fora isso, como o *peso morto é crescente nas elasticidades*, o governo deve taxar mais mercados mais inelásticos
 
@@ -293,21 +307,19 @@ Fora isso, como o *peso morto é crescente nas elasticidades*, o governo deve ta
 class: middle
 ## Problemas com a regra de Ramsey
 
-A *regra da elasticidade inversa* tem implicações distributivas cruéis: se há dois bens, arroz e caviar, como a demanda de arroz é muito mais inelástica, a regra da elasticidade inversa implica taxar muito o arroz e pouco o caviar
+A **regra da elasticidade inversa** tem implicações distributivas cruéis: se há dois bens, arroz e caviar, como a demanda de arroz é muito mais inelástica, a regra da elasticidade inversa implica taxar muito o arroz e pouco o caviar
 
 Isso vem da suposição implícita de que estamos preocupados apenas com *eficiência* &mdash; já vimos que qualquer decisão normativa tem que estar baseada em alguma *função de bem-estar social*, que vai levar em conta *igualdade*
 
-Outro problema é que assume que podemos olhar cada mercado separadamente, o que sabemos que não é verdade: há efeitos importantes de *equilíbrio geral*
+Outro problema é que assume que podemos olhar cada mercado separadamente, o que sabemos que não é verdade: há efeitos importantes de *equilíbrio geral* (elasticidades cruzadas)
 
 ---
 class: middle
 ## Problemas com a regra de Ramsey
 
-O mais importante desses efeitos é a relação com o trabalho: como lazer não pode ser taxado, as pessoas trabalham ineficientemente pouco
+O mais importante desses efeitos é a relação com o trabalho: como lazer não pode ser taxado, as pessoas trabalham ineficientemente pouco: 
 
-**Taxar menos (ou até subsidiar) bens complementares ao trabalho** (educação, creche, transporte público, etc) pode reduzir essa distorção
-
-Analogamente, faz sentido taxar mais bens substitutos ao trabalho, como video-games
+**Taxar menos (ou até subsidiar) bens complementares ao trabalho** (educação, creche, transporte público, etc) pode reduzir essa distorção &mdash; analogamente, faz sentido taxar mais bens substitutos ao trabalho, como video-games
 
 Se nos preocupamos com redistribuição e não podemos taxar progressivamente a renda, a teoria diz que devemos redistribuir pela taxação indireta: **taxar menos bens consumidos pelos mais pobres**
 
@@ -315,27 +327,11 @@ Se nos preocupamos com redistribuição e não podemos taxar progressivamente a 
 class: middle
 ## Taxação homogênea
 
-Todas as reformas em discussão no Brasil propõem taxação uniforme do consumo &mdash; quando isso é o ótimo?
+O **princípio da focalização** (Atkinson & Stiglitz, 1976) diz que se podemos taxar a renda diretamente, devemos usar esse instrumento para reduzir desigualdade de renda, não a taxação de consumo (ou de poupança)
 
-O **princípio da focalização** (Atkinson & Stiglitz, 1976) diz que se podemos taxar a renda diretamente, devemos usar esse instrumento para reduzir desigualdade de renda, não a taxação de consumo
+Mas isso só vale se a capacidade de geração de renda for a única fonte de desigualdade. Se houver outras dimensões (por exemplo, riqueza ou desconto intertemporal), isso já não é mais válido
 
-Mas isso só vale se capacidade de geração de renda for a única fonte de desigualdade. Se houver outras dimensões (por exemplo, riqueza), isso já não é mais válido
-
-Pode também fazer sentido por motivos de *economia política*, já que evita *lobby* por redução nas taxas de setores particulares: política *third-best*
-
----
-class: middle
-## Imposto sobre insumos
-
-Um dos resultados mais importantes de taxação ótima é o **resultado de eficiência produtiva** de Diamond-Mirrlees (1971)
-
-Ele diz que um governo que precise arrecadar impostos em um mundo de concorrência perfeita e retornos constantes de escala *nunca taxará bens intermediários e importações*
-
-No ótimo, o imposto deve manter a taxa marginal de substituição técnica entre insumos igual em todos os seus usos produtivos 
-
-A intuição é que qualquer imposto sobre a produção distorce a produção *e o consumo*, então deve ser pior que um que distorce apenas o consumo
-
-
+Pode também fazer sentido por motivos de economia política, já que evita lobby por redução nas taxas de setores particulares: **política third-best**
 
 ---
 class:middle

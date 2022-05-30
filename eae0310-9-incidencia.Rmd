@@ -175,30 +175,29 @@ A diferença é que a firma agora *demanda* esses fatores, cujos ofertantes são
 
 Quando há salário mínimo, a incidência formal do imposto novamente vai importar, pois vai definir o "valor líquido" desse piso de preços
 
+---
+class: middle
+## Incidência em mercados competitivos
+
+Embora importante, **o peso-morto é relativamente pequeno**: Harberger (1959) estimou o peso-morto da taxação corporativa em ~8% da receita; estimativas para impostos indiretos são parecidas (3-5%)
+
+Portanto *em mercados competitivos* podemos ignorá-lo (é de *segunda ordem*) no cálculo do custo de bem-estar para consumidores e produtores
+
+Assim, a perda de excedente do consumidor se torna $\rho dt \cdot Q$ (onde $\rho$ é o **pass-through**), e a perda do produtor $(1 - \rho)dt \cdot Q$ &mdash; ambos somam (aproximadamente) a receita do governo $R(dt) = Qdt$
 
 ---
 class: middle
-## Incidência em mercados não-competitivos
+## Incidência em monopólio
 
-Incidência em mercados não-competitivos é mais complicado, mas ainda assim no modelo não importa para a incidência econômica quem formalmente paga o imposto
+Quando há alguma imperfeição anterior, poder de monopólio ou imposto inicial, **o peso-morto não é mais negligenciável**: então a perda de excedente do consumidor e do produtor somam **mais que** a receita do governo
 
-Dizemos que o peso-morto $D$ é **de segunda-ordem** quando $\lim_{dt\rightarrow 0} \frac{D}{dt} = 0$
-
-Como veremos na aula que vem, em *mercados competitivos* o peso-morto é de segunda ordem (negligenciável) &mdash; assim, a perda de excedente do consumidor, $\rho dt \cdot Q$ (onde $\rho$ é o **pass-through**), e a perda do produtor, $(1 - \rho)dt \cdot Q$, somam (aproximadamente) a receita do governo $R(dt) = Qdt$
-
----
-class: middle
-## Incidência em mercados não-competitivos
-
-Quando há alguma imperfeição no mercado (no caso, poder de mercado), *o peso-morto não é mais de segunda-ordem*: então a perda de excedente do consumidor e do produtor somam **mais que** a receita do governo
-
-De fato, a incidência no consumidor continua sendo $\rho$, pois é o aumento do preço que ele paga, $dp^c/dt$ &mdash; mas agora a incidência no produtor é $1$: o monopolista absorve um montante igual a *toda* taxação `r Citep(myBib, "weyl2013pass")`  
+De fato, a incidência no consumidor continua sendo $\rho$, pois é o aumento do preço que ele paga, $dp^c/dt$ &mdash; mas agora a incidência no produtor é $1$: o monopolista absorve um montante igual a *toda* receita do governo `r Citep(myBib, "weyl2013pass")`  
 
 Talvez pareça contraintuivo que quanto maior poder de mercado, mais a incidência se dá no produtor &mdash; mas note que *quanto maior o excedente, mais espaço há para o imposto incidir sobre esse lado do mercado*
 
 ---
 class: middle
-## Incidência em mercados não-competitivos
+## Incidência em monopólio
 
 Outra característica importante incidência em mercados não-competitivos é que *o pass-through pode ser maior que um*
 
