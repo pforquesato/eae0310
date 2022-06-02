@@ -393,7 +393,7 @@ class: middle
 
 Internalidades é mais difícil estimar empiricamente &mdash; `r Citep(myBib, "allcott2019regressive")` comparam com consumo de nutricionistas e estimam que pessoas comprariam 31-37% menos SSBs se tivessem informação boa sobre custos de saúde
 
-Isso corresponde a ¢0,91-2,14/oz de externalidades
+Isso corresponde a ¢0,91-2,14/oz de internalidades
 
 Mas essa internalidade é correlacionada com a renda! Em um survey sobre os danos de SSBs, erros de informação são 30% maiores em famílias com renda de 10.000 dólares/ano do que $100.000/ano 
 

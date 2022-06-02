@@ -1,6 +1,6 @@
 ---
 title: "EAE-0310: ECONOMIA DO SETOR PÚBLICO"
-author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 19C/FEA2 - pforquesato@usp.br"
+author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 217/FEA2 - pforquesato@usp.br"
 institute: "Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo"
 date: "Aula 11: Impostos sobre a renda do trabalho<br/>2022/1"
 output:

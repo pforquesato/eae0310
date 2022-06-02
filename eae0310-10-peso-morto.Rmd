@@ -29,6 +29,57 @@ myBib <- ReadBib("./esp_bib.bib", check = FALSE)
 
 ---
 class: middle
+## Prefácio: teoria do consumidor
+
+Seja a utilidade $u(c_x, c_y)$ abaixo e assuma que $p_y = 1$: então, a restrição orçamentária é $Y = p_x c_x + c_y$ e portanto $c_y = Y - p_x c_x$ 
+
+$$u(c_x, c_y) = \ln c_x + \ln c_y$$ 
+
+Isso nos dá a CPO: $$\frac{1}{c_x} = \frac{p_x}{Y - p_x c_x} \Rightarrow Y - p_x c_x = p_x c_x \Rightarrow x(p_x, Y) \equiv c_x = \frac{Y}{2p_x}$$
+
+$$\therefore V(p_x, Y) = \ln \left( \frac{Y}{2p_x} \right) + \ln \left( \frac{Y}{2} \right)$$ 
+
+
+
+---
+class: middle
+## Prefácio: teoria do consumidor
+
+No slide anterior, $x(p_x, Y)$ é a **demanda marshalliana** (de Alfred Marshall, em 1890) do bem $x$ e $V(p_x, Y)$ é a **função de utilidade indireta** (onde eu simplifiquei o problema por ser em 2 dimensões)
+
+$$V(p_x, Y) = \ln \left( \frac{Y}{2p_x} \right) + \ln \left( \frac{Y}{2} \right) \equiv \bar{u}$$
+
+$$\therefore \exp \left\{ \bar{u} \right\} = \left( \frac{Y}{2p_x} \right) \cdot \left( \frac{Y}{2} \right) \Rightarrow Y \equiv e(p_x, \bar{u}) = 2\sqrt{p_x e^{\bar{u}}}$$
+
+Essa é a **função dispêndio** $e(p_x, \bar{u})$, que nos permite manter a utilidade $\bar{u}$ constante
+
+
+---
+class: middle
+## Prefácio: teoria do consumidor
+
+Nesse caso, a demanda marshalliana é negativamente inclinada, mas não precisa ser sempre o caso: se o bem é inferior, então o **efeito renda** $x(p_x, Y) \cdot \partial x(p_x, Y) / \partial Y < 0$ e pode compensar o **efeito substituição**, gerando demanda positivamente inclinada (essa é a equação de Slutsky, de 1915)
+
+Note ainda que vale nesse exemplo (ufa!) a **identidade de Roy**: $x(p_x, Y) = - \partial_{p_x} V(p_x, Y) / \partial_Y V(p_x, Y)$
+
+$$\frac{\partial V(p_x, Y)}{\partial p_x} = -\frac{2}{2 p_x} \text{ e } \frac{\partial V(p_x, Y)}{\partial Y} = \frac{2}{Y}$$
+$$\therefore x(p_x, Y) = - \frac{\partial_{p_x} V(p_x, Y)}{\partial_Y V(p_x, Y)} = \frac{Y}{2 p_x}$$
+
+---
+class: middle
+## Prefácio: teoria do consumidor
+
+O **Lema de Shephard** (1953) diz que a **demanda compensada** (ou hicksiana, por John Hicks em 1939) por um bem é a derivada da função dispêndio em relação ao preço desse bem &mdash; assim,
+
+$$x^c(p_x, \bar{u}) = \frac{\partial e(p_x, \bar{u})}{\partial p_x} = \sqrt{\frac{e^{\bar{u}}}{p_x}}$$
+
+A demanda se chama assim pois representa o consumo do bem $x$ dada variações no preço do bem que são *compensadas* de forma a manter a utilidade do consumidor constante em $\bar{u}$: o que importa são apenas os preços relativos (**efeito substituição**), já que o efeito renda é compensado na utilidade
+
+
+Note que aqui é válido, e **sempre** será verdade, que a demanda compensada é *negativamente inclinada*: $\partial x^c(p_x, \bar{u}) / \partial p_x < 0$
+
+---
+class: middle
 ## Custos de eficiência da taxação
 
 Discutimos o efeito redistributivo da taxação: a **incidência** da taxação indireta, que é causada por alterações *no preço* dos produtos
@@ -41,12 +92,11 @@ O peso morto advém do fato do imposto alterar os *preços relativos* que agente
 class: middle
 ## Variação equivalente
 
-
-Seja $e \left( p_0, V(p_1, Y) \right)$ (*função dispêndio*) a renda necessária para alcançar a preços iniciais $p_0$ a mesma utilidade $\bar{u} = V(p_1, Y)$ que o indivíduo tem a preços após os impostos $p_1 = p_0 + t$ (utilidade que é menor, já que $p_1 > p_0$)
+Seja $e \left( p_0, V(p_0 + t, Y) \right)$ a **função dispêndio**, que mede a renda necessária para alcançar a preços iniciais $p_0$ a mesma utilidade $\bar{u}_1 = V(p_0 + t, Y)$ que o indivíduo com renda $Y$ tem após introdução de impostos $t >0$ (utilidade que é menor, já que o poder de compra caiu)
 
 Então a **variação equivalente** é quanto de perda de renda teria efeito igual na utilidade do agente que a introdução do imposto:
 
-$$EV = e \left( p_0, V(p_1, Y) \right) - Y$$
+$$EV = Y - e \left( p_0, V(p_0 + t, Y) \right)$$
 
 Uma EV de 100 significa que introduzir o imposto sobre o consumo de dado bem tem efeito igual para o consumidor que tirar 100 reais de renda dele
 
@@ -58,9 +108,39 @@ class: middle
 
 Essa diferença é **peso morto**: a perda de renda equivalente à perda de bem-estar (em medida monetária) gerada pelo imposto que é *além da arrecadação do imposto*:
 
-$$EB = |EV| - R(t) = - \left( e \left( p_0, V(p_1, Y) \right) - Y \right) - t x(p_1, Y)$$ 
+$$EB = EV - R(t) = Y - e \left( p_0, V(p_0 + t, Y) \right) - t x(p_0 + t, Y)$$ 
 
-*Taxação lump-sum* não gera peso morto &mdash; isso fica claro pela definição de variação equivalente: $$e \left(p_0, V(p_0, Y - T)\right) = Y - T \text{ e portanto } EV = - T = - R(t)$$
+*Taxação lump-sum* não gera peso morto &mdash; isso fica claro pela definição de variação equivalente: $$e \left(p_0, V(p_0, Y - T)\right) = Y - T \text{ e portanto } EV = T = R(t)$$
+
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '75%', fig.align = 'center'}
+knitr::include_graphics("figs/eae0310-10-6.png")
+```
+
+A função de demanda compensada sempre é negativamente inclinada, pois ao manter o consumidor na mesma curva de indiferença, elimina o efeito renda (ambíguo) e mantém apenas o efeito subsituição (sempre negativo) (Nicholson & Snyder) 
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '75%', fig.align = 'center'}
+knitr::include_graphics("figs/eae0310-10-7.png")
+```
+
+Imagine que um imposto $t > 0$ mova $p^{\prime \prime}$ para $p^{\prime} = p^{\prime \prime} + t$, isso reduz a demanda compensada de $x^{\prime \prime}$ para $x^*$, a quantidade ótima na curva de indiferença $U_2$ &mdash; a preços relativos $p^{\prime}/p_y$ o agente precisaria de mais renda para consumir $x^{\prime \prime}$: essa é a **variação equivalente** (N&S) 
+
+
+---
+class: middle
+## Peso morto é positivo
+
+O peso morto medido pela variação equivalente (ou compensatória) sempre será bem-definido e positivo, já que a *Lei da Demanda* vale sempre para **demanda compensada**
+
+Isso é uma aplicação direta do **Lema de Shephard**: a variação equivalente $EV = Y - e \left( p_0, V(p_1, Y) \right)$ é a integral da demanda compensada $x^{c}(p, \bar{u}_1)$ $$EV = \int_{p_0}^{p_0 + t} x^{c}(p, \bar{u}_1)dp$$ 
+
+Enquanto a receita governamental é $t x(p_1, Y) = tx^c(p_1, V(p_1, Y))$, ou seja, $tx^c(p_1, \bar{u}_1)$ 
 
 ---
 class: middle

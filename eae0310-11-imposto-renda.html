@@ -3,7 +3,8 @@
   <head>
     <title>EAE-0310: ECONOMIA DO SETOR PÚBLICO</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 19C/FEA2 - pforquesato@usp.br" />
+    <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 217/FEA2 - pforquesato@usp.br" />
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -11,10 +12,18 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # EAE-0310: ECONOMIA DO SETOR PÚBLICO
-### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 19C/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
+]
+.author[
+### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 217/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
+]
+.institute[
 ### Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo
+]
+.date[
 ### Aula 11: Impostos sobre a renda do trabalho<br/>2022/1
+]
 
 ---
 
@@ -465,9 +474,9 @@ Macmillan, 2016.
 of Economic Literature_ 49.4 (2011), pp. 961-1075.
 
 [Kle+14] H. J. Kleven, C. Landais, E. Saez, et al. "Migration and wage
-effects of taxing top earners: Evidence from the foreignersâ€™ tax
-scheme in Denmark". In: _The Quarterly Journal of Economics_ 129.1
-(2014), pp. 333-378.
+effects of taxing top earners: Evidence from the foreigners’ tax scheme
+in Denmark". In: _The Quarterly Journal of Economics_ 129.1 (2014), pp.
+333-378.
 
 [PSS14] T. Piketty, E. Saez, and S. Stantcheva. "Optimal taxation of
 top labor incomes: A tale of three elasticities". In: _American
@@ -524,6 +533,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
