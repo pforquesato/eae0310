@@ -118,21 +118,15 @@ Essa diferença é **peso morto**: a perda de renda equivalente à perda de bem-
 
 *Taxação lump-sum* não gera peso morto &amp;mdash; isso fica claro pela definição de variação equivalente: `$$e \left(p_0, V(p_0, Y - T)\right) = Y - T \text{ e portanto } EV = T = R(t)$$`
 
+---
+class: middle
+
+&lt;img src="figs/eae0310-10-7b.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
 class: middle
 
-&lt;img src="figs/eae0310-10-6.png" width="75%" style="display: block; margin: auto;" /&gt;
-
-A função de demanda compensada sempre é negativamente inclinada, pois ao manter o consumidor na mesma curva de indiferença, elimina o efeito renda (ambíguo) e mantém apenas o efeito subsituição (sempre negativo) (Nicholson &amp; Snyder) 
-
----
-class: middle
-
-&lt;img src="figs/eae0310-10-7.png" width="75%" style="display: block; margin: auto;" /&gt;
-
-Imagine que um imposto `\(t &gt; 0\)` mova `\(p^{\prime \prime}\)` para `\(p^{\prime} = p^{\prime \prime} + t\)`, isso reduz a demanda compensada de `\(x^{\prime \prime}\)` para `\(x^*\)`, a quantidade ótima na curva de indiferença `\(U_2\)` &amp;mdash; a preços relativos `\(p^{\prime}/p_y\)` o agente precisaria de mais renda para consumir `\(x^{\prime \prime}\)`: essa é a **variação equivalente** (N&amp;S) 
-
+&lt;img src="figs/eae0310-10-7c.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
 class: middle
@@ -143,6 +137,12 @@ O peso morto medido pela variação equivalente (ou compensatória) sempre será
 Isso é uma aplicação direta do **Lema de Shephard**: a variação equivalente `\(EV = Y - e \left( p_0, V(p_1, Y) \right)\)` é a integral da demanda compensada `\(x^{c}(p, \bar{u}_1)\)` `$$EV = \int_{p_0}^{p_0 + t} x^{c}(p, \bar{u}_1)dp$$` 
 
 Enquanto a receita governamental é `\(t x(p_1, Y) = tx^c(p_1, V(p_1, Y))\)`, ou seja, `\(tx^c(p_1, \bar{u}_1)\)` 
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-10-6.png" width="100%" style="display: block; margin: auto;" /&gt;
+
 
 ---
 class: middle
@@ -288,17 +288,17 @@ Mesmo com tudo isso, o imposto só foi retirado em 1851, quase 160 anos depois d
 ---
 class: inverse, middle, center
 
-# Imposto ótimo sobre consumo
+# Imposto sobre consumo
 
 ---
 class: middle
-## Imposto sobre insumos
+## Eficiência produtiva
 
-Um dos resultados mais importantes de taxação ótima é o **resultado de eficiência produtiva** de Diamond-Mirrlees (1971)
+O **teorema da eficiência produtiva** (Diamond &amp; Mirrlees, 1971) diz que sem externalidades e poder de mercado, impostos não devem distorcer a escolha produtiva da firma 
 
-Ele diz que um governo que precise arrecadar impostos em um mundo de concorrência perfeita e retornos constantes de escala *nunca taxará bens intermediários e importações*
+Isso implica que não há distorção de preços relativos dos insumos, apenas no bem final &amp;mdash; a intuição é que qualquer imposto sobre a produção distorce a produção **e** o consumo, então deve ser pior que distorcer apenas o consumo
 
-No ótimo, o imposto deve manter a taxa marginal de substituição técnica entre insumos igual em todos os seus usos produtivos: qualquer imposto sobre a produção distorce a produção **e** o consumo, então deve ser pior que um que distorce apenas o consumo
+Em geral esse é um argumento forte *contra a taxação de bens intermediários*, e a razão principal pela qual sistemas tributários tendem a taxar apenas a *venda final dos bens* (mas taxam fatores de produção)
 
 ---
 class: middle
@@ -306,14 +306,14 @@ class: middle
 
 Taxação de consumo (impostos indiretos) podem ser cobrados sobre vendas, recolhendo uma taxa `\(t\)` (proporcional ou fixa) sobre a venda *do bem final*
 
-Mas nas últimas décadas se tornou muito mais comum o **imposto sobre valor adicionado** (IVA, ou VAT em inglês): com *compliance* perfeito e sem isenções, o IVA é equivalente a um imposto sobre vendas
+Mas nas últimas décadas se tornou muito mais comum o **imposto sobre valor adicionado** (IVA, ou VAT em inglês): cada produtor paga uma taxa sobre a sua receita de vendas, mas **desconta** o imposto pago *upstream*
 
-A sua vantagem vem de dificultar a evasão fiscal: cada produtor na cadeia produtiva desconta o imposto pago *upstream*, o que dá incentivo para **third-party reporting**
+É por isso que é um imposto sobre **valor adicionado**, sua base é a receita menos o custo dos insumos &amp;mdash; com *compliance* perfeito e sem isenções, o IVA é equivalente a um imposto sobre vendas
 
 ---
 class: middle
 
-&lt;img src="figs/eae0310-8-1.png" width="85%" /&gt;
+&lt;img src="figs/eae0310-8-1.png" width="80%" /&gt;
 
 Funcionamento de um imposto sobre vendas e um IVA de 20% [GN18] 
 
@@ -321,11 +321,27 @@ Funcionamento de um imposto sobre vendas e um IVA de 20% [GN18]
 class: middle
 ## Imposto sobre valor adicionado
 
+A sua vantagem vem de dificultar a evasão fiscal: cada produtor na cadeia produtiva desconta o imposto pago *upstream*, o que dá incentivo para **third-party reporting**
+
 O IVA pode ser uma ferramenta poderosa de combater evasão fiscal em transações *business-to-business* (B2B), pois a empresa *downstream* ganha dinheiro reportando a transação ao governo
 
 Mas isso não funciona para a transação para os consumidores &amp;mdash; foi para tentar evitar esse "buraco" no IVA que o governo de SP introduziu a Nota Fiscal Paulista (NFP)
 
-[Nar19] encontrou que a NFP aumenta a receita de impostos do ICMS paulista em 9,3%
+---
+class: middle
+
+&lt;img src="figs/eae0310-10-11.png" width="75%" /&gt;&lt;img src="figs/eae0310-10-10.png" width="75%" /&gt;
+
+[Nar19] estudou o efeito da introdução do programa Nota Fiscal Paulista, em 2008, comparando o comportamento antes e depois de lojas de varejo (tratamento) vs atacado (controle)
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-10-12.png" width="45%" /&gt;&lt;img src="figs/eae0310-10-12b.png" width="45%" /&gt;
+
+Parte do efeito vem de reclamações dos consumidores &amp;mdash; após uma denúncia, firmas reportam 7% mais vendas ao governo (Painel A)
+
+O Nota Fiscal Paulista levou a um aumento de 9,3% na receita de impostos do ICMS paulista, na comparação com outros estados (Painel B)  [Nar19] 
 
 ---
 class: middle
@@ -343,7 +359,7 @@ class: middle
 
 O estudo da taxação ótima de consumo começou com Frank Ramsey, que fez várias descobertas relevantes em matemática, filosofia e economia antes da sua morte trágica aos 26 anos
 
-Em 1926 Pigou propôs o problema para ele: como podemos arrecadar uma dada quantidade de receita por tributos `\(R\)` causando o mínimo de distorções na economia?
+Em 1926 Pigou propôs o problema para ele: como podemos arrecadar uma dada quantidade de receita por tributos `\(\bar{R}\)` causando o mínimo de distorções na economia?
 
 O resultado ficou conhecido como **regra de Ramsey** (ou *regra da elasticidade inversa*): devemos taxar cada bem de forma inversamente proporcional à sua elasticidade da demanda
 
@@ -355,7 +371,7 @@ O problema de Ramsey é minimizar a soma de peso-morto dos diferentes mercados d
 
 `$$\min_{(t_k)_{k=1}^K} \sum_{k=1}^K EB_k \text{ sujeito a } \sum_{k=1}^K R_k = \bar{R}$$`
 
-Vimos ainda nessa aula que `\(\text{EB}_k = \frac{1}{2}\frac{\epsilon_S^k \epsilon_D^k}{\epsilon_S^k - \epsilon_D^k} \frac{Q_k}{p_k} (t_k)^2\)`. Portanto: `$$\min_{(t_k)_{k=1}^K} \sum_{k=1}^K \frac{1}{2}\frac{\epsilon_S^k \epsilon_D^k}{\epsilon_S^k - \epsilon_D^k} \frac{Q_k}{p_k} (t_k)^2 + \lambda \cdot \left( \sum_{k=1}^K Q_k t_k - \bar{R} \right)$$`
+Vimos ainda nessa aula que `\(\text{EB}_k = \frac{1}{2}\frac{\epsilon_S^k \epsilon_D^k}{\epsilon_S^k - \epsilon_D^k} \frac{Q_k}{p_k} (t_k)^2\)`. Portanto: `$$\min_{(t_k)_{k=1}^K} \sum_{k=1}^K \frac{1}{2}\frac{\epsilon_S^k \epsilon_D^k}{\epsilon_S^k - \epsilon_D^k} \frac{Q_k}{p_k} (t_k)^2 + \lambda \cdot \left( \bar{R} - \sum_{k=1}^K Q_k t_k \right)$$`
 
 ---
 class: middle
@@ -363,7 +379,7 @@ class: middle
 
 A condição de primeira ordem para bem `\(k\)` é:
 
-`$$[t_k]: \frac{\epsilon_S^k \epsilon_D^k}{\epsilon_S^k - \epsilon_D^k} \frac{Q_k}{p_k} t_k = - \lambda Q_k \Rightarrow \frac{t_k}{p_k} = \lambda \left( \frac{1}{|\epsilon_D|} + \frac{1}{|\epsilon_S|} \right)$$`
+`$$[t_k]: \frac{\epsilon_S^k \epsilon_D^k}{\epsilon_S^k - \epsilon_D^k} \frac{Q_k}{p_k} t_k = \lambda Q_k  \therefore \frac{t_k}{p_k} = \lambda \left( \frac{1}{|\epsilon_D|} + \frac{1}{|\epsilon_S|} \right)$$`
 
 Aqui `\(\lambda\)` é o **valor marginal dos fundos públicos** &amp;mdash; como a taxação é distorciva, se o dinheiro com o governo não tiver valor social maior que na mão dos indivíduos privados, o imposto ótimo é zero
 
@@ -373,36 +389,87 @@ Fora isso, como o *peso morto é crescente nas elasticidades*, o governo deve ta
 class: middle
 ## Problemas com a regra de Ramsey
 
-A **regra da elasticidade inversa** tem implicações distributivas cruéis: se há dois bens, arroz e caviar, como a demanda de arroz é muito mais inelástica, a regra da elasticidade inversa implica taxar muito o arroz e pouco o caviar
+A **regra de Ramsey** se tornou bastante conhecida em economia, mas faz implicitamente duas suposições importantes:
 
-Isso vem da suposição implícita de que estamos preocupados apenas com *eficiência* &amp;mdash; já vimos que qualquer decisão normativa tem que estar baseada em alguma *função de bem-estar social*, que vai levar em conta *igualdade*
+1. O que importa é **apenas eficiência**: minimizar o peso morto, e não maximizar o *bem-estar social*
+2. Podemos analisar mercados separadamente, ignorando como afetam um ao outro (um bem pode ter demanda inelástica mas alta elasticidade cruzada com outros bens)
 
-Outro problema é que assume que podemos olhar cada mercado separadamente, o que sabemos que não é verdade: há efeitos importantes de *equilíbrio geral* (elasticidades cruzadas)
+Essas duas suposições infelizmente tornam o resultado pouco aplicável no mundo real, e a maior parte dos sistemas tributários hoje em dia não vai nessa direção
 
 ---
 class: middle
-## Problemas com a regra de Ramsey
+## Imposto indireto e desigualdade
 
-O mais importante desses efeitos é a relação com o trabalho: como lazer não pode ser taxado, as pessoas trabalham ineficientemente pouco: 
+A **regra da elasticidade inversa** tem implicações distributivas cruéis: se há dois bens, arroz e caviar, como a demanda de arroz é mais inelástica, a regra da elasticidade inversa implica taxar muito o arroz e pouco o caviar
+
+Isso minimiza o peso morto, pois há pouca redução na quantidade comercializada, mas gera uma perda enorme de excedente do consumidor, diminuindo o bem-estar social (dadas preferências sociais por **equidade**)
+
+Se nos preocupamos com redistribuição e há restrições na progressividade da taxação de renda, devemos redistribuir pela taxação indireta: **taxar menos bens consumidos pelos mais pobres**, como alimentos
+
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-10-8.png" width="95%" /&gt;
+
+**Curvas de Engel** (proporcionais) de consumo de produtos informais para Ruanda (a) e México (b) &amp;mdash; como eles não são taxados (por definição) e seu consumo decresce na renda (*bens necessários*), isso torna taxação indireta em países em desenvolvimento mais progressivas [BGJ20]
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-10-9.png" width="65%" /&gt;
+
+Em uma simulação com taxação uniforme de 10%, ter comércio informal não taxado (vermelho) deixa o imposto mais progressivo que isentar alimentos (verde), e quase suplanta os ganhos dessa política quando conjuntamente (laranja) [BGJ20] 
+
+---
+class: middle
+## Imposto indireto e desigualdade
+
+Vimos que existe um motivo para querer redistribuir renda por meio da tributação do consumo, taxando menos bens consumidos pelos mais pobres (e vice-versa) 
+
+O **princípio da focalização** (Atkinson &amp; Stiglitz, 1976) diz que se podemos taxar a renda diretamente, devemos usar esse instrumento (*focalizado*) para reduzir desigualdade de renda, não a taxação de consumo (ou de poupança)
+
+Na *restrição orçamentária* dos consumidores uma taxação de renda `\(p_x c_x + p_y c_y = (1-\tau_Y)Y\)` é equivalente a uma taxação **uniforme** sobre o consumo `\((1+\tau_C)p_x c_x + (1+\tau_C)p_y c_y = Y\)` quando `\(1 - \tau_Y = (1 + \tau_C)^{-1}\)`
+
+---
+class: middle
+## Imposto indireto e desigualdade
+
+Mas isso só vale se a **habilidade** for a única fonte de desigualdade &amp;mdash; se houver outras dimensões relevantes de heterogeneidade (p. ex., riqueza inicial ou taxa de desconto intertemporal), isso já não é mais válido
+
+De qualquer forma, se mantém a intuição de que taxação indireta é uma forma bastante obtusa de redistribuição de renda comparada com IR e assistência social
+
+No UK, estima-se que remover isenção no IVA e aumentar em 15% transferências *means-tested* faria os mais pobres melhor e pouparia £11bi/ano ao orçamento [MA10, ch. 4]
+
+---
+class: middle
+## Imposto indireto e oferta de trabalho
+
+Outro problema da **regra de Ramsey** é que assume que podemos olhar cada mercado separadamente, o que sabemos que não é verdade: há efeitos importantes de *equilíbrio geral* (elasticidades cruzadas)
+
+O mais importante desses efeitos é a relação com o trabalho: como lazer não pode ser taxado, as pessoas trabalham ineficientemente pouco
 
 **Taxar menos (ou até subsidiar) bens complementares ao trabalho** (educação, creche, transporte público, etc) pode reduzir essa distorção &amp;mdash; analogamente, faz sentido taxar mais bens substitutos ao trabalho, como video-games
 
-Se nos preocupamos com redistribuição e não podemos taxar progressivamente a renda, a teoria diz que devemos redistribuir pela taxação indireta: **taxar menos bens consumidos pelos mais pobres**
 
 ---
 class: middle
-## Taxação homogênea
+## Taxação uniforme
 
-O **princípio da focalização** (Atkinson &amp; Stiglitz, 1976) diz que se podemos taxar a renda diretamente, devemos usar esse instrumento para reduzir desigualdade de renda, não a taxação de consumo (ou de poupança)
+Se admitirmos o **princípio da focalização** e supormos que não há bens relacionados com demanda por lazer (muito forte!), então o ideal é uma *alíquota uniforme* (quiçá zero) sobre o consumo (e redistribuição por IR)
 
-Mas isso só vale se a capacidade de geração de renda for a única fonte de desigualdade. Se houver outras dimensões (por exemplo, riqueza ou desconto intertemporal), isso já não é mais válido
+Taxação homogênea também fazer sentido por motivos de economia política, já que evita lobby por redução nas taxas de setores particulares (**política third-best**) e simplifica o arcabouço tributário
 
-Pode também fazer sentido por motivos de economia política, já que evita lobby por redução nas taxas de setores particulares: **política third-best**
+Ela também **expande a base tributária**, evitando elisão fiscal: enquanto a taxação de renda permite **withholding**, imposto sobre consumo atinge melhor trabalhadores por conta-própria &amp;mdash; e uma alíquota única não permite manipular categorias
 
 ---
 class:middle
 # Referências
 &lt;small&gt;
+[BGJ20] P. Bachas, L. Gadenne, and A. Jensen. _Informality, Consumption
+Taxes, and Redistribution_. Tech. rep. National Bureau of Economic
+Research, 2020.
+
 [GN18] F. Gérard and J. Naritomi. "Value Added Tax in developing
 countries: Lessons from recent research". In: _IGC Growth Brief Series_
 15 (2018).
@@ -413,6 +480,14 @@ Macmillan, 2016.
 [Hin99] J. R. Hines. "Three sides of Harberger triangles". In: _Journal
 of Economic Perspectives_ 13.2 (1999), pp. 167-188.
 
+[MA10] J. A. Mirrlees and S. Adam. _Dimensions of tax design: the
+Mirrlees review_. Oxford University Press, 2010.
+&lt;/small&gt;
+
+---
+class:middle
+# Referências
+&lt;small&gt;
 [Nar19] J. Naritomi. "Consumers as tax auditors". In: _American
 Economic Review_ 109.9 (2019), pp. 3031-72.
 

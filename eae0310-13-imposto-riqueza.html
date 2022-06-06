@@ -4,6 +4,7 @@
     <title>EAE-0310: ECONOMIA DO SETOR PÚBLICO</title>
     <meta charset="utf-8" />
     <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 19C/FEA2 - pforquesato@usp.br" />
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -11,10 +12,18 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # EAE-0310: ECONOMIA DO SETOR PÚBLICO
+]
+.author[
 ### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 19C/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
+]
+.institute[
 ### Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo
+]
+.date[
 ### Aula 13: Impostos sobre riqueza<br/>2022/1
+]
 
 ---
 
@@ -198,6 +207,13 @@ Vimos que pelo **princípio da focalização** se a única fonte de heterogeneid
 Mas heranças geram outra fonte de heterogeneidade, agora há 2: renda e herança, então precisamos de dois instrumentos, taxação de renda e taxação de heranças
 
 Além disso, heranças monetárias são taxadas, mas não heranças em serviços: educação, redes de conexões, etc
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-13-9.png" width="80%" /&gt;
+
+[Pik11]
 
 ---
 class: middle
@@ -422,6 +438,10 @@ Quarterly Journal of Economics_ 135.1 (2020), pp. 329-388.
 returns". In: _The Quarterly Journal of Economics_ 122.4 (2007), pp.
 1801-1854.
 
+[Pik11] T. Piketty. "On the long-run evolution of inheritance: France
+1820-2050". In: _The quarterly journal of economics_ 126.3 (2011), pp.
+1071-1131.
+
 [SS21] F. Scheuer and J. Slemrod. "Taxing our wealth". In: _Journal of
 Economic Perspectives_ 35.1 (2021), pp. 207-30.
 &lt;/small&gt;
@@ -472,6 +492,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

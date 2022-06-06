@@ -208,6 +208,15 @@ Além disso, heranças monetárias são taxadas, mas não heranças em serviços
 
 ---
 class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-13-9.png")
+```
+
+`r Citep(myBib, "piketty2011long")`
+
+---
+class: middle
 ## Imposto sobre propriedade
 
 A única razão para a taxação de patrimônio é que ele é mais simples de aplicar que sobre outras formas de patrimônio &mdash; os efeitos dependem da **incidência**: em última instância quem paga o imposto

@@ -31,11 +31,11 @@ myBib <- ReadBib("./esp_bib.bib", check = FALSE)
 class: middle
 ## Imposto sobre a renda
 
-Na taxação indireta (sobre bens), o governo em geral busca arrecadar receita para políticas públicas da forma menos distorciva possível
+Na taxação indireta (sobre bens), o governo em geral busca arrecadar receita para políticas públicas da forma menos distorciva possível (**princípio da focalização**)
 
-Na taxação direta (sobre renda), há um segundo motivador: *diminuir desigualdade socioeconômica* &mdash; por isso que quase todo país do mundo taxa renda de forma **progressiva** (o Brasil muito pouco)
+Na taxação direta (sobre renda), há um segundo motivador: *diminuir desigualdade socioeconômica* &mdash; por isso que quase todo país do mundo taxa renda de forma progressiva (o Brasil muito pouco)
 
-Na aula passada tentamos abstrair de definir uma *função de bem-estar social* e olhar só eficiência(*); na taxação de renda isso é imprescindível
+Como em sociedades modernas a **redistribuição de renda** é uma das principais tarefas dos governos, estudar a progressividade ótima do imposto de renda é um dos pontos centrais (e mais contenciosos) das finanças públicas
 
 ---
 class: middle
@@ -53,18 +53,18 @@ class: middle
 
 Mas é claro que a renda *depende sim* do esforço, e sob um imposto de 100% ninguém iria trabalhar &mdash; o que gera o já conhecido **trade-off entre eficiência e equidade**
 
-O segundo ingrediente então para decidir o nível ótimo de taxação vai ser quantificar o tamanho desse *trade-off*: se a renda tributável for muito elástica à taxação, então mais equidade é muito custoso; se não for, é pouco
+O segundo ingrediente então para decidir o nível ótimo de taxação vai ser quantificar o tamanho desse *trade-off*: se a **renda tributável** for muito elástica à taxação, então mais equidade é muito custoso; se não for, é pouco
 
 O estudo da teoria da taxação é fundamental para a redução das desigualdades, e o papel do economista é central ao dizer aos políticos qual é o tamanho do *trade-off* entre eficiência e equidade
 
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '50%'}
+```{r, echo=FALSE, out.width = '50%', fig.align='center'}
 knitr::include_graphics("figs/eae0310-11-3.png")
 ```
 
-Exemplo de **curva de Laffer**: existe uma taxa $\tau^*$ que maximiza a receita, qualquer alíquota maior é uma piora unânime `r Citep(myBib, "gruber")`
+Com *efeitos comportamentais* da taxação, não há mais garantia que aumentar a alíquota de impostos aumente a receita: a partir de um nível de impostos, vai reduzí-la, gerando uma **piora unânime** &mdash; isso é exposto na **curva de Laffer**, que aponda uma taxa $\tau^*$ que maximiza a receita, e qualquer alíquota maior implica receita menor `r Citep(myBib, "gruber")`
 
 ---
 class: middle
@@ -72,10 +72,10 @@ class: middle
 
 Um aumento na tributação de renda do trabalho tem dois efeitos contrários: 
 
-1. Para um dado nível de oferta de trabalho, aumenta a arrecadação (o que depende da variação na taxa);
-2. Reduz a arrecadação pela diminuição na oferta de trabalho (o que depende do total de taxa)
+1. *Efeito mecânico*: para um dado nível de oferta de trabalho, aumenta a arrecadação $\Delta \tau \cdot wl$, isto é, **proporcional a $\Delta \tau$**;
+2. *Efeito comportamental*: reduz a arrecadação pela diminuição na oferta de trabalho em $\tau \cdot w\Delta l$, i.e., **proporcional a $\tau$**
 
-Como 1. depende da variação na taxa e 2. da tributação total, o primeiro efeito tende a dominar para $\tau$ pequeno e o segundo efeito dominar para $\tau$ alto &mdash; isso que está representado pela **curva de Laffer**
+Como (1) depende da variação na taxa e (2) da tributação total, o primeiro efeito tende a dominar para $\tau$ pequeno e o segundo efeito dominar para $\tau$ alto: isso que está representado pela **curva de Laffer**
 
 ---
 class: middle
@@ -107,7 +107,7 @@ class: middle
 knitr::include_graphics("figs/eae0310-11-9.png")
 ```
 
-A taxação de renda é (geralmente) crescente na renda (*progressiva*), mas de forma contínua: cada nova alíquota se aplica apenas à renda acima do limiar (*piecewise-linear*) (Saez)
+A taxação $T$ de **renda tributável** $z$ é (geralmente) crescente na renda (*progressiva*), mas de forma contínua por meio de alíquotas discretas (*piecewise-linear*): note que cada nova alíquota (taxa marginal) se aplica apenas à renda acima do limiar (Saez)
 
 ---
 class: middle
@@ -116,35 +116,45 @@ class: middle
 knitr::include_graphics("figs/eae0310-11-10.png")
 ```
 
-Já a *taxa marginal* aumenta de forma discontínua, gerando *kinks* no gráfico de taxação (*step function*) (Saez)
+Já a *taxa marginal* $T^{\prime}(z)$ aumenta de forma discontínua (é uma *step function*), gerando **kinks** no gráfico de taxação, onde indivíduos agindo racionalmente tendem a se concentrar (Saez)
 
 ---
 class: middle
-## Conceitos importantes
+## Medidas de distorção
 
-Quem tem renda tributável zero recebe transferências $-T(0)$, o que gera uma **taxa de participação** $\tau_p = \left( T(z)- T(0) \right)/z$: indivíduo fica com $1-\tau_p$ quando começa a trabalhar (*margem extensiva*)
+Quem tem renda tributável zero recebe transferências $T(0) < 0$, o que gera uma **taxa de participação** $\tau_p = \left( T(z)- T(0) \right)/z$: indivíduo fica com $1-\tau_p$ quando começa a trabalhar (*margem extensiva*)
 
-A **taxa marginal de imposto** é $T^{\prime}(z)$: indivíduo fica com $1 - T^{\prime}(z)$ para cada `$`1 extra que ganhe (*margem intensiva*)
+A **taxa marginal de imposto** é $T^{\prime}(z)$: indivíduo fica com $1 - T^{\prime}(z)$ para cada `$`1 extra que ganhe (*margem intensiva*) &mdash; geralmente focamos na taxa marginal *no topo*, que em um sisema tributário progressivo será a maior
 
-Assistencialismo e taxação de renda geram o ponto de *break-even* $z^*$ tal que $T(z^*) = 0$
+Um sistema de *taxes and transfers* (assistencialismo e taxação de renda) progressivos geram o **ponto de break-even** $z^*$ tal que $T(z^*) = 0$
 
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '70%'}
+```{r, echo=FALSE, out.width = '75%'}
 knitr::include_graphics("figs/eae0310-11-11.png")
 ```
 
-Uma função de taxação gera uma **restrição orçamentária**: a relação entre renda tributável e consumo (potencial), nesse exemplo para uma alíquota única $T^{\prime}(z)$ &mdash; o ponto onde a RO intercepta a linha sem taxação (45º) é de *break-even* (Saez)
+Uma função de taxação gera uma **restrição orçamentária** com inclinação $1 - T^{\prime}(z)$: a relação entre renda tributável e consumo (potencial), nesse exemplo para uma alíquota única $T^{\prime}(z)$ &mdash; o ponto onde a RO intercepta a linha sem taxação (45º) é de *break-even* (Saez)
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '75%'}
+knitr::include_graphics("figs/eae0310-11-12.png")
+```
+
+A diferença entre o intercepto $-T(0)$ e a renda trabalhando $z - T(z)$ é a proporção da renda que fica com o indivíduo $(1 - \tau_p)z$, onde $\tau_p$ é a **taxa de participação** (Saez)
+
 
 ---
 class: middle
 
 ```{r, echo=FALSE, out.width = '70%'}
-knitr::include_graphics("figs/eae0310-11-12.png")
+knitr::include_graphics("figs/eae0310-11-20.png")
 ```
 
-A diferença entre o intercepto $-T(0)$ e a renda trabalhando $z - T(z)$ é $(1 - \tau_p)z$, onde $\tau_p$ é a *taxa de participação*: é a renda extra dos indivíduos ao decidir entrar na força de trabalho (Saez)
+Restrições orçamentárias no mundo real: na França tanto a *taxa marginal* quanto a *taxa de participação* são bem maiores que nos EUA `r Citep(myBib, "auerbach2013handbook", after=", ch. 7")`
 
 ---
 class: middle
@@ -153,9 +163,9 @@ class: middle
 Um tributo sobre renda do trabalho tem dois efeitos:
 
 1. Ele torna o lazer mais barato relativamente ao consumo (*efeito substituição*)
-2. Ele torna o trabalhador mais pobre, e mais disposto a trabalhar se o lazer for bem normal (*efeito renda*)
+2. Ele torna o trabalhador mais *pobre*, e mais disposto a trabalhar se o lazer for bem normal (*efeito renda*)
 
-Essa é uma visão idealizada do mercado: na realidade, há vários tipos de **rigidez no mercado de trabalho** &mdash; trabalhadores não podem escolher livremente quantas horas ofertar
+Essa é uma visão idealizada do mercado, na realidade há **rigidez no mercado de trabalho**: trabalhadores não podem escolher livremente quantas horas ofertar &mdash; mas isso vai estar de certa forma capturado nas *elasticidades* que compõem a taxação ótima
 
 ---
 class: middle
@@ -164,7 +174,7 @@ class: middle
 knitr::include_graphics("figs/eae0310-11-13.png")
 ```
 
-Escolha entre oferta de trabalho e consumo gera a **oferta marshalliana** de trabalho &mdash; aqui ainda sem impostos (Saez)
+Escolha entre oferta de trabalho $l$ (que diminui a utilidade por reduzir o lazer) e consumo $c$ (que depende do salário $w$ ganho e outras rendas $R$) gera a **oferta marshalliana** de trabalho $l(w, R)$ &mdash; aqui ainda sem impostos (Saez)
 
 ---
 class: middle
@@ -173,25 +183,25 @@ class: middle
 knitr::include_graphics("figs/eae0310-11-14.png")
 ```
 
-*Efeito renda* descola verticalmente a RO e sempre diminui oferta de trabalho se lazer for um bem normal (Saez)
+Um aumento de renda **descola verticalmente** a restrição orçamentária e sempre diminui oferta de trabalho, já que lazer é um bem normal (só há o *efeito renda* $\eta = w \frac{\partial l}{\partial R}$) (Saez)
 
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '80%'}
+```{r, echo=FALSE, out.width = '85%'}
 knitr::include_graphics("figs/eae0310-11-14b.png")
 ```
 
-*Efeito renda* descola verticalmente a RO e sempre diminui oferta de trabalho se lazer for um bem normal (Saez)
+Um aumento de renda **descola verticalmente** a restrição orçamentária e sempre diminui oferta de trabalho, já que lazer é um bem normal (só há o *efeito renda* $\eta = w \frac{\partial l}{\partial R}$) (Saez)
 
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '80%'}
+```{r, echo=FALSE, out.width = '85%'}
 knitr::include_graphics("figs/eae0310-11-14c.png")
 ```
 
-*Efeito renda* descola verticalmente a RO e sempre diminui oferta de trabalho se lazer for um bem normal (Saez)
+Um aumento de renda **descola verticalmente** a restrição orçamentária e sempre diminui oferta de trabalho, já que lazer é um bem normal (só há o *efeito renda* $\eta = w \frac{\partial l}{\partial R}$) (Saez)
 
 ---
 class: middle
@@ -209,7 +219,7 @@ class: middle
 knitr::include_graphics("figs/eae0310-11-16.png")
 ```
 
-O *efeito substituição* se obtém pela *oferta compensada*: analisamos a alteração nos preços relativos mantendo a utilidade constante (Saez)
+A alteração da oferta de trabalho *compensada* pela mudança nos preços relativos do consumo e do lazer (i.e., o salário) mede o **efeito substituição** $\epsilon^C = \frac{w}{l^C(w, \bar{u})}\frac{\partial l^c(w, \bar{u})}{\partial w}$ (Saez)
 
 ---
 class: middle
@@ -218,7 +228,7 @@ class: middle
 knitr::include_graphics("figs/eae0310-11-16b.png")
 ```
 
-O *efeito substituição* se obtém pela *oferta compensada*: analisamos a alteração nos preços relativos mantendo a utilidade constante (Saez)
+A alteração da oferta de trabalho *compensada* pela mudança nos preços relativos do consumo e do lazer (i.e., o salário) mede o **efeito substituição** $\epsilon^C = \frac{w}{l^C(w, \bar{u})}\frac{\partial l^c(w, \bar{u})}{\partial w}$ (Saez)
 
 ---
 class: middle
@@ -227,7 +237,7 @@ class: middle
 knitr::include_graphics("figs/eae0310-11-17.png")
 ```
 
-O efeito total de uma mudança no salário é a soma do *efeito renda* e *efeito substituição*: o primeiro diminui e o segundo aumenta a oferta de trabalho (Saez)
+O **efeito total** (*elasticidade da oferta marshalliana*) de uma mudança no salário é a soma do *efeito substituição* e *efeito renda*: $\epsilon^U = \epsilon^C + \eta$ &mdash; o primeiro aumenta e o segundo diminui a oferta de trabalho, e o efeito final $\epsilon^U$ é ambíguo (Saez)
 
 ---
 class: middle
@@ -236,7 +246,8 @@ class: middle
 knitr::include_graphics("figs/eae0310-11-17b.png")
 ```
 
-O efeito total de uma mudança no salário é a soma do *efeito renda* e *efeito substituição*: o primeiro diminui e o segundo aumenta a oferta de trabalho (Saez)
+O **efeito total** (*elasticidade da oferta marshalliana*) de uma mudança no salário é a soma do *efeito substituição* e *efeito renda*: $\epsilon^U = \epsilon^C + \eta$ &mdash; o primeiro aumenta e o segundo diminui a oferta de trabalho, e o efeito final $\epsilon^U$ é ambíguo (Saez)
+
 
 ---
 class: middle
@@ -245,7 +256,8 @@ class: middle
 knitr::include_graphics("figs/eae0310-11-17c.png")
 ```
 
-O efeito total de uma mudança no salário é a soma do *efeito renda* e *efeito substituição*: o primeiro diminui e o segundo aumenta a oferta de trabalho (Saez)
+O **efeito total** (*elasticidade da oferta marshalliana*) de uma mudança no salário é a soma do *efeito substituição* e *efeito renda*: $\epsilon^U = \epsilon^C + \eta$ &mdash; o primeiro aumenta e o segundo diminui a oferta de trabalho, e o efeito final $\epsilon^U$ é ambíguo (Saez)
+
 
 ---
 class: middle
@@ -254,18 +266,19 @@ class: middle
 knitr::include_graphics("figs/eae0310-11-17d.png")
 ```
 
-O efeito total de uma mudança no salário é a soma do *efeito renda* e *efeito substituição*: o primeiro diminui e o segundo aumenta a oferta de trabalho (Saez)
+O **efeito total** (*elasticidade da oferta marshalliana*) de uma mudança no salário é a soma do *efeito substituição* e *efeito renda*: $\epsilon^U = \epsilon^C + \eta$ &mdash; o primeiro aumenta e o segundo diminui a oferta de trabalho, e o efeito final $\epsilon^U$ é ambíguo (Saez)
+
 
 ---
 class: middle
 ## Efeito da taxação na oferta de trabalho
 
 Os efeitos da taxação são:
-1. $T^{\prime}(z) > 0$ reduz o salário líquido e reduz oferta de trabalho pelo *efeito substituição*
-2. $T(z) > 0$ reduz a renda disponível e *aumenta* a oferta de trabalho pelo *efeito renda*
-3. $T(z) < 0$ *aumenta* a renda disponível e reduz a oferta de trabalho pelo *efeito renda*
+1. $T^{\prime}(z) > 0$ reduz o salário líquido e **reduz** a oferta de trabalho pelo *efeito substituição*
+2. $T(z) > 0$ reduz a renda disponível e **aumenta** a oferta de trabalho pelo *efeito renda*
+3. $T(z) < 0$ aumenta a renda disponível e **reduz** a oferta de trabalho pelo *efeito renda*
 
-Impostos têm efeito ambíguo, mas assistência social (com $T^{\prime}(z) > 0$ e $T(z) < 0$ *sempre* diminuem oferta de trabalho)
+Impostos têm efeito ambíguo na oferta de trabalho, como vimos, mas assistência social (com $T^{\prime}(z) > 0$ e $T(z) < 0$) **sempre diminui** ela
 
 ---
 class: middle
@@ -274,7 +287,7 @@ class: middle
 knitr::include_graphics("figs/eae0310-11-18.png")
 ```
 
-Enquanto o efeito da taxação da renda do trabalho é ambíguo, o efeito da assistência social é sempre de diminuir a oferta de trabalho (Saez)
+O efeito da taxação na oferta de trabalho depende do **nível** $T(z)$ e **inclinação** $T^{\prime}(z)$ da restrição orçamentária (Saez)
 
 ---
 class: middle
@@ -283,100 +296,8 @@ class: middle
 knitr::include_graphics("figs/eae0310-11-18b.png")
 ```
 
-Enquanto o efeito da taxação da renda do trabalho é ambíguo, o efeito da assistência social é sempre de diminuir a oferta de trabalho (Saez)
+O efeito da taxação na oferta de trabalho depende do **nível** $T(z)$ e **inclinação** $T^{\prime}(z)$ da restrição orçamentária (Saez)
 
----
-class: middle
-## Taxação linear rawlsiana
-
-Sem imposto, consumo é igual à renda tributável, $c = z$. Com taxação, $c = z - T(z)$ (consumo $=$ renda tributável $-$ impostos líquidos)
-
-O cálculo mais simples é de uma taxa linear que maximize a receita ("topo" da *curva de Laffer*)
-
-Como $R(\tau^*) = \tau^* Z$, a taxa que maximiza a receita resolve (a CPO) $R^{\prime}(\tau^*) = 0$, e portanto:
-
-$$0 = R^{\prime}(\tau^*) = Z - \tau^* \frac{dZ}{d(1 - \tau^*)}$$
-
----
-class: middle
-## Taxação linear rawlsiana
-
-Multiplicando e dividindo por $(1 - \tau^*)$ e dividindo por $Z$, temos: $$1 - \frac{\tau^*}{1 - \tau^*} \frac{1 - \tau^*}{Z}\frac{dZ}{d(1 - \tau^*)} = 0 \Rightarrow \tau^* = \frac{1}{1 + e},$$
-
-onde $e \equiv (1 - \tau^*)/Z \cdot dZ/d(1 - \tau^*)$ é a **elasticidade da renda tributável** em relação à *net-of-tax rate*
-
-A taxa que maximiza a receita é a taxação ótima dada uma *função de bem-estar social Rawliana*: é o máximo de redistribuição que não piora a situação de todos ("lado errado" da curva de Laffer)
-
----
-class: middle
-## Alíquota máxima rawlsiana
-
-Na prática, o imposto de renda tem alíquotas progressivas, e uma pergunta importante é qual deveria ser a alíquota máxima
-
-Considere então um limiar $z^*$ e uma alíquota marginal máxima $\tau$ acima desse limiar, e seja $z$ a renda média das pessoas na alíquota superior (no Brasil, quem tem renda acima de R$4.664: 10% mais ricos; nos EUA os 1% mais ricos)
-
-Consideremos novamente a alíquota que maximiza a arrecadação (o que nesse caso é até mais plausível, pois a utilidade marginal da renda para a alíquota máxima deve ser baixa)
-
----
-class: middle
-## Alíquota máxima rawlsiana
-
-Então qualquer alteração infinitesimal $d\tau$ (acima de $z^*$) no ótimo deve ter efeito zero sobre arrecadação
-
-Há um **efeito mecânico** (positivo), por arrecadar mais para uma quantidade fixa de trabalho, e um **efeito comportamental** (negativo), pela redução na oferta de trabalho
-
-O efeito mecânico é $dM = \left( z - z^* \right) d\tau$, e o efeito comportamental é:
-
-$$dB = \tau dz = - \tau \frac{dz}{d(1-\tau)}d\tau = -\frac{\tau}{1-\tau}e z \ d\tau$$
-
----
-class: middle
-
-```{r, echo=FALSE, out.width = '80%'}
-knitr::include_graphics("figs/eae0310-11-19.png")
-```
-
-Um aumento de $d\tau$ na alíquota para rendas acima de $z^*$ rotaciona para baixo a RO dos trabalhadores `r Citep(myBib, "diamond2011case")`
-
----
-class: middle
-
-```{r, echo=FALSE, out.width = '80%'}
-knitr::include_graphics("figs/eae0310-11-19b.png")
-```
-
-Esse aumento tem efeito mecânico de aumento da arrecadação, mas que é contrabalanceado pela redução na renda tributável $z$ `r Citep(myBib, "diamond2011case")`
-
----
-class: middle
-## Alíquota máxima rawlsiana
-
-Como o efeito na receita de $d\tau$ tem que ser zero, $dM + dB = 0$, e portanto: $$\left[ \left( z - z^* \right) -\frac{\tau}{1-\tau}e \cdot z \right] d\tau = 0$$
-
-Definindo $a = z/ (z - z^*)$, temos $$\frac{\tau^*}{1 - \tau^*} = \frac{1}{a \cdot e} \Rightarrow \tau^* = \frac{1}{1 + a \cdot e}$$
-
----
-class: middle
-## Alíquota máxima rawlsiana
-
-$$\tau^* = \frac{1}{1 + a \cdot e}$$
-A alíquota no topo que maximiza a arrecadação é decrescente em $e$ (custo de eficiência) e em $a$, que mede quão "fina" é a cauda da distribuição (se $z^* = 0$, então $a = 1$, e temos a mesma fórmula de antes)
-
-Isso porque um aumento na alíquota máxima apenas arrecada sobre a renda maior que $z^*$, mas reduções na oferta de trabalho reduzem a arrecadação "em todas as alíquotas"
-
-$a$ é fácil de estimar empiricamente (nos EUA $\sim 1.5$): se $e = 0.1$, $\tau^* = 87\%$ (!), se $e = 0.3$, $\tau^*$ é ainda altos $68\%$
-
----
-class: middle
-## Alíquota ótima
-
-No caso mais geral, em que a sociedade seja *utilitarista* mas não rawlsiana, a taxação marginal ótima se torna: $$T^{\prime}(z)^* = \frac{1 - G(z)}{1 - G(z) + a(z) \cdot e(z)}$$
-
-A grande diferença aqui é que temos o termo $G(z)$, que é o **peso na função de bem-estar social** de indivíduos com renda $z$, ou seja, a importância que a socidedade dá ao seu bem-estar
-
-É plausível que a sociedade dê menos valor à utilidade dos mais ricos, se a sociedade tiver preferências sociais redistributivas ("gostar de igualdade")
-
-Mas mesmo que não seja o caso, $G(z)$ tenderá a ser decrescente pela *utilidade marginal decrescente*: no limite, quando $z \rightarrow \infty$, $u^{\prime}(z) = 0 \Rightarrow G(z) = 0$ e a alíquota ótima utilitarista maximiza a receita
 
 ---
 class: middle
@@ -429,6 +350,99 @@ Estimativas mais recentes e confiáveis colocam a elasticidade entre 0,1-0,5 (di
 
 Literatura também apontou que se o custo esperado da evasão for transferências a outros agentes (esp. multas ao governo), isso não entra no cálculo da taxação ótima
 
+
+---
+class: middle
+## Topo da curva de Laffer
+
+No nosso modelo simples, sem imposto o consumo é igual à renda tributável, $c = z$; já com taxação $c = z - T(z)$ (i.e., o consumo é igual à renda tributável menos impostos líquidos)
+
+O nosso objetivo aqui é obter insumos sobre qual deve ser a alíquota desejável de imposto de renda &mdash; um ponto natural para iniciar é definir a taxação que maximiza a receita (o **topo da curva de Laffer**)
+
+Como $R(\tau^*) = \tau^* z$, a *taxa que maximiza a receita* resolve a CPO $R^{\prime}(\tau^*) = 0$, e portanto:
+
+$$\frac{dR(\tau^*)}{d\tau} = z - \tau^* \frac{dz}{d(1 - \tau^*)} = 0$$
+
+---
+class: middle
+## Taxação rawlsiana
+
+Multiplicando e dividindo por $(1 - \tau^*)$ e dividindo por $z$, temos: $$1 - \frac{\tau^*}{1 - \tau^*} \frac{1 - \tau^*}{z}\frac{dz}{d(1 - \tau^*)} = 0 \Rightarrow \tau^* = \frac{1}{1 + e},$$
+
+onde $e \equiv (1 - \tau^*)/z \cdot dz/d(1 - \tau^*)$ é a **elasticidade da renda tributável** em relação à **net-of-tax rate**
+
+A taxa que maximiza a receita é a taxação ótima dada uma **função de bem-estar social rawliana**: é o *máximo de redistribuição* que não piora a situação de todos (que não está do *lado errado* da curva de Laffer)
+
+---
+class: middle
+## Alíquota máxima de IR
+
+Até aqui consideramos uma taxa única de impostos &mdash; na prática, o imposto de renda geralmente tem alíquotas progressivas, e daí uma pergunta interessante é qual deveria ser a alíquota máxima
+
+Considere então um limiar $z^*$ e uma alíquota marginal máxima $\tau^{\infty}$ acima desse limiar, e seja $z$ a renda média das pessoas na alíquota superior (no Brasil, quem tem renda acima de R$4.664, por volta dos 10% mais ricos; nos EUA, dos 1% mais ricos)
+
+Vamos calcular a alíquota máxima $\tau^{\infty}$ acima do limiar $z^*$ que maximiza a arrecadação
+
+---
+class: middle
+## Alíquota máxima de IR
+
+Se estamos no máximo, então qualquer alteração infinitesimal $d\tau^{\infty}$ acima de $z^*$ no ótimo deve ter efeito zero sobre a arrecadação (CPO)
+
+Há um **efeito mecânico** (positivo), por arrecadar mais para uma quantidade fixa de trabalho, e um **efeito comportamental** (negativo), pela redução na oferta de trabalho
+
+O *efeito mecânico* sobre o indivíduo médio é $dM = \left( z - z^* \right) d\tau^{\infty}$
+
+E o *efeito comportamental* no indivíduo médio se dá por:
+
+$$dB = \tau^{\infty} dz = - \tau^{\infty} \frac{dz}{d(1-\tau^{\infty})}d\tau^{\infty} = - \frac{\tau^{\infty}}{1-\tau^{\infty}}e z \ d\tau^{\infty}$$
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '70%'}
+knitr::include_graphics("figs/eae0310-11-19.png")
+```
+
+Um aumento de $d\tau^{\infty}$ na alíquota de IR para rendas acima de $z^*$ **rotaciona para baixo** a restrição orçamentária dos trabalhadores começando em $z^*$ (diminui a inclinação) `r Citep(myBib, "diamond2011case")`
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '70%'}
+knitr::include_graphics("figs/eae0310-11-19b.png")
+```
+
+Os dois efeitos dessa mudança são um aumento **mecânico** da arrecadação, pois para um nível de trabalho estão pagando mais, mas que é contrabalanceado pela redução **comportamental** na renda tributável $z$ causada por uma **taxa marginal de impostos** maior `r Citep(myBib, "diamond2011case")`
+
+---
+class: middle
+## Alíquota no topo que maximiza a receita
+
+Como o efeito na receita de $d\tau^{\infty}$ tem que ser zero, $dM + dB = 0$, e portanto: $$\left[ \left( z - z^* \right) -\frac{\tau^{\infty}}{1-\tau^{\infty}}e \cdot z \right] d\tau^{\infty} = 0$$
+
+Definindo $a = z/ (z - z^*)$, temos $$\frac{\tau^{\infty}}{1 - \tau^{\infty}} = \frac{1}{a \cdot e} \Rightarrow \tau^{\infty} = \frac{1}{1 + a \cdot e}$$
+
+---
+class: middle
+## Alíquota no topo que maximiza a receita
+
+A alíquota no topo *que maximiza a arrecadação* é decrescente na **elasticidade da renda tributável** $e$ (custo de eficiência) e em $a = z/(z - z^*)$, que mede quão "fina" é a cauda da distribuição em relação ao limiar da alíquota (se $z^* = 0$, então $a = 1$, e temos a mesma fórmula de antes)
+
+Isso porque um aumento na alíquota máxima apenas arrecada sobre a renda maior que $z^*$, mas reduções na oferta de trabalho reduzem a arrecadação "em todas as alíquotas" (i.e., $\tau dz$)
+
+E estatística $a$ é fácil de estimar empiricamente, nos EUA é $\sim 1.5$ &mdash; se $e = 0.1,$ então $\tau^{\infty} = 87\%$ (!); se $e = 0.3$, $\tau^{\infty}$ é ainda altos $68\%$
+
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '70%'}
+knitr::include_graphics("figs/eae0310-11-21.png")
+```
+
+Alíquotas máximas de IR em países selecionados durante o século XX: em vários momentos, especialmente durante as guerras (mas não apenas!), essas alíquotas chegaram próximas &mdash; ou plausivelmente até ultrapassaram &mdash; o topo da curva de Laffer de por volta de 70-90% de taxa marginal `r Citep(myBib, "auerbach2013handbook")`
+
 ---
 class: middle
 ## Taxação dos mais ricos
@@ -455,34 +469,34 @@ class: middle
 knitr::include_graphics("figs/eae0310-11-2.png")
 ```
 
-... mas não parece ter tido nenhum efeito no crescimento da renda dos outros 99% (se algo, o efeito é negativo): ou seja, há pouco efeito econômico real de maior taxação `r Citep(myBib, "piketty2014optimal")` 
+... mas não parece ter tido nenhum efeito no crescimento da renda dos outros 99% (se algo, o efeito é negativo): ou seja, há *plausivelmente* pouco efeito econômico real de maior taxação `r Citep(myBib, "piketty2014optimal")` 
 
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '80%'}
+```{r, echo=FALSE, out.width = '75%'}
 knitr::include_graphics("figs/eae0310-11-5.png")
 ```
 
-Em evidência *cross-country* vemos o mesmo: maior taxação no topo é fortemente (negativamente) correlacionada com menor proporção dos 1% mais ricos na renda... `r Citep(myBib, "piketty2014optimal")` 
+Em evidência *cross-country* vemos o mesmo: maior taxação no topo é fortemente (e negativamente) correlacionada com menor proporção dos 1% mais ricos na renda... `r Citep(myBib, "piketty2014optimal")` 
 
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '80%'}
+```{r, echo=FALSE, out.width = '75%'}
 knitr::include_graphics("figs/eae0310-11-6.png")
 ```
 
-... e tem zero correlação com crescimento do PIB *per capita* `r Citep(myBib, "piketty2014optimal")` 
+... mas mudanças na taxa marginal no topo têm zero correlação com crescimento do PIB *per capita* `r Citep(myBib, "piketty2014optimal")` 
 
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '80%'}
+```{r, echo=FALSE, out.width = '75%'}
 knitr::include_graphics("figs/eae0310-11-7.png")
 ```
 
-Maior taxação no topo está associada a menor salário dos CEOs *antes do imposto*: evidência de que taxação diminui o **rent-seeking** `r Citep(myBib, "piketty2014optimal")` 
+Maior taxação no topo está associada a menor salário dos CEOs *antes do imposto*: evidência de que taxação diminuiria o **rent-seeking** `r Citep(myBib, "piketty2014optimal")` 
 
 ---
 class: middle
@@ -490,26 +504,45 @@ class: middle
 
 Um efeito potencial da taxação, especialmente no topo, é a emigração: se uma alíquota máxima elevada "expulsar" os maiores inventores e agentes mais produtivos, o custo econômico pode ser alto
 
-A elasticidade da emigração em relação à taxação é bastante alta para jogadores de futebol europeus (Kleven et al 2013)
+A elasticidade da emigração em relação à taxação é bastante alta para jogadores de futebol europeus `r Citep(myBib, "kleven2013taxation")` &mdash; para inventores *super-stars*, ela é alta para estrangeiros, mas baixa para os nacionais `r Citep(myBib, "akcigit2016taxation")`
 
-Para inventores *super-stars*, ela é alta para estrangeiros, mas baixa para os nacionais (Akcigit et al 2016)
-
-Como a emigração é de **soma zero**, há necessidade de **coordenação tributária** para evitar políticas *beggar-thy-neighbor*
+Como a emigração é **um jogo de soma zero**, há necessidade de *coordenação tributária internacional* para evitar políticas **beggar-thy-neighbor**
 
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '75%'}
+```{r, echo=FALSE, out.width = '70%'}
 knitr::include_graphics("figs/eae0310-11-8.png")
 ```
 
-Redução por 3 anos dos impostos para imigrantes altamente qualificados em 1991 dobrou o seu número na Dinamarca em comparação com controles `r Citep(myBib, "kleven2014migration")` 
+Redução por 3 anos dos impostos para imigrantes altamente qualificados em 1991 mais que dobrou o seu número na Dinamarca (elasticidade $\varepsilon = 1.6$) em comparação com imigrantes menos qualificados que não tiveram redução na taxação (*grupo de controle*) `r Citep(myBib, "kleven2014migration")` 
 
 ---
 class:middle
 # Referências
 <small>
 ```{r refs, echo=FALSE, results="asis"}
-PrintBibliography(myBib)
+PrintBibliography(myBib, start=1, end=5)
 ```
 </small>
+
+---
+class:middle
+# Referências
+<small>
+```{r refs2, echo=FALSE, results="asis"}
+PrintBibliography(myBib, start=6)
+```
+</small>
+
+<!-- --- -->
+<!-- class: middle -->
+<!-- ## Alíquota ótima -->
+
+<!-- No caso mais geral, em que a sociedade seja *utilitarista* mas não rawlsiana, a taxação marginal ótima se torna: $$T^{\prime}(z)^* = \frac{1 - G(z)}{1 - G(z) + a(z) \cdot e(z)}$$ -->
+
+<!-- A grande diferença aqui é que temos o termo $G(z)$, que é o **peso na função de bem-estar social** de indivíduos com renda $z$, ou seja, a importância que a socidedade dá ao seu bem-estar -->
+
+<!-- É plausível que a sociedade dê menos valor à utilidade dos mais ricos, se a sociedade tiver preferências sociais redistributivas ("gostar de igualdade") -->
+
+<!-- Mas mesmo que não seja o caso, $G(z)$ tenderá a ser decrescente pela *utilidade marginal decrescente*: no limite, quando $z \rightarrow \infty$, $u^{\prime}(z) = 0 \Rightarrow G(z) = 0$ e a alíquota ótima utilitarista maximiza a receita -->
