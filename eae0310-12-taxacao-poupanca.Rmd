@@ -38,22 +38,13 @@ knitr::include_graphics("figs/musk.jpg")
 
 ---
 class: middle
-## Desigualdade de riqueza
+## Desigualdade de renda do capital
 
-O principal modo de redução das desigualdades socioeconômicas é o sistema de tributação progressiva da renda do trabalho e transferências, já que renda do trabalho responde por ao redor de 3/4 do produto nacional
+A principal forma de redução das desigualdades socioeconômicas é o sistema de tributação progressiva da renda do trabalho e transferências, já que renda do trabalho responde por ao redor de 3/4 do produto nacional
 
-Mas especialmente os 1%, e especialmente 0,1% mais ricos, a tributação da renda do trabalho não é suficiente para reduzir a desigualdade, já que a maior parte da renda deles vêm do capital
+Mas o 1% mais rico, e especialmente o 0,1% mais rico, é muito pouco afetado pela tributação da renda do trabalho, já que a maior parte da renda deles vêm do capital (ou pelo menos é facilmente transformada em renda do capital)
 
-Como vimos, pelo **princípio da focalização**, se a única heterogeneidade é *habilidade*, devemos taxar apenas o trabalho &mdash; mas se a riqueza é desigual, então a taxação do capital se torna imprescindível para reduzir desigualdades
-
----
-class: middle
-
-```{r, echo=FALSE, out.width = '70%'}
-knitr::include_graphics("figs/eae0310-12-1.png")
-```
-
-Enquanto apenas 10% da renda dos 90% menos ricos é advinda do capital, 60% da renda dos 1% mais ricos e 70% dos 0,1% vêm desse fator de produção `r Citep(myBib, "piketty2018distributional")`
+Como vimos, pelo **princípio da focalização**, se a única heterogeneidade é *habilidade*, devemos taxar apenas o trabalho &mdash; mas se poupança ou taxa de retorno é desigual, então a taxação do capital se torna importante
 
 ---
 class: middle
@@ -67,29 +58,11 @@ Em 1850, a participação do capital na renda nacional era de quase 50%, mas tem
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '75%'}
-knitr::include_graphics("figs/eae0310-12-2.png")
-```
-
-O estoque de capital nas economias desenvolvidas é de 600% do PIB, com a maior parte sendo moradia (urbana) &mdash; que substituiu a importância histórica das propriedades rurais `r Citep(myBib, "piketty2014capital")`
-
----
-class: middle
-
-```{r, echo=FALSE, out.width = '70%'}
-knitr::include_graphics("figs/eae0310-12-4.png")
-```
-
-Já no Brasil estima-se que o montante de capital (riqueza) é por volta de 400% do PIB [(WID)](https://wid.world/country/brazil/)
-
----
-class: middle
-
 ```{r, echo=FALSE, out.width = '70%'}
 knitr::include_graphics("figs/eae0310-12-5.png")
 ```
 
-E a riqueza brasileira é distribuída de forma extremamente desigual (mesmo na comparação internacional): os 10% mais ricos têm por volta de 3/4 da riqueza brasileira, e o 1% mais rico metade &mdash; como é comum internacionalmente, os 50% mais pobres possuem riqueza zero [(WID)](https://wid.world/country/brazil/)
+A riqueza brasileira é distribuída de forma extremamente desigual (mesmo na comparação internacional): os 10% mais ricos têm por volta de 3/4 da riqueza brasileira, e o 1% mais rico metade &mdash; como é comum internacionalmente, os 50% mais pobres possuem riqueza zero [(WID)](https://wid.world/country/brazil/)
 
 ---
 class: middle
@@ -116,7 +89,7 @@ class: middle
 knitr::include_graphics("figs/eae0310-12-7.png")
 ```
 
-Nos EUA, a riqueza dos 90% cresceu até a década de 80 com incentivos para a casa própria, mas caiu (relativamente) desde então, por causa da desigualdade de renda e de poupança, além de reduções nos impostos `r Citep(myBib, "piketty2018distributional")`
+Nos EUA, a riqueza dos 90% cresceu até a década de 80 com incentivos para a casa própria, mas caiu (relativamente) desde então, por causa da desigualdade de renda e de poupança, além de reduções nos impostos &mdash; e esse movimento foi espelhado por um crescimento de 100% na proporção do 0.1% mais rico, que tem hoje 20% da riqueza daquele país `r Citep(myBib, "piketty2018distributional")`
 
 ---
 class: middle
@@ -127,13 +100,33 @@ knitr::include_graphics("figs/eae0310-12-8.png")
 
 Outra forma de ver a desigualdade de riqueza é a lista dos 400 mais ricos da Forbes: desde 1982 a riqueza deles triplicou, ultrapassando 3% da riqueza total americana &mdash; 3% da riqueza para (quase) 1-em-1-milhão (Saez)
 
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '50%'}
+knitr::include_graphics("figs/eae0310-13-10.png")
+knitr::include_graphics("figs/eae0310-13-10b.png")
+```
+
+Existe também uma **desigualdade racial de riqueza**: nos EUA, em 1860, na Emancipation, a riqueza dos brancos era 56x maior que a dos negros: houve uma melhora acentuada nas décadas seguintes, diminuindo a velocidade no século XX &mdash; até que desde os anos 2000 essa desigualdade *aumentou*, voltando ao nível do Civil Rights Movement na década de 60 (5-7x maior) `r Citep(myBib, "derenoncourt2022wealth")`
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '70%'}
+knitr::include_graphics("figs/eae0310-12-1.png")
+```
+
+Enquanto apenas 10% da renda para 90% da população é advinda do capital, 60% da renda dos 1% mais ricos e 70% dos 0,1% vêm desse fator de produção (ou pelo menos é reportada como): taxar trabalho tem capacidade limitada de redistribuição nesses grupos `r Citep(myBib, "piketty2018distributional")`
+
 ---
 class: middle
 ## Dinâmica da riqueza
 
 Se a riqueza em $t$ é $W_t$ e a taxa de retorno $r_t$, então a renda do capital é $r_t W_{t-1}$ e: $$W_t = (1 + r_t) W_{t-1} + S_t + I_t$$
 
-A riqueza em $t$ vai ser a riqueza em $t-1$ mais a renda do capital, a poupança $S_t$ e eventual herança $I_t$ &mdash; pessoas têm riqueza desigual por causa de:
+A riqueza em $t$ vai ser a riqueza em $t-1$ mais a renda do capital, a poupança $S_t$ e eventual herança $I_t$: pessoas têm riqueza desigual por causa de:
 
 1. Idades diferentes (**riqueza do ciclo-de-vida**)
 2. Diferenças na quantidade poupada no passado $S_t$, potencialmente por renda do trabalho $Y_t$ diferente, já que $S_t = Y_t - C_t$
@@ -165,24 +158,6 @@ class: middle
 
 Este final da disciplina vamos focar inteiramente na taxação do capital: nessa semana vamos estudar (ii), na semana seguinte (iii)-(v), e no último tópico (i)
 
----
-class: middle
-## Taxação do capital
-
-Distinção importante entre **riqueza de ciclo-de-vida**, que os indivíduos podem afetar e é potencialmente "merecida", e a **riqueza herdada**, que é o contrário
-
-Piketty no seu livro argumentou que quando a taxa de retorno do capital é maior que o crescimento da economia (i.e., $r > g$), a riqueza herdada cresce e também a desigualdade de riqueza
-
-Na *belle époque* a riqueza herdada era a grande maior parte da riqueza (~70%), essa proporção caiu no pós-guerra, mas está crescendo novamente &mdash; ainda assim a maior parte do debate olha para o capital como uma decisão de poupança
-
----
-class: middle
-
-```{r, echo=FALSE, out.width = '80%'}
-knitr::include_graphics("figs/eae0310-12-9.png")
-```
-
-Ao contrário de uma percepção pública do "self-made man", a maior parte da riqueza mundial ainda hoje é herdada, nos EUA até mais que na Europa, e essa proporção tem crescido desde 1980 `r Citep(myBib, "alvaredo2017share")`
 
 ---
 class: middle
@@ -213,7 +188,7 @@ Se $\beta = 1/(1 + r)$ (o que vai ocorrer em equilíbrio em mercados completos e
 
 Essa é uma hipótese: (i) desmentida nos dados; e (ii) bastante importante em macro, pois é condição necessária para teorias importantes, como a *equivalência ricardiana*
 
-No mundo real, quando 50% da riqueza está com o 1% mais rico, é difícil acreditar que bilionários estão poupando e investindo para suavizar consumo &mdash; mas vale provavelmente bem para os 90% "da base"
+No mundo real, quando 50% da riqueza está com o 1% mais rico, é difícil acreditar que bilionários estão poupando e investindo para suavizar consumo &mdash; mas vale provavelmente de forma aproximada para os 90% "da base"
 
 ---
 class: middle
@@ -223,7 +198,7 @@ knitr::include_graphics("figs/eae0310-12-14.png")
 knitr::include_graphics("figs/eae0310-12-14b.png")
 ```
 
-Na Dinamarca, observamos um perfil de riqueza compatível com a **hipótese do ciclo-da-vida** na população em geral (a), com riqueza negativa na juventude, crescendo nos anos ativos, e caindo na aposentadoria &mdash; mas o mesmo movimento não ocorre entre os mais ricos (b) `r Citep(myBib, "jakobsen2020wealth")` 
+Na Dinamarca, observamos um perfil de riqueza mais ou menos compatível com a **hipótese do ciclo-da-vida** na população com riqueza positiva em geral (a), com riqueza crescendo nos anos ativos e caindo na aposentadoria (mas menos do que deveria) &mdash; mas o mesmo movimento não ocorre entre os mais ricos, cuja riqueza cresce até o fim da vida (b) `r Citep(myBib, "jakobsen2020wealth")` 
 
 ---
 class: middle
@@ -232,7 +207,7 @@ class: middle
 knitr::include_graphics("figs/eae0310-12-13.png")
 ```
 
-Nos Estados Unidos, a riqueza dos mais ricos também cresce de forma contínua até a morta, contrariando a hipótese do ciclo-da-vida, que implicaria uma queda na riqueza na aposentadoria (**suavização do consumo**) `r Citep(myBib, "kopczuk2007bequest")`
+Nos Estados Unidos, a riqueza dos mais ricos também cresce de forma contínua até a morte, contrariando a hipótese do ciclo-da-vida, que implicaria uma queda na riqueza na aposentadoria (**suavização do consumo**) &mdash; esse comportamento condiz mais com riqueza na função de utilidade `r Citep(myBib, "kopczuk2007bequest")`
 
 ---
 class: middle
@@ -242,7 +217,7 @@ Considere agora um imposto sobre consumo $\tau_C$. A restrição orçamentária 
 
 Se ao invés disso aplicarmos um imposto sobre a renda (do trabalho) $\tau_L$, a RO agora é $c_1 + \frac{c_2}{1 + r} = (1 - \tau_L)wl$
 
-Se $(1 + \tau_C) = 1/(1 - \tau_L)$, os impostos são equivalentes: já vimos que essa equivalência vale estaticamente &mdash; esse é um exemplo simplificado da equivalência de impostos (lineares) sobre a renda e consumo ao longo do ciclo-da-vida **em steady-state e sem herança**
+Se $(1 + \tau_C) = 1/(1 - \tau_L)$, os impostos são equivalentes: já vimos que essa equivalência vale estaticamente &mdash; esse é um exemplo simplificado da equivalência de impostos (lineares) sobre a renda e sobre o consumo **e heranças** ao longo do ciclo-da-vida (em steady-state)
 
 ---
 class: middle
@@ -252,7 +227,7 @@ $$\max_{l, c_2} u \left( (1 - \tau_L)wl - \frac{c_2}{1 + r}, l \right) + \beta u
 
 $$[l]: (1 - \tau_L)w\frac{\partial u}{\partial c_1} = - \frac{\partial u}{\partial l}$$
 $$[c_2]: \frac{\partial u}{\partial c_1} = \beta (1 + r) \frac{\partial u}{\partial c_2}$$
-Como a renda do trabalho diminui, há um *efeito renda*, e o preço relativo do trabalho e do lazer se altera (*efeito substituição*) &mdash; mas não há distorção da **escolha de consumo intertemporal**
+Considere um **imposto de renda**: a renda do trabalho diminui, há um *efeito renda*, além disso o preço relativo do trabalho e do lazer se altera (*efeito substituição*) &mdash; mas não há distorção da *escolha de consumo intertemporal* (apenas efeito renda)
 
 ---
 class: middle
@@ -270,12 +245,12 @@ Aqui é oposto, o preço relativo do trabalho e lazer *não* se altera, mas do c
 class: middle
 ## Taxação no modelo de ciclo da vida
 
-Assim como a taxação do trabalho, a taxação da poupança envolve efeito renda e substituição:
+Assim como na taxação do trabalho, a **taxação de capital** (poupança) envolve efeito renda e substituição:
 
-1. **Efeito substituição:** o imposto torna o consumo no período 2 mais caro relativo ao consumo no período 1: poupança cai
-2. **Efeito renda:** o imposto torna os indivíduos mais pobres, que consomem menos em $t=1$ *e* em $t=2$, mas a poupança sobe (lembrem-se que $s = wl - c_1$)
+1. *Efeito substituição:* o imposto torna o consumo no período 2 mais caro relativo ao consumo no período 1: poupança cai
+2. *Efeito renda:* o imposto torna os indivíduos mais pobres, que consomem menos em $t=1$ *e* em $t=2$, mas como $s = wl - c_1$, $c_1$ menor implica que a poupança sobe
 
-Assim, o efeito é teoricamente **ambíguo**! Na verdade, se $u(c)$ é Cobb-Douglas, os dois efeitos se anulam e o impacto do imposto na poupança vai ser exatamente zero
+Assim, o efeito *sobre a poupança* é teoricamente **ambíguo**! Na verdade, se a utilidade é Cobb-Douglas, os dois efeitos se anulam e o impacto do imposto na poupança vai ser exatamente zero
 
 ---
 class: middle
@@ -284,7 +259,7 @@ class: middle
 knitr::include_graphics("figs/eae0310-12-10.png")
 ```
 
-Agentes escolhem entre o consumo nos períodos 1 e 2, com restrição orçamentária de inclinação $- (1 + r)$, e intercepto $w$ (supondo $l=1$): $w - c_1 = s$ é a quantidade poupada (Saez)
+Agentes escolhem entre o consumo nos períodos 1 e 2, com restrição orçamentária de inclinação $- (1 + r)$, abscissa em zero $w$ (supondo $l=1$), e $w - c_1 = s$ é a quantidade poupada (Saez)
 
 ---
 class: middle
@@ -293,7 +268,7 @@ class: middle
 knitr::include_graphics("figs/eae0310-12-10b.png")
 ```
 
-Uma taxa sobre retorno do capital deixa o consumo no período 2 mais caro: **rotaciona** a RO para inclinação $- (1 + r(1 - \tau_K))$ (Saez)
+Um tributo sobre o retorno do capital deixa o consumo no período 2 mais caro: **rotaciona** a RO para inclinação $- (1 + r(1 - \tau_K))$ (Saez)
 
 ---
 class: middle
@@ -302,43 +277,33 @@ class: middle
 knitr::include_graphics("figs/eae0310-12-10c.png")
 ```
 
-O **efeito substituição**, mantendo a utilidade constante, aumenta $c_1$, diminui $s$ e $c_2$ &mdash; já o **efeito renda** diminui $c_2$ e $c_1$, mas (por causa disso) aumenta $s$ (Saez)
+O **efeito substituição**, mantendo a utilidade constante, aumenta $c_1$, diminui $s$ e $c_2$, já o **efeito renda** diminui $c_2$ e $c_1$, mas (por causa disso) aumenta $s$ &mdash; aqui, o efeito renda é mais forte, e a taxação de capital aumenta a poupança (Saez)
 
 ---
 class: middle
-## Taxação no modelo de ciclo da vida
+## Efeito da taxação na poupança
 
 Do mesmo modo que na taxação de trabalho, a resposta da teoria é ambígua: o efeito da taxação de capital na poupança é *uma pergunta empírica*!
 
 Infelizmente, ao contrário da aula anterior, a evidência nesse caso é muito menos confiável: não há unanimidade entre economistas nem se tal taxação diminui, não afeta, *ou até aumenta* a poupança
 
-O problema é identificar efeito de composição da poupança, além de efeitos dinâmicos
-
----
-class: middle
-## Relação entre taxação de renda e consumo
-
-Como vimos, ao longo da vida, taxação de renda é equivalente à taxação de consumo + taxação de heranças &mdash; a proposta (por conservadores) de trocar taxação de renda por consumo é chamada de **fundamental tax reform**
-
-Essa mudança geraria uma taxação "uma vez só" na riqueza, já que ela compraria menos no futuro (assim como inflação não esperada); também é taxação dupla da geração que sofre a mudança
-
-O problema principal entretanto é outro: taxação de consumo não é progressiva, e na verdade é regressiva, já que ricos consomem proporção menor da renda
+Estimar *efeito comportamental* na poupança é muito mais difícil que na oferta de trabalho: há a dificuldade de identificar efeito de composição da poupança, além de efeitos dinâmicos e menor observabilidade
 
 ---
 class: middle
 ## Imposto ótimo no modelo de ciclo da vida
 
-Imagine que o governo pode taxar renda progressivamente $T(z)$ e capital $\tau_K$, e *a única heterogeneidade entre indivíduos* é a capacidade de gerar renda $z$ (ou seja, não há heranças)
+Imagine que o governo pode taxar renda progressivamente com um tributo $T(z)$ e taxar o capital a uma taxa $\tau_K$, e o único motivo de desigualdade de riqueza é diferenças na poupança pela desigualdade de renda (**motivo 2**)
 
 Então pelo **princípio da focalização**, a taxação do capital deveria ser zero: o governo pode atingir os seus objetivos de redistribuição puramente pela taxação de renda do trabalho
 
-Nesse caso, taxar o capital distorceria a decisão de poupança sem necessidade &mdash; e realmente, parece injusto discriminar contra poupadores se toda a riqueza vem da poupança do indivíduo
+Nesse caso, taxar o capital distorceria a decisão de poupança sem necessidade, já que redistribuir renda também resolveria a desigualdade de riqueza
 
 ---
 class: middle
 ## Imposto ótimo no modelo de ciclo da vida
 
-No mundo real, desigualdade em renda do capital também vem de heranças e diferentes taxas de retorno: há espaço teórico para taxação de capital
+Mas desigualdade em renda do capital também vem de diferenças em heranças, paciência e taxas de retorno: taxação da renda do trabalho não é suficiente para redistribuir riqueza, e há espaço para taxação de capital
 
 Frequentemente é difícil distinguir renda do trabalho e do capital (p. ex., o dono da firma que também é CEO, "pejotização") &mdash; taxar capital é importante para aumentar a base tributária e reduzir elisão/evasão fiscal
 
@@ -357,7 +322,7 @@ Algo não levado em conta nos modelos vistos, mas que é um fato estilizado impo
 class: middle
 ## Outras teorias de poupança
 
-As pessoas também poupam dinheiro é **modelo precaucionário de poupança**: com mercados incompletos, as pessoas precisam poupar dinheiro não apenas para suavizar consumo ao longo do tempo, mas também entre diferentes estados da natureza
+Com mercados incompletos, as pessoas precisam poupar dinheiro não apenas para suavizar consumo ao longo do tempo, mas também entre diferentes estados da natureza (**modelo precaucionário de poupança**)
 
 Às vezes indivíduos gostariam de poupar mais, mas têm dificuldades de **auto-controle**: experimentos mostram que *nudges* ou *mecanismos de comprometimento* podem aumentar poupança
 
@@ -365,11 +330,40 @@ As pessoas também poupam dinheiro é **modelo precaucionário de poupança**: c
 
 ---
 class: middle
+
+```{r, echo=FALSE, fig.show="hold", out.width="50%"}
+knitr::include_graphics("figs/eae0310-12-16.png")
+knitr::include_graphics("figs/eae0310-12-16b.png")
+```
+
+`r Citep(myBib, "smith2019capitalists")` argumentam que parte da renda do capital na verdade *vem do trabalho de administração das firmas* pelo empreendedor, mesmo para empresas médias &mdash; isso se mostraria pelo fato delas perderem boa parte de seu valor de mercado quando o dono morre ou se aposenta
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '50%', fig.align='center'}
+knitr::include_graphics("figs/eae0310-12-17.png")
+```
+
+Se nós calcularmos (pela análise anterior) que 75% da renda desse tipo de negócio é fator trabalho, a proporção do 0.1% que recebe a maior parte da renda por salário cresce de 23% para mais da metade, e do 1% para 80% `r Citep(myBib, "smith2019capitalists")`
+
+---
+class: middle
+
+```{r, echo=FALSE, fig.show="hold", out.width="50%"}
+knitr::include_graphics("figs/eae0310-12-18.png")
+knitr::include_graphics("figs/eae0310-12-18b.png")
+```
+
+Como vimos na aula passada, a participação do 1% mais rico na renda dos EUA mais que duplicou desde os anos 80, chegando a 20% &mdash; isso se deu pela triplicação do salário e pelo crescimento da renda corporativa, boa parte também potencialmente remuneração de trabalho `r Citep(myBib, "smith2019capitalists")`
+
+---
+class: middle
 ## Incentivos fiscais à poupança
 
 A baixa taxa de poupança no Brasil (15% em 2020) e baixa poupança para aposentadoria leva governos a instituírem vários programas de subsídio à poupança
 
-No Brasil, empresas podem deduzir contribuições para previdência privada dos empregados do IRPJ e CSLL. Também há a "tabela regressiva", com alíquotas menores para maturidades mais longas da poupança (até 10%)
+No Brasil, empresas podem deduzir contribuições para previdência privada dos empregados do IRPJ e CSLL &mdash; há também a "tabela regressiva", com alíquotas menores para maturidades mais longas de poupança (até 10%)
 
 Outro incentivo fiscal é **pagamento deferido** no IRPF: pagar a mesma taxa de imposto só no fim da maturidade tem custo fiscal menor que em cada período, pois o indivíduo fica com os juros do imposto devido
 
@@ -391,19 +385,19 @@ knitr::include_graphics("figs/eae0310-12-11.png")
 knitr::include_graphics("figs/eae0310-12-11b.png")
 ```
 
-O efeito de subsídios à poupança com teto em indivíduos que poupam pouco é ambíguo (a), mas em indivíduos com alta poupança sempre diminuem a poupança (b) `r Citep(myBib, "gruber")` 
+Um subsídio à poupança até $2,000 rotaciona a RO para fora até esse ponto, gerando efeito substituição (inclinação maior) e efeito renda (o orçamento aumenta): para quem ganha em A menos que $2,000 o efeito é ambíguo (B ou C) em (a), mas em (b) quem poupa mais de $2,000 sempre diminui a poupança (só há efeito renda) `r Citep(myBib, "gruber")` 
 
 ---
 class: middle
 ## Evidência empírica
 
-Evidência de falta de atenção (**racionalidade limitada**): mudar um plano de aposentadoria opcional de *opt-in* (default sem) para *opt-out* (default com) aumentou *take-up* de 50% para 90% dos contratados de uma firma
+Evidência de falta de atenção (**racionalidade limitada**): mudar um plano de aposentadoria opcional de *opt-in* (default sem) para *opt-out* (default com) aumentou *take-up* de 50% para 90% dos contratados de uma firma `r Citep(myBib, "madrian2001power")`
 
 Efeito especialmente alto para pessoas com baixa educação: de 13% para 80%!
 
 `r Citep(myBib, "chetty2014active")` encontram que na Dinamarca 85% dos agentes são "poupadores passivos", que não respondem a incentivos (mas sim a *nudges*!)
 
-Enquanto para os outros 15% subsídios tem efeitos comportamentais grandes, mas são apenas de composição da poupança (*crowding out*) &mdash; para cada $1 de subsídio, a poupança privada aumenta em ¢1 (e a poupança pública cai!) 
+Enquanto para os outros 15% subsídios tem efeitos comportamentais grandes, mas são apenas de composição da poupança (*crowding out*) &mdash; para cada $1 de subsídio, a poupança total aumenta em apenas ¢1 
 
 ---
 class: middle
@@ -412,8 +406,7 @@ class: middle
 knitr::include_graphics("figs/eae0310-12-12.png")
 ```
 
-Em 1999 a Dinamarca cortou subsídios para previdência privada dos ricos (azul), mas não da classe média (vermelho): a contribuição a esse tipo de previdência caiu fortemente nesse grupo (tratamento) comparado ao controle `r Citep(myBib, "gruber")` apud `r Citep(myBib, "chetty2014active")`
-
+Em 1999 a Dinamarca cortou subsídios para previdência privada dos ricos (azul), mas não da classe média (vermelho): a contribuição a esse tipo de previdência caiu fortemente no tratamento comparado ao controle &mdash; mas apenas substituição para outros tipos de poupança `r Citep(myBib, "gruber")` apud `r Citep(myBib, "chetty2014active")`
 
 ---
 class:middle
@@ -432,3 +425,14 @@ class:middle
 PrintBibliography(myBib, start=6)
 ```
 </small>
+
+
+<!-- --- -->
+<!-- class: middle -->
+<!-- ## Relação entre taxação de renda e consumo -->
+
+<!-- Como vimos, ao longo da vida, taxação de renda é equivalente à taxação de consumo + taxação de heranças &mdash; a proposta (por conservadores) de trocar taxação de renda por consumo é chamada de **fundamental tax reform** -->
+
+<!-- Essa mudança geraria uma taxação "uma vez só" na riqueza, já que ela compraria menos no futuro (assim como inflação não esperada); também é taxação dupla da geração que sofre a mudança -->
+
+<!-- O problema principal entretanto é outro: taxação de consumo não é progressiva, e na verdade é regressiva, já que ricos consomem proporção menor da renda -->

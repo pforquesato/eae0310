@@ -3,7 +3,7 @@
   <head>
     <title>EAE-0310: ECONOMIA DO SETOR PÚBLICO</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 19C/FEA2 - pforquesato@usp.br" />
+    <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 217/FEA2 - pforquesato@usp.br" />
     <script src="libs/header-attrs-2.14/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
@@ -16,7 +16,7 @@ class: center, middle, inverse, title-slide
 # EAE-0310: ECONOMIA DO SETOR PÚBLICO
 ]
 .author[
-### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 19C/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
+### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 217/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
 ]
 .institute[
 ### Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo
@@ -33,104 +33,139 @@ class: inverse, middle, center
 
 # Impostos sobre riqueza
 
+
+---
+class: middle
+## Motivos para a taxação do capital
+
+Na definição da taxação do capital, há uma distinção importante entre **riqueza de ciclo-de-vida**, que os indivíduos podem afetar e é potencialmente "merecida", e a **riqueza herdada**, que é o contrário
+
+Piketty no seu livro argumentou que quando a taxa de retorno do capital é maior que o crescimento da economia (i.e., `\(r &gt; g\)`), a riqueza herdada cresce e também a desigualdade de riqueza
+
+Na *belle époque* a riqueza herdada era a grande maior parte da riqueza (~70%), essa proporção caiu no pós-guerra, mas está crescendo novamente &amp;mdash; ainda assim a maior parte do debate foca na decisão de poupança
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-12-9.png" width="80%" /&gt;
+
+Ao contrário de uma percepção pública do "self-made man", a maior parte da riqueza mundial ainda hoje é herdada, nos EUA até mais que na Europa, e essa proporção tem crescido desde 1980 [AGP17]
+
+
+---
+class: middle
+## Motivo de economia política
+
+A taxação de riqueza vai além da redução de desigualdades econômicas, envolve também a redução de **desigualdade política** (e isso justificaria potencialmente taxação até além do máximo da curva de Laffer)
+
+O 1% mais rico pode comprar empresas de mídia, fazer contribuições de campanha, lobby; e quanto maior a concentração de riqueza, maior o descontentamento popular e a instabilidade política
+
+Por outro lado, quanto maior essa desigualdade, mais importante se torna o controle rígido do poder político pela elite para evitar confiscação dessa riqueza: a elite *tem mais a perder* &amp;mdash; o que gera enfraquecimento institucional e ruptura democrática
+
 ---
 class: middle
 ## Imposto sobre riqueza
 
-Há três tipos de impostos sobre o capital que incidem sobre o *estoque* de capital e não o *fluxo de renda*: impostos sobre heranças, sobre propriedade e sobre riqueza (patrimônio líquido)
+Há três tipos de impostos sobre o capital que incidem sobre o **estoque** de capital e não o **fluxo** de renda: impostos sobre heranças, sobre propriedade e sobre riqueza geral (patrimônio líquido)
 
-Mas vamos começar com uma forma de taxação de renda (do capital) que tem algumas semelhanças com taxação de estoque: o ganho de capital
+Outra forma de taxação de renda do capital que tem algumas semelhanças com taxação de estoque é a tributação sobre o ganho de capital
 
-A razão pela qual queremos taxar capital é por ser mais progressivo, especialmente bem no pico da distribuição: enquanto o 1% mais rico nos EUA tem 24% da renda nacional, tem 40% da riqueza total
+O estoque de capital de uma economia mede todos os bens de capital, máquinas, moradias e terra que geram fluxos de renda aos seus controladores
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-12-2.png" width="75%" /&gt;
+
+O estoque de capital nas economias desenvolvidas é de 600% do PIB, com a maior parte sendo moradia (urbana) &amp;mdash; que substituiu a importância histórica das propriedades rurais [PZ14]
 
 ---
 class: middle
 
-&lt;img src="figs/eae0310-13-1.png" width="75%" /&gt;
+&lt;img src="figs/eae0310-12-4.png" width="70%" /&gt;
 
-Progressividade do sistema tributário por tipo de imposto nos EUA, com simulações para imposto sobre riqueza: é difícil alcançar os mais ricos com outras formas de taxação (Saez)
-
----
-class: middle
-## Impostos e tomada de risco
-
-Vamos começar investigando como a taxação afeta a *tomada de risco*
-
-Em geral se assume que é melhor aumentar a tomada de risco, por ser importante para o crescimento: inovação, empreendedorismo, educação são todas atividades arriscadas
-
-Mas em alguns casos pode ser o contrário: pagamento variável para executivos pode gerar "curto-prazismo" e excesso de riscos e no setor financeiro pode gerar apostas arriscadas, instabilidade e crises
+Já no Brasil estima-se que o montante de capital (riqueza) é por volta de 400% do PIB [(WID)](https://wid.world/country/brazil/)
 
 ---
 class: middle
 ## Impostos e tomada de risco
 
-Considere um mercado financeiro com um ativo livre de risco com retorno `\(r\)` e um ativo arriscado com retorno (aleatório) `\(x\)`, tal que `\(\min{x} &lt; r &lt; \mathbb{E}x\)`
+Vamos começar investigando como a taxação de riqueza e de capital afeta a **tomada de risco**
 
-O agente escolhe a proporção no ativo arriscado `\(a\)` tal que resolva: `$$\max_{a} \mathbb{E} \left\{ u \left( (1 - \tau)W \left[ 1 + (ax + (1 - a)r)(1 - t) \right]  \right)  \right\}$$`
+Em geral se assume que é melhor aumentar a tomada de risco, por ser importante para o crescimento: inovação, empreendedorismo, educação são todas atividades arriscadas e que plausivelmente gostaríamos de estimular
 
-onde `\(\tau\)` é o imposto sobre riqueza e `\(t\)` sobre o ativo arriscado. Chamando a riqueza no fim do investimento de `\(W_{\text{ex-post}}\)`, temos que a CPO é: `$$\mathbb{E} \left\{ u^{\prime}(W_{\text{ex-post}}) (1 - \tau)W(1-t) (x - r) \right\} = 0 = \mathbb{E} \left\{ u^{\prime}(W_{\text{ex-post}})(x - r) \right\}$$`
-
----
-class: middle
-## Impostos e tomada de risco
-
-`$$\mathbb{E} \left\{ u^{\prime}(W_{\text{ex-post}})(x - r) \right\} = 0$$`
-O imposto sobre riqueza `\(\tau\)` só entra na decisão do agente por `\(W_{\text{ex-post}}\)`: se a aversão absoluta ao risco for decrescente, o que é quase unânime empiricamente, então taxação de riqueza diminui a *quantidade* do ativo arriscado **REVER**
-
-Mas para garantir que a *proporção* do ativo arriscado cai com taxação de riqueza, precisaríamos de aversão relativa ao risco decrescente, o que é mais discutível empiricamente (a maioria dos modelos assume RRA constante)
+Mas em alguns casos pode ser o contrário: pagamento variável para executivos pode gerar "curto-prazismo" e *rent-seeking*, e excesso de tomada de risco e no setor financeiro pode gerar apostas arriscadas, instabilidade e crises financeiras
 
 ---
 class: middle
-## Impostos e tomada de risco
+## Taxação de riqueza e tomada de risco
 
-Domar e Musgrave em 1944 perceberam que sob algumas hipóteses taxação de ativos arriscados `\(t\)` *aumenta* a tomada de risco
+Considere um mercado com um ativo livre de risco com retorno líquido `\(r\)` e um ativo arriscado com retorno (aleatório) `\(x\)`, tal que `\(\min{x} &lt; r &lt; \mathbb{E}x\)` 
 
-Pense que o ativo `\(x\)` custe `$`100 e pague `$`120 no cenário positivo e `$`80 no cenário negativo (50% de chance cada) e que `\(r\)` seja dinheiro sem inflação
+O agente escolhe então a proporção no ativo arriscado `\(a\)` tal que resolva: `$$\max_{a} \mathbb{E} \left\{ u \left( (1 - \tau_W)W \left[ 1 + (ax + (1 - a)r) \right]  \right)  \right\}$$`
 
-Então uma taxação de 50% no retorno do ativo com **compensação de perdas** vai fazer o ativo pagar `$`110 no cenário positivo e `$`90 no cenário negativo
-
-É como se o governo entrasse como acionista na empresa, e os investidores podem refazer a carteira inicial duplicando `\(a\)` (aumentando a tomada de risco)
+onde `\(\tau_W\)` é o imposto sobre riqueza. Chamando a riqueza no fim do investimento de `\(W_{1}\)`, temos que a CPO é: `$$\mathbb{E} \left\{ u^{\prime}(W_1) (1 - \tau_W) (x - r) \right\} = 0 = \mathbb{E} \left\{ u^{\prime}(W_1)(x - r) \right\}$$`
 
 ---
 class: middle
-## Impostos e tomada de risco
+## Taxação de riqueza e tomada de risco
 
-No mundo real, entretanto, quase nunca *compensação de perdas* é completa, pois isso abre enorme espaço para elisão/sonegação fiscal, e envolve possivelmente o Estado pagar o indivíduo, o que é politicamente difícil
+Ou seja, o imposto `\(\tau_W\)` sai da CPO: ele não distorce o valor relativo dos investimentos, há apenas efeito renda, pois reduz `\(W_1\)`, já que: `$$W_1 = (1 - \tau_W)W \left[ 1 + (ax + (1 - a)r) \right]$$`
 
-Além disso, se a taxação é *progressiva*, então isso diminui a compensação de perdas, pois os indivíduos podem trocar de alíquota quando ganham em relação a quando perdem
+Isso vai depender de como uma riqueza menor afeta a concavidade da utilidade: se a aversão ao risco *absoluta* for decrescente, então os agentes se tornarem mais pobres diminui a **quantidade** do ativo arriscado
 
-Sem compensação completa de perdas, o efeito da taxação na tomada de risco é ambíguo
+Mas para garantir que a **proporção** do ativo arriscado caia com a taxação da riqueza, precisaríamos de aversão ao risco *relativa* decrescente, o que é discutível empiricamente &amp;mdash; a maioria dos modelos assume RRA constante: nesse caso, a `\(\tau_W\)` não afeta `\(a\)`
 
 ---
 class: middle
-## Impostos e educação
+## Taxação do ativo arriscado e tomada de risco
 
-Uma atividade arriscada é a educação: ela implica gastos (pelo menos em custos de oportunidade) presentes para retornos incertos no futuro
+Agora considere uma taxação diretamente sobre o retorno do ativo arriscado: `$$\max_{a} \mathbb{E} \left\{ u \left( W \left[ 1 + (ax(1 - \tau_A) + (1 - a)r) \right]  \right)  \right\}$$`
 
-Se o gasto em educação é de graça ou dedutível, como imposto só é cobrado sobre renda recebida, os custos de oportunidade também são dedutíveis
+Domar e Musgrave já em 1944 perceberam que sob algumas hipóteses taxação de ativos arriscados `\(\tau_A\)` *aumenta* a tomada de risco
 
-Então tributação aumentaria busca por educação &amp;mdash; mas na prática tributação é progressiva, então torna a *compensação de perdas* não completa, e portanto o efeito é ambíguo
+Pense que o ativo `\(x\)` custe `$`100 e pague `$`120 no cenário positivo e `$`80 no cenário negativo (50% de chance cada) e que `\(r\)` seja dinheiro sem inflação &amp;mdash; então uma taxação de 50% no retorno do ativo com **compensação de perdas** vai fazer o ativo pagar `$`110 no cenário positivo e `$`90 no cenário negativo
+
+---
+class: middle
+## Taxação do ativo arriscado e tomada de risco
+
+É como se o governo entrasse como acionista na empresa (**risk-sharing**), e os investidores podem refazer a carteira inicial duplicando `\(a\)` (aumentando a tomada de risco)
+
+No mundo real, entretanto, quase nunca **compensação de perdas** é completa, pois abre espaço para elisão/sonegação fiscal, e envolve possivelmente o Estado pagar o indivíduo, o que é politicamente difícil &amp;mdash; e se a taxação é *progressiva*, então indivíduos podem trocar de alíquota quando ganham em relação a quando perdem
+
+Sem compensação completa de perdas, o efeito da taxação na tomada de risco é ambíguo, já que diminui o valor esperado do ativo
+
+---
+class: middle
+## Imposto de renda e educação
+
+Isso não vale apenas para ativos financeiros: um exemplo de investimento arriscado é a **educação**, já que ela implica gastos (pelo menos em custos de oportunidade) presentes para retornos incertos e bastante variáveis no futuro
+
+Se o gasto em educação é de graça ou dedutível, então há **compensação por perdas** no investimento &amp;mdash; ademais, como imposto de renda só é cobrado sobre renda recebida, os custos de oportunidade também são dedutíveis
+
+Então tributação de renda *aumentaria* o investimento em educação &amp;mdash; mas na prática o imposto de renda é progressivo, o que torna a *compensação de perdas não completa*, e portanto **o efeito é ambíguo**
 
 ---
 class: middle
 ## Ganhos de capital
 
-Uma forma importante de renda se dá não por rendimentos monetários, mas pela valorização dos ativos (imóveis, ações, moedas) que dada pessoa possui: os **ganhos de capital**
+Uma forma importante de renda do capital se dá não por rendimentos monetários, mas pela valorização dos ativos (imóveis, ações, moedas) que a pessoa possui: os **ganhos de capital**
 
-Ganhos de capital gera dois problemas para sistemas tributários:
+Ganhos de capital geram dois problemas para sistemas tributários:
 
-1. Se eles são tributados a taxa menor que dividendos, firmas podem transformar dividendos em ganhos de capital pela *recompra de ações*
-2. Como ganhos de capital geralmente são cobrados na *realização* (venda) e juros no *auferimento* (anualmente), existe um benefício fiscal implícito para ganhos de capital (vide aula anterior)
+1. Se eles são tributados a taxa menor que dividendos, firmas podem transformar dividendos em ganhos de capital pela **recompra de ações**
+2. Como ganhos de capital geralmente são cobrados na *realização* (venda) e juros no *auferimento* (anualmente), existe um *benefício fiscal implícito* para ganhos de capital
 
 ---
 class: middle
-## Ganhos de capital
+## Taxação de ganhos de capital
 
-(2) é difícil de eliminar, pois vários ativos não líquidos não têm preços definidos em mercado fora da hora da alienação do ativo (mas ações têm)
+O problema 2 é difícil (mas não impossível!) de eliminar, pois vários ativos sem liquidez não têm preços definidos no mercado fora do momento da alienação do ativo (mas ações públicas e similares têm)
 
-Outro problema é que o dono do ativo pode não ter dinheiro disponível para pagar o imposto sem vendê-lo (imagine um imóvel de $1mi que dobrou de valor, com imposto de 20% sobre ganhos de capital)
+Outro problema é que o dono do ativo pode não ter dinheiro disponível para pagar o imposto sem vender o ativo (imagine um aposentado com um imóvel de $1mi que dobrou de valor, e uma taxa de 20% sobre ganhos de capital)
 
-Nos EUA (e no Brasil para imóveis comprados até 1996) o ganho de capital é isento em caso de morte (herança) &amp;mdash; portanto, boa parte dos ganhos do 0,1% nunca será taxado
+Nos EUA (e no Brasil para imóveis comprados até 1996) o ganho de capital é isento em caso de morte (herança), portanto boa parte dos ganhos do 0,1% mais rico nunca será taxado
 
 ---
 class: middle
@@ -138,37 +173,34 @@ class: middle
 
 Por outro lado, como ganhos de capital são avaliados *nominalmente*, há sobretributação por causa da inflação (mas isso não é particular desse tipo de taxação do capital)
 
-Taxação de ganhos de capital é uma taxação na tomada de risco, o que pode diminuir atitudes arriscadas benéficas à sociedade, como empreendedorismo (mas nem todas são benéficas!) 
+Taxação de ganhos de capital é uma taxação de ativos de risco (principalmente capital corporativo), o que poderia a princípio diminuir atitudes arriscadas benéficas à sociedade, como o empreendedorismo
 
-Embora como vimos o efeito teórico seja ambíguo, e haja pouca evidência empírica nesse sentido
+Mas como vimos esse efeito é *ambíguo teoricamente*, e há pouca evidência empírica que indique um impacto relevante nesse sentido
 
 ---
 class: middle
-## Taxação de ganhos de capital
+## Ganhos de capital e desigualdade
 
-Taxação de ganhos de capital é bastante progressiva: nos EUA, se ganhos de capital formam menos de 10% da renda de pessoas com renda até $500 mil, é metade da renda daqaueles com renda maior de 10 mi (0,1%)
+Taxação de ganhos de capital é bastante **progressiva**: nos EUA, se ganhos de capital formam menos de 10% da renda de pessoas com renda até $500 mil, é metade da renda daqueles com renda maior de 10 mi (o 0,1% mais rico)
 
 Em 2010, as 400 famílias mais ricas nos EUA pagaram 16% de todo o imposto sobre ganhos de capital [Gru16]
 
-Outro motivo para essa taxação é ampliar a base tributária: além de (1) supracitado, benefício tributário para ganhos de capital incentiva pagamento de executivos com ações e não salários, distorcendo incentivos &amp;mdash; um exemplo é *carried interest* no mercado financeiro
+Outro motivo para essa taxação é ampliar a base tributária: além do ponto 1 anterior, o benefício tributário para ganhos de capital incentiva o pagamento de executivos com ações e não salários, distorcendo incentivos &amp;mdash; um exemplo é o *[carried interest](https://www.taxpolicycenter.org/briefing-book/what-carried-interest-and-how-it-taxed)* no mercado financeiro
 
 ---
 class: middle
 
 &lt;img src="figs/eae0310-13-2.png" width="80%" /&gt;
 
-Realização de ganhos de capital deu um salto em 1986, como antecipação a um aumento do imposto em 1987 &amp;mdash; mas logo depois retornou ao seu nível original, indicando que esse efeito comportamental alto é apenas no curto-prazo [Gru16]
+Realização de ganhos de capital deu um salto em 1986, como antecipação a um aumento do imposto em 1987 &amp;mdash; mas logo depois retornou ao seu nível original, indicando que esse efeito comportamental alto é apenas no curto-prazo como adiantamento da realização de ganhos [Gru16]
 
 ---
 class: middle
 ## Impostos sobre herança
 
-Em São Paulo, cobramos 4% do valor da herança (com algumas isenções). Nos EUA, é de 40% com isenção até ~11mi &amp;mdash; e embora só incida sobre os 1-em-1000 mais ricos, arrecada 0,6% do orçamento do governo
+Em São Paulo, cobramos 4% do valor da herança (com algumas isenções); nos EUA, é de 40% com isenção até ~11mi &amp;mdash; e embora só incida sobre os 0,1% com maior riqueza, arrecada 0,6% do orçamento do governo
 
-Taxar herança traz um difícil dilema normativo:
-
-1. Por um lado, desigualdade em herança gera desigualdade econômica sem "merecimento" pelos indivíduos
-2. Por outro lado, parece injusto taxar pais que trabalharam duro e pagaram imposto na renda novamente quando morrem
+Taxar herança traz um dilema normativo: por um lado, desigualdade em herança gera desigualdade econômica sem "merecimento" pelos indivíduos &amp;mdash; por outro lado, parece injusto taxar pais que trabalharam duro e pagaram imposto na renda novamente quando morrem
 
 Geralmente quem é a favor enfatiza 1 (ponto de vista do recipiente) e quem é contra 2 (ponto de vista do doador)
 
@@ -178,76 +210,58 @@ class: middle
 
 Há várias dimensões de potenciais efeitos comportamentais da taxação de herança:
 
-1. Reduz o trabalho dos pais por diminuir por diminuir a utilidade marginal do dinheiro
-2. Reduz a acumulação de capital pelos pais e diminui a base tributária
-3. Aumenta o trabalho dos filhos por efeito renda
+1. Reduz o trabalho *dos pais* por diminuir a utilidade marginal do dinheiro (por efeito substituição e efeito renda)
+2. Reduz a acumulação de capital pelos pais (aumenta o consumo) e diminui a base tributária desse imposto
+3. Aumenta o trabalho *dos filhos* por efeito renda
 
 Kopczuk (2013) estima que a elasticidade de heranças reportadas em relação a taxa livre de imposto de 0,1-0,2 (relativamente baixa) &amp;mdash; importante entender *por que* as pessoas deixam heranças
 
 ---
 class: middle
-## Herança acidental
+## Teoria da herança acidental
 
-A **herança acidental** é a ideia de que as pessoas morrem ricas por "amor à riqueza" ou motivo precaução pela incerteza da data da morte
+A **teoria de herança acidental** é a ideia de que as pessoas morrem ricas por "amor à riqueza" ou motivo precaução pela incerteza da data da morte: nesse caso não há efeito comportamental sobre os pais (1 e 2), apenas sobre os filhos (3, positivo) &amp;mdash; a taxação de herança deveria ser a maior possível
 
-Nesse caso não há efeito comportamental sobre os pais (1 e 2), apenas sobre os filhos (3, positivo): taxação de herança deveria ser a maior possível
+Em pesquisas, pessoas não indicam deixar heranças como principal motivo para acumular riqueza; também é um motivo (plausivelmente) necessário para observarmos multimilionários sem filhos
 
-Em pesquisas pessoas não indicam deixar heranças como principal motivo para acumular riqueza; também necessário para observarmos bilionários sem filhos
-
-Kindermann et al (2020) estimam que na Alemanha, cada €1 arrecadado com taxação de herança arrecada ¢9 a mais por maior oferta de trabalho dos herdeiros 
+Kindermann et al (2020) estimam que na Alemanha, cada €1 arrecadado com taxação de herança arrecada ¢9 *a mais* por maior oferta de trabalho dos herdeiros (efeito renda) 
 
 ---
 class: middle
-## Herança altruísta
+## Teoria de herança altruísta
 
-No caso de **herança altruísta**, então temos efeitos 1-3, e a teoria é ambígua: mas alguma taxação de herança deve ter
+No caso da **teoria de herança altruísta**, então temos efeitos 1-3, e a teoria é ambígua: mas alguma taxação de herança geralmente é desejável
 
-Vimos que pelo **princípio da focalização** se a única fonte de heterogeneidade é renda, então devemos taxar apenas a renda para redistribuição
+Vimos que pelo *princípio da focalização* se a única fonte de heterogeneidade é renda, então devemos taxar apenas a renda para redistribuição, mas heranças geram outra fonte de heterogeneidade, então precisamos de dois instrumentos: taxação de renda e taxação de heranças
 
-Mas heranças geram outra fonte de heterogeneidade, agora há 2: renda e herança, então precisamos de dois instrumentos, taxação de renda e taxação de heranças
-
-Além disso, heranças monetárias são taxadas, mas não heranças em serviços: educação, redes de conexões, etc
+Notem que mesmo que heranças monetárias fossem inteiramente taxadas, isso não implicaria **igualdade de oportunidades**, pois há outras formas de transferência intergeneracional de renda: educação, redes de conexões, etc
 
 ---
 class: middle
 
 &lt;img src="figs/eae0310-13-9.png" width="80%" /&gt;
 
-[Pik11]
+O fluxo anual de heranças como proporção do PIB na França era de 20% durante a Revolução Industrial, chegou a 1/4 na *belle époque*, desabou para 8% na 1GM e 4% no pós-guerra, mas tem voltado a subir [Pik11]
 
 ---
 class: middle
 ## Imposto sobre propriedade
 
-A única razão para a taxação de patrimônio é que ele é mais simples de aplicar que sobre outras formas de patrimônio &amp;mdash; os efeitos dependem da **incidência**: em última instância quem paga o imposto
+A única razão para a taxação de propriedade (imóveis, carros, etc) é que ela é mais simples de aplicar que tributos sobre outras formas de patrimônio, mas os efeitos dela dependem da sua **incidência**
 
-Uma visão é a de *benefits tax view*, o **modelo de Tiebout**: o imposto (local) sobre moradia é usado para pagar bens públicos locais, então é apenas um preço pago pelas amenidades do município
+Uma visão é a de *benefits tax view*, o **modelo de Tiebout**: o imposto (local) sobre moradia é usado para pagar bens públicos locais, então é apenas um preço pago pelas amenidades do município &amp;mdash; ele não redistribui renda
 
-A ideia é que as pessoas "votam com os pés" e isso tem que manter o imposto local igual ao benefício de se morar lá
+A ideia é que no modelo de Tiebout as pessoas "votam com os pés", e por isso as cidades têm que manter o imposto local igual ao benefício de se morar lá
 
 ---
 class: middle
-## Efeitos comportamentais
+## Evidência empírica
 
-Agersnap e Zidar (2021) estimam a elasticidade da receita em relação à taxa sobre ganhos de capital em entre -0,5 e -0,3, negando o argumento comum que cortes no imposto "se pagariam": a taxação que maximiza receita é entre 38-47%
+[AZ21] estimam a elasticidade da receita em relação à taxa sobre ganhos de capital em entre -0,5 e -0,3, negando o argumento comum que cortes no imposto "se pagariam": a taxação que maximiza receita é entre 38-47%
 
-Goupille-Lebret e Infante (2018) e Glogowsky (2021) estimam elasticidades da riqueza tributável em relação a taxação de heranças baixas: 0,27 e 0,1, respectivamente
+[GI18] e [Glo21] estimam elasticidades da riqueza tributável em relação a taxação de heranças baixas: 0,27 e 0,1, respectivamente
 
 [Kop07] compara a herança deixada por mortes "de repente" com pessoas com doença terminal longa, e acha riqueza reportada 10-18% menor para doenças longas (meses ou anos) e 5-10% para doenças curtas (dias ou semanas) 
-
----
-class: middle
-
-&lt;img src="figs/eae0310-12-13.png" width="80%" /&gt;
-
-A riqueza reportada dos ricos americanos cresce até os 100 anos de idade: parece haver custos de se evadir por muito tempo a riqueza, e eles "procrastinam" até a última hora o planejamento sucessório [Kop07]
-
----
-class: middle
-
-&lt;img src="figs/eae0310-14-18.png" width="70%" /&gt;
-
-Maior taxação estadual de renda física e corporativa ambos reduzem produção de inovação (elasticidade de 0,8 a 1,8 e 1,3 a 2,8, respectivamente) &amp;mdash; mas o efeito da taxação corporativa vem quase inteiramente da mobilidade estadual [Akc+22]
 
 ---
 class: middle
@@ -255,7 +269,7 @@ class: middle
 
 **Paraísos fiscais** são países que combinam confidencialidade bancária com baixa (ou nenhuma) taxação de lucros
 
-[AJZ19] comparou dados dos vazamentos "Panama papers" e "Swiss leaks" com dados administrativos escandinavos e estima que o 0,01% mais rico *evade* ~25% dos impostos devidos com contas em paraísos fiscais (contra ~5% da população em geral)
+[AJZ19] comparou dados dos vazamentos "Panama Papers" e "Swiss Leaks" com dados administrativos escandinavos e estima que o 0,01% mais rico *evade* ~25% dos impostos devidos (!) com contas em paraísos fiscais (contra ~5% da população em geral)
 
 Eles estimam que 1,6% da riqueza total escandinava, e 3,3% da mundial, está escondida em paraísos fiscais &amp;mdash; e essa riqueza é extremamente concentrada: enquanto 0,01% mais rico tem 5% da riqueza total, tem metade da riqueza em paraísos fiscais 
 
@@ -264,115 +278,132 @@ class: middle
 
 &lt;img src="figs/eae0310-13-7.png" width="50%" /&gt;&lt;img src="figs/eae0310-13-7b.png" width="50%" /&gt;
 
-Probabilidade de ter uma conta não-reportada no HSBC e proporção da riqueza naquela conta (condicional a ter uma), por renda entre os mais ricos [AJZ19]
+Enquanto o 99% (até $2mi de patrimônio líquido) têm probabilidade quase zero de ter uma conta no HSBC não reportada, essa probabilidade sobe para quase 1% no 0.01% mais rico (&gt; $40mi) &amp;mdash; mas condicional na existência da conta, todos sonegam por volta de 40% da sua riqueza total [AJZ19]
 
 ---
 class: middle
 
 &lt;img src="figs/eae0310-13-8.png" width="50%" /&gt;&lt;img src="figs/eae0310-13-8b.png" width="50%" /&gt;
 
-A evasão fiscal, de riqueza e consequentemente de renda, é altamente crescente ao longo da distribuição, tornando os sistemas tributários bem menos progressivos que pela escolha social [AJZ19]
+Isso gera uma desigualdade de riqueza sonegada gigantesca: enquanto o 0.01% mais rico têm 5% da riqueza dinamarquesa, eles representam metade da riqueza em paraísos fiscais &amp;mdash; ademais, condicional em sonegar renda, domicílios sonegam todos por volta de 10%, mas a proporção sonegando dá um salto nos 5% e 0.5% mais ricos [AJZ19]
 
 ---
 class: inverse, middle, center
 
 # Scheuer &amp; Slemrod (2021). "Taxing Our Wealth"
 
+
+---
+class: middle
+
+&lt;img src="figs/eae0310-13-1.png" width="70%" /&gt;
+
+A motivação da **taxação de riqueza** é que outras formas de tributação, mesmo de capital e heranças, têm alcance limitado sobre o 0.01% mais rico, tornando o sistema regressivo no (extremo) topo da distribuição &amp;mdash; algo que defensores desse imposto dizem que ele resolveria (Saez)
+
 ---
 class: middle
 ## Imposto sobre riqueza
 
-Taxação de riqueza é um imposto sobre o *patrimônio líquido total*: o valor dos ativos menos os passivos possuídos por cada domicílio
+O imposto sobre riqueza (no Brasil, *imposto sobre grandes fortunas*) é um imposto sobre o **patrimônio líquido**: o valor dos ativos menos os passivos possuídos por cada domicílio
 
-Há duas dificuldades práticas com um imposto sobre riqueza:
+Um imposto sobre **estoque** de capital é (economicamente) equivalente a um imposto sobre **fluxo**! Se a taxa normal de lucro é `\(5\%\)`, então um imposto sobre capital de `\(1\%\)` é equivalente a um imposto sobre lucro de `\(20\%\)`
 
-1. É difícil estimar anualmente o valor de propriedades não comercializadas em mercado (firmas fechadas, propriedades que não estão a venda, etc)
-2. A quantidade de riqueza nem sempre tem relação com a renda disponível em um dado ano (por exemplo, investimentos não líquidos)
+Quanto menor a taxa normal de lucro, maior é o efeito de um imposto sobre capital: se ao invés de `\(5\%\)` for `\(2\%\)`, então o imposto de `\(1\%\)` se torna uma taxa de `\(50\%\)` sobre o lucro
 
 ---
 class: middle
 
 &lt;img src="figs/iq-meme.jpg" width="70%" style="display: block; margin: auto;" /&gt;
 
+---
+class: middle
+## Imposto sobre riqueza
+
+
+Há uma diferença importante: taxação de riqueza é um imposto sobre a **taxa normal** de lucro &amp;mdash; *lucros anormais não são taxados*
+
+E vice-versa: se eu deixar toda a minha riqueza em títulos que pagam 0% a.a. (bonds americanos até pouco tempo), eu não pago nada de taxação de renda do capital, mas ainda pago o mesmo em imposto sobre riqueza
+
+Isso tem tanto consequências positivas, ao não taxar lucros inframarginais advindos de inovação e maior produtividade, quanto negativas, ao não taxar lucros econômicos por poder de mercado
 
 ---
 class: middle
 ## Imposto sobre riqueza
 
-Um imposto sobre *estoque* de capital é (economicamente) equivalente a um imposto sobre *fluxo*! Se a taxa normal de lucro é `\(5\%\)`, então um imposto sobre capital de `\(1\%\)` é equivalente a um imposto sobre lucro de `\(20\%\)`
+Note que a teoria microeconômica diz que *devemos taxar em 100% lucro econômico*, pois ele não gera efeito comportamental, e o imposto de riqueza taxa em 0%
 
-Quanto menor a taxa normal de lucro, maior é o efeito de um imposto sobre capital: se ao invés de `\(5\%\)` for `\(2\%\)`, então o imposto se torna uma taxa de `\(50\%\)` sobre o lucro
+Há também as duas dificuldades já discutidas anteriormente: é difícil estimar anualmente o valor de patrimônio sem liquidez; e a quantidade de riqueza nem sempre tem relação com a renda disponível em um dado ano
 
-Há uma diferença importante: taxação de riqueza é um imposto sobre a taxa *normal* de lucro &amp;mdash; *lucros anormais não são taxados*
-
----
-class: middle
-## Imposto sobre riqueza
-
-Por exemplo, se eu deixar toda a minha riqueza em títulos que pagam 0%a.a., eu não pago nada de imposto de renda, mas pago ainda o mesmo em taxa sobre riqueza
-
-Isso tem vantagens e desvantagens: por um lado, recompensa bom investimento e empreendedores bem-sucedidos; por outro lado, a teoria microeconômica diz que devemos taxar em 100% lucro econômico, e esse imposto taxa em 0%
-
-Impostos que diminuem a taxa de retorno se acumulam no tempo, e mesmo impostos pequenos podem ter efeito enorme na renda
+Esse imposto teria potencial efeito significativo na desigualdade de riqueza, já que tributos que diminuem a taxa de retorno se acumulam no tempo, tendo efeito considerável no longo prazo
 
 ---
 class: middle
 
 &lt;img src="figs/eae0310-13-3.png" width="75%" /&gt;
 
-Uma taxa de imposto sobre capital de 3-8%, como proposta nos EUA, pode parecer confiscatória, mas na verdade apenas controlaria o crescimento da proporção na renda do Forbes 400 (Saez)
+Uma taxa de imposto sobre capital de 5-8%, como proposta pelo Sanders nos EUA, pode parecer confiscatória (já que corresponde a uma taxação dos lucros de até 100% ou mais), mas na verdade apenas controlaria o crescimento da proporção na renda do Forbes 400 nos últimos 40 anos (Saez)
 
 ---
 class: middle
 ## Imposto sobre riqueza
 
-Embora hoje apenas poucos países tenham imposto sobre riqueza, isso não é de forma alguma uma invenção: Finlândia, Suécia e Suíça já tiveram taxas sobre riqueza de até 4%, e hoje partes da Espanha chegam a 3,75%
+Embora hoje apenas alguns poucos países tenham imposto sobre riqueza, esse imposto não seria de forma alguma uma invenção (ou "jabuticaba"): Finlândia, Suécia e Suíça já tiveram taxas sobre riqueza de até 4%, e hoje partes da Espanha chegam a 3,75%
 
-A maior parte desses países abandonou essa política nas últimas décadas, o que pode apontar dificuldades práticas (ou ser uma questão de economia política)
+A maioria desses países abandonou essa política nas últimas décadas, o que pode apontar dificuldades práticas (ou ser uma questão de economia política)
 
-Propostas nos EUA têm taxas marginais são bem maiores (até 8%), e atingem muito menos pessoas (só 75.000 domicílios no plano de Warren, com 600 famílias na alíquota máxima) 
-
----
-class: middle
-
-&lt;img src="figs/eae0310-13-4.png" width="90%" /&gt;
-
-Experiências europeias com taxação de riqueza [SS21]
+Propostas recentes nos EUA têm taxas marginais bem maiores (até 8%), e atingem muito menos pessoas (só 75.000 domicílios no plano de Warren, com 600 famílias na alíquota máxima)
 
 ---
 class: middle
-## Relação com outros impostos
 
-Como vimos, a *taxação de propriedade* é uma forma de imposto sobre riqueza, mas com particularidades: primeiro, taxação de propriedade não permite dedução de dívida
+&lt;img src="figs/eae0310-13-4.png" width="85%" /&gt;
 
-Se eu tomo um empréstimo e compro uma casa, eu pago IPTU sobre o seu valor total, mesmo que meu patrimônio líquido seja zero
-
-Mais importante, por causa de idiossincrasias na composição de carteira de ativos, não é um imposto que atinge os mais ricos: enquanto moradia representa 62% do ativo bruto dos 3 quintis do meio, apenas 8% do 1% mais rico
+Vários países europeus já implementaram por muitas décadas imposto sobre riqueza &amp;mdash; mas experiências com esse imposto sempre geraram receita pequena e tiveram alíquotas menores que propostas mais recentes [SS21]
 
 ---
 class: middle
-## Efeitos comportamentais
+## Taxação de riqueza e propriedade
 
-Nas Suíça, uma redução de 1p.p. no imposto sobre taxação (mas note que isso é uma redução significativa!) aumentou a riqueza reportada em 43%: 1/4 do efeito viria de mobilidade, 1/5 da *capitalização dos imóveis*, e o efeito de poupança é muito pequeno
+Como vimos, a **taxação de propriedade** é uma forma de imposto sobre riqueza, mas com algumas particularidades negativas
+
+A taxação de propriedade não permite dedução de dívida: uma casa inteiramente financiada com dívida representa um patrimônio líquido zero, mas ainda assim paga IPTU
+
+Ademais, ela fere a **equidade horizontal** ao taxar um tipo de ativo mas não outros &amp;mdash; e pior, não é um ativo especialmente detido pelos mais ricos: enquanto moradia representa 62% do ativo bruto dos 3 quintis do meio, apenas 8% do patrimônio do 1% mais rico é imobiliário
+
+---
+class: middle
+## Taxação de riqueza e heranças
+
+Outra forma de taxação do *estoque* de capital é a taxação de heranças: esse é mais similar ao imposto sobre riqueza, mas é cobrado apenas uma vez na morte da pessoa
+
+Isso facilita a **evasão fiscal**: é mais fácil fazer planejamento tributário para um evento que ocorre uma única vez por geração que uma cobrança anual de impostos
+
+Por outro lado, reduz os custos administrativos do imposto, que não envolve um cálculo (frequentemente difícil) do patrimônio líquido do contribuinte todo ano fiscal
+
+---
+class: middle
+## Evidência empírica
+
+Na Suíça, uma redução de 1p.p. (bastante!) no imposto aumentou a riqueza reportada em 43%: 25% do efeito viria de mobilidade, 20% da **capitalização** dos imóveis, e o efeito na taxa de poupança é muito pequeno
 
 Na Dinamarca, uma redução de 1p.p. aumentou riqueza reportada em 21% em 8 anos &amp;mdash; metade do efeito é *mecânico*, já que uma taxa maior reduz a riqueza mesmo sem alteração comportamental
 
-A reintrodução surpresa de um imposto desse tipo na Califórnia reduziu riqueza tributável em 32% em 4 anos, quase inteiramente por elisão fiscal
+Similarmente, nos Países Baixos uma redução de 1p.p. aumentou a riqueza reportada em 14% &amp;mdash; mas pesquisa para a Suécia acha um valor muito menor de 0.1-0.27%
 
 ---
 class: middle
 ## Efeitos reais
 
-Um efeito possível da taxação de riqueza é reduzir o empreendedorismo (69% do Forbes 400 são fundadores de suas companhias)
+Um efeito possível da taxação de riqueza é reduzir o empreendedorismo (69% do Forbes 400 são fundadores de suas companhias) &amp;mdash; mas como o sucesso no empreendedorismo é altamente assimétrico, a utilidade marginal no caso de sucesso é bastante pequena
 
-Mas como o sucesso no empreendedorismo é altamente assimétrico, a utilidade marginal no caso de sucesso é bastante pequena, e é difícil acreditar que o imposto afete muito a decisão de empreender
+Entretanto, se esse imposto reduzir a acumulação de capital, no longo prazo pode reduzir a taxa de salários
 
-Taxação de riqueza também pode incentivar emigração &amp;mdash; em várias evidências que vimos esse efeito é significativo, mas em todos eles o imposto era local (e na Espanha esse efeito veio inteiramente de declaração fraudulenta)
+Taxação de riqueza também pode incentivar emigração: a evidência é que esse efeito é significativo, mas nela o imposto é regional (e na Espanha o efeito veio inteiramente de declaração fraudulenta)
 
 ---
 class: middle
 
-&lt;img src="figs/eae0310-13-6.png" width="80%" /&gt;
+&lt;img src="figs/eae0310-13-6.png" width="70%" /&gt;
 
 Uma redução do imposto de riqueza de 2,2% para 1% para casais, na Dinamarca em 1989, aumentou sua riqueza em 18% vs solteiros depois de 8 anos, com 11% sendo *efeito mecânico* &amp;mdash; o efeito dobra entre ultra-ricos e em 30 anos: elasticidade de longo prazo é 0,7 para os ricos e 1,15 para os ultra-ricos [Jak+20]
 
@@ -384,49 +415,55 @@ Quando a Espanha deu isenção do imposto sobre riqueza para algumas formas de s
 
 Isso pode gerar significativas distorções econômicas, na medida que firmas tentem esconder o patrimônio de seus donos mantendo o capital fechado, mesmo quando abrir fosse eficiente
 
-Mas uma vantagem do imposto sobre riqueza em relação à taxação de herança é que o 2o só precisa evadir um ano, enquanto o 1o envolve desenvolver todo um caminho plausível de fluxo de renda e riqueza
+A implementação desse imposto também poderia plausivelmente intensificar a sonegação fiscal de riqueza em paraísos fiscais, que já representam 3-8% da riqueza mundial
 
 ---
 class: middle
 
 &lt;img src="figs/eae0310-13-5.png" width="75%" /&gt;
 
-Não há consenso sobre o nível de evasão de um potencial imposto sobre riqueza &amp;mdash; e uma taxa elevada de evasão prejudicaria significativamente a progressividade do imposto (Saez)
+Não há consenso sobre o nível de evasão de um potencial imposto sobre riqueza &amp;mdash; e uma evasão elevada prejudicaria bastante a progressividade do imposto, enquanto aumentaria o seu custo de eficiência (Saez)
 
 ---
 class: middle
 ## Imposto lump-sum sobre riqueza
 
-A princípio, desigualdade de riqueza poderia ser aliviada por uma taxação de riqueza única e inesperada, que é efetivamente *lump-sum*
+A princípio, desigualdade de riqueza poderia ser aliviada por uma taxação de riqueza única e inesperada, que é efetivamente **lump-sum**
 
 Por ser *única e inesperada*, ela não distorce comportamento &amp;mdash; de fato, lucro sobre capital já investido é **lucro econômico**, e taxação de lucro econômico não é distorciva
 
-Essa política, entretanto, só funciona se for de fato única: na prática, frequentemente se tornam políticas de longo-prazo ou acontecem repetidamente
+Essa política, entretanto, só funciona se for de fato única (e os agentes acreditarem que será única): na prática, frequentemente se tornam políticas de longo-prazo ou acontecem repetidamente, inviabilizando esse argumento
 
----
-class: middle
-## Economia política
-
-O argumento para taxação de riqueza vai além da redução de desigualdades econômicas: envolve também a redução de **desigualdade política** &amp;mdash; e isso justificaria taxação até além do máximo da curva de Laffer
-
-O 1% mais rico pode comprar empresas de mídia, fazer contribuições de campanha etc
-
-Quanto maior a concentração de riqueza, maior o descontentamento popular e instabilidade política
-
-Por outro lado, mais importante se torna o controle rígido do poder político pela elite para evitar confiscação dessa riqueza: enfraquecimento institucional e ruptura democrática
 
 ---
 class:middle
 # Referências
 &lt;small&gt;
+[AGP17] F. Alvaredo, B. Garbinti, and T. Piketty. "On the share of
+inheritance in aggregate wealth: Europe and the USA, 1900-2010". In:
+_Economica_ 84.334 (2017), pp. 239-260.
+
 [AJZ19] A. Alstadsæter, N. Johannesen, and G. Zucman. "Tax evasion and
 inequality". In: _American Economic Review_ 109.6 (2019), pp.
 2073-2103.
 
-[Akc+22] U. Akcigit, J. Grigsby, T. Nicholas, et al. "Taxation and
-Innovation in the Twentieth Century*". In: _The Quarterly Journal of
-Economics_ 137.1 (2022), pp. 329-385.
+[AZ21] O. Agersnap and O. Zidar. "The tax elasticity of capital gains
+and revenue-maximizing rates". In: _American Economic Review: Insights_
+3.4 (2021), pp. 399-416.
 
+[GI18] J. Goupille-Lebret and J. Infante. "Behavioral responses to
+inheritance tax: Evidence from notches in France". In: _Journal of
+Public Economics_ 168 (2018), pp. 21-34.
+
+[Glo21] U. Glogowsky. "Behavioral responses to inheritance and gift
+taxation: Evidence from Germany". In: _Journal of Public Economics_ 193
+(2021), p. 104309.
+&lt;/small&gt;
+
+---
+class:middle
+# Referências
+&lt;small&gt;
 [Gru16] J. Gruber. _Public finance and public policy_. 5th ed.
 Macmillan, 2016.
 
@@ -441,6 +478,10 @@ returns". In: _The Quarterly Journal of Economics_ 122.4 (2007), pp.
 [Pik11] T. Piketty. "On the long-run evolution of inheritance: France
 1820-2050". In: _The quarterly journal of economics_ 126.3 (2011), pp.
 1071-1131.
+
+[PZ14] T. Piketty and G. Zucman. "Capital is back: Wealth-income ratios
+in rich countries 1700-2010". In: _The Quarterly Journal of Economics_
+129.3 (2014), pp. 1255-1310.
 
 [SS21] F. Scheuer and J. Slemrod. "Taxing our wealth". In: _Journal of
 Economic Perspectives_ 35.1 (2021), pp. 207-30.
