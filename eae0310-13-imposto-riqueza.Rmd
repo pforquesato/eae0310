@@ -75,7 +75,7 @@ class: middle
 knitr::include_graphics("figs/eae0310-12-2.png")
 ```
 
-O estoque de capital nas economias desenvolvidas é de 600% do PIB, com a maior parte sendo moradia (urbana) &mdash; que substituiu a importância histórica das propriedades rurais `r Citep(myBib, "piketty2014capital")`
+O estoque de capital nas economias desenvolvidas é de 600% do PIB, com a maior parte sendo moradia (urbana) &mdash; que substituiu a importância histórica das propriedades rurais (França) `r Citep(myBib, "piketty2014capital")`
 
 ---
 class: middle
@@ -104,7 +104,7 @@ Considere um mercado com um ativo livre de risco com retorno líquido $r$ e um a
 
 O agente escolhe então a proporção no ativo arriscado $a$ tal que resolva: $$\max_{a} \mathbb{E} \left\{ u \left( (1 - \tau_W)W \left[ 1 + (ax + (1 - a)r) \right]  \right)  \right\}$$
 
-onde $\tau_W$ é o imposto sobre riqueza. Chamando a riqueza no fim do investimento de $W_{1}$, temos que a CPO é: $$\mathbb{E} \left\{ u^{\prime}(W_1) (1 - \tau_W) (x - r) \right\} = 0 = \mathbb{E} \left\{ u^{\prime}(W_1)(x - r) \right\}$$
+onde $\tau_W$ é o imposto sobre riqueza. Chamando a riqueza no fim do investimento de $W_{1}$, temos que a CPO é: $$\mathbb{E} \left\{ u^{\prime}(W_1) (1 - \tau_W) W (x - r) \right\} = 0 = \mathbb{E} \left\{ u^{\prime}(W_1)(x - r) \right\}$$
 
 ---
 class: middle
@@ -135,16 +135,6 @@ class: middle
 No mundo real, entretanto, quase nunca **compensação de perdas** é completa, pois abre espaço para elisão/sonegação fiscal, e envolve possivelmente o Estado pagar o indivíduo, o que é politicamente difícil &mdash; e se a taxação é *progressiva*, então indivíduos podem trocar de alíquota quando ganham em relação a quando perdem
 
 Sem compensação completa de perdas, o efeito da taxação na tomada de risco é ambíguo, já que diminui o valor esperado do ativo
-
----
-class: middle
-## Imposto de renda e educação
-
-Isso não vale apenas para ativos financeiros: um exemplo de investimento arriscado é a **educação**, já que ela implica gastos (pelo menos em custos de oportunidade) presentes para retornos incertos e bastante variáveis no futuro
-
-Se o gasto em educação é de graça ou dedutível, então há **compensação por perdas** no investimento &mdash; ademais, como imposto de renda só é cobrado sobre renda recebida, os custos de oportunidade também são dedutíveis
-
-Então tributação de renda *aumentaria* o investimento em educação &mdash; mas na prática o imposto de renda é progressivo, o que torna a *compensação de perdas não completa*, e portanto **o efeito é ambíguo**
 
 ---
 class: middle
