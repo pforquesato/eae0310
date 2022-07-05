@@ -27,6 +27,16 @@ myBib <- ReadBib("./esp_bib.bib", check = FALSE)
 
 # Impostos corporativos
 
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '50%', fig.align='center'}
+knitr::include_graphics("figs/eae0310-12-19.png")
+```
+
+O Brasil tem taxação corporativa [comparativamente alta](https://taxsummaries.pwc.com/quick-charts/corporate-income-tax-cit-rates), chegando a 34% (ver slide aula 12); por outro lado, não tributa a distribuição de dividendos &mdash; note que alguns países têm taxas corporativas regionais (nos EUA por volta de 4% e no Canadá chegando a 15%), enquanto o Brasil só cobra impostos corporativos ao nível federal
+
 ---
 class: middle
 ## Corporações

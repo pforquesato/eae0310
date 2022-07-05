@@ -139,7 +139,7 @@ class: middle
 
 Há várias formas de taxação do capital:
 
-(i) **Imposto de renda corporativa:** no Brasil, há o Imposto de Renda da Pessoa Jurídica (IRPJ) de 15% sobre o lucro real e Contribuição Social sobre Lucro Líquido (CSLL) de 9% (15% para instituições financeiras) (*)
+(i) **Imposto de renda corporativa:** no Brasil, há o IRPJ de 15% sobre o lucro real (25% acima de 240 mil/ano) e Contribuição Social sobre Lucro Líquido (CSLL) de 9% (20% para instituições financeiras)(*)
 
 (ii) **Imposto de renda do capital na pessoa física:** no Brasil, dividendos são *rendimentos isentos*, e ganhos de capital taxados em 15% (até 5mi, subindo progressivamente até 22,5% acima de 30mi), mas dedutíveis do IRPJ e CSLL
 
