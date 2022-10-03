@@ -158,7 +158,7 @@ O Brasil é mais desigual que qualquer outra grande economia (5º maior do mundo
 class: middle
 ## 2. Como o governo pode intervir na economia?
 
-Por exemplo, digamos que o governo queira incentivar a produção de bens desejáveis ou desicentivar de indesejáveis (e.g. saúde), ele pode: 
+Por exemplo, digamos que o governo queira incentivar a produção de bens desejáveis (e.g. saúde) ou desicentivar de indesejáveis, ele pode: 
 
 1. Intervir no mecanismo de preços (incentivos dos agentes) por meio de taxação (ou subsídios)
 2. Proibir ou obrigar diretamente o consumo de dado bem (a ser oferecido usualmente pelo mercado)

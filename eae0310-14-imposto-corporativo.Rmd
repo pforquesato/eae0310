@@ -35,7 +35,7 @@ class: middle
 knitr::include_graphics("figs/eae0310-12-19.png")
 ```
 
-O Brasil tem taxação corporativa [comparativamente alta](https://taxsummaries.pwc.com/quick-charts/corporate-income-tax-cit-rates), chegando a 34% (ver slide aula 12); por outro lado, não tributa a distribuição de dividendos &mdash; note que alguns países têm taxas corporativas regionais (nos EUA por volta de 4% e no Canadá chegando a 15%), enquanto o Brasil só cobra impostos corporativos ao nível federal
+O Brasil tem taxação corporativa [comparativamente alta](https://taxsummaries.pwc.com/quick-charts/corporate-income-tax-cit-rates), chegando a 34% (ver slide aula 12); por outro lado, não tributa a distribuição de dividendos &mdash; note que alguns países têm taxas corporativas regionais (nos EUA por volta de 4% e no Canadá chegando a 15%), enquanto o Brasil só cobra impostos corporativos ao nível federal `r Citep(myBib, "brealey2006corporate")`
 
 ---
 class: middle
@@ -291,6 +291,15 @@ A visão antiga sobre taxação de dividendos é de que ao encarecer o financiam
 Mas essa visão decorre de um modelo que não explica por que dividendos existem em primeiro lugar: no modelo de agência, taxar divendos **aumentaria** o investimento
 
 A visão moderna é que investimento das empresas se dá majoritariamente por *lucros retidos*: assim, taxação de dividendos tem pouco efeito no nível de investimento [[Artigo no Jornal da USP]](https://jornal.usp.br/artigos/afinal-a-taxacao-de-dividendos-reduz-o-investimento/)
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-14-21.png")
+```
+
+Fontes de financiamento das empresas (não-financeiras) americanas (% do total) &mdash; quase todo o financiamento do investimento na prática vem de lucros retidos e fundos para depreciação: assim, taxação de dividendos tem pouco efeito sobre o custo de financiamento das firmas `r Citep(myBib, "brealey2006corporate")`
 
 ---
 class: middle

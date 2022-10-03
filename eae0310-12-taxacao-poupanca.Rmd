@@ -193,6 +193,15 @@ No mundo real, quando 50% da riqueza está com o 1% mais rico, é difícil acred
 ---
 class: middle
 
+```{r, echo=FALSE, out.width = '90%', fig.align='center'}
+knitr::include_graphics("figs/eae0310-12-20.png")
+```
+
+A suavização de consumo com um perfil hiperbólico de renda ao longo da vida implica um **ciclo-da-vida** na acumulação de riqueza: com poupança positiva na idade ativa e acúmulo de riqueza, que depois é gasta inteiramente na aposentadoria
+
+---
+class: middle
+
 ```{r, echo=FALSE, fig.show="hold", out.width="50%"}
 knitr::include_graphics("figs/eae0310-12-14.png")
 knitr::include_graphics("figs/eae0310-12-14b.png")
