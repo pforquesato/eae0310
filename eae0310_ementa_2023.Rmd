@@ -1,0 +1,133 @@
+---
+title: 'EAE-0310: ECONOMIA DO SETOR PÚBLICO'
+author: Pedro Forquesato<br/>Departamento de Economia<br/>Faculdade de Economia, Administração
+  e Contabilidade<br/>Universidade de São Paulo
+date: "2023/1"
+output:
+  prettydoc::html_pretty:
+    toc: yes
+    theme: cayman
+    urlcolor: red
+  word_document: default
+  html_document:
+    toc: yes
+    df_print: paged
+  pdf_document: default
+institute: Departamento de Economia<br/>Universidade de São Paulo
+bibliography: ./slides/esp_bib.bib
+---
+
+### Objetivo Geral
+
+Em economias modernas mais de um terço do produto nacional é absorvido pelos governos na forma de impostos; eles empregam um de cada cinco trabalhadores (média da OCDE) e no Brasil o consumo governamental responde por quase 20% do PIB. É indiscutível, portanto, que o estudo do papel do setor público na economia é fundamental para o entendimento das sociedades modernas.
+
+Nesse curso estudaremos em que situações e de que forma o governo deve atuar na economia de forma a gerar o melhor bem-estar para a sociedade, e se de fato isso ocorre no mundo real (e por que não). Estudaremos também como deve ser organizado o sistema tributários dos países de forma a alcançar seus objetivos de redistribuição de renda, e como abordar dificuldades modernas na taxação de riqueza e grandes empresas.
+
+### Objetivos de Aprendizagem
+
+1. Entender conceitualmente as consequências da intervenção governamental na economia, prevendo de forma substanciada e logicamente precisa a consequência provável de políticas públicas.
+2. Conhecer os principais modelos microeconômicos usados para explicar a ação governamental, resolvendo-os analiticamente e interpretando-os corretamente.  
+3. Argumentar de forma lógica e informada sobre o papel do governo e formulação de políticas públicas, desenvolvendo ensaios argumentativos defendendo adoção de políticas.
+4. Julgar a coerência lógica e condizência empírica de argumentos econômicos, avaliando criticamente os argumentos dos colegas de classe.
+<!-- participando ativamente da discussão em aula. -->
+
+### Avaliação de Aprendizagem
+
+1. Prova de meio-termo, cobrindo a primeira parte: 40-50% da média. (Objetivos de aprendizagem 1 e 2.)
+2. Prova final, cobrindo a segunda parte: 40-50% da média. (Objetivos de aprendizagem 1 e 2.)
+3. Duas listas de exercício: cada lista de exercício entregue *completamente* feita adiciona 0,5 ponto (**crédito extra**) na nota final (não há crédito parcial). (Objetivo de aprendizagem 2.) 
+4. Dois ensaios argumentativos (artigos de opinião) com correção por pares (6500 caracteres): até 10% da nota final cada um (**opcional**). Toda a nota virá da avaliação do ensaio do aluno, mas os ensaios apenas valerão crédito se *ambas* as atividades forem feitas adequadamente. (Objetivos de aprendizagem 3 e 4.)
+<!-- 4. Participação em aula: *até* 10% da nota final (opcional). (Objetivo de aprendizagem 3.) -->
+
+A não participação em uma atividade opcional (ensaio ou lista) **não** impede a participação do aluno em qualquer outra atividade. As provas envolvem perguntas conceituais sobre a matéria vista em aula e da bibliografia obrigatória, e uma questão escolhida dentre as questões da lista com algumas modificações. 
+
+A média final, portanto, é dada pela seguinte fórmula: $$\text{MF} = \sum_{j=1}^{2} \left( 0.4\text{NP}_j + 0.1\max\{ \text{NP}_j, \text{NE}_j \} + 0.05 𝟙\{\text{LE}_j = 1\} \right)$$
+
+Todas as médias serão arredondadas para cima (em relação à nota final no Moodle) a uma casa decimal (**e apenas isso**).
+
+### Qualidade de Vida
+
+Se você estiver passando por dificuldades: 1. se isso atrapalhar de alguma forma a sua capacidade de cursar a disciplina, fale comigo *antes do fim do curso* e acertaremos algo; 2. contate a [Comissão de Qualidade de Vida](https://www.fea.usp.br/fea/noticias/conheca-cqv-comissao-de-qualidade-de-vida), que eles poderão ajudar (além de fornecerem informações de como acessar os outros serviços de saúde mental da USP).
+
+### Docente
+
+Meu nome é Pedro Forquesato, sou professor doutor do Departamento de Economia da FEA/USP e pesquisador do [LabPub](https://labpub.fea.usp.br/). Mais informações sobre mim podem ser encontradas no [meu site](https://www.pedroforquesato.com). Minha área de atuação é em microeconomia aplicada, com foco de pesquisa em economia do setor público. Em 2023, leciono Economia do Setor Público na graduação (esse curso), e Econometria I e Economia do Setor Público I na pós.
+
+### Contato
+
+Dúvidas gerais sobre a matéria ou o curso podem (preferencialmente) ser perguntadas no fórum do Moodle. Para questões específicas e individuais me mandem um [e-mail](mailto:pforquesato@usp.br). Se quiserem conversar pessoalmente, podem marcar um horário de atendimento no link disponível na plataforma. A minha sala é a 217 no FEA2.
+
+Por favor, sempre mandem e-mails claramente identificados, legíveis, *educados* e relativamente curtos. (Se o e-mail que vocês está escrevendo tem mais de 2 parágrafos, talvez valha a pena conversarmos pessoalmente.)
+
+### Monitoria
+
+A monitora do curso será... Ela será responsável por uma monitoria semanal (definam entre si por favor um cronograma) e office-hours quando necessário. Estará disponível para ajudar por e-mail também. A monitoria é *parte importante* (mas não obrigatória) do curso.
+
+### Políticas e regulamentos
+
+**Aulas.** As aulas serão segundas-feiras das 07h30 às 09h10 e quartas-feiras das 09h20 às 11h00 (turma 2023-121) e segundas das 09h20 às 11h00 e quartas das 7h30 às 09h10 (turma 2023-122) na sala **XX** do FEA 1.
+
+Como eu preciso deixar meu filho na creche antes do trabalho, e a creche só abre às 07h30, as aulas começarão sempre 07h40.
+
+**Comunicação.** Toda a comunicação oficial por minha parte do curso será feita pelo [Moodle](https://edisciplinas.usp.br), incluindo listas, notas, presenças, trabalhos e avisos. O curso assume que o aluno acessa frequentemente a plataforma e checa diariamente os e-mails recebidos.
+
+**Faltas.** Pelo regulamento da USP, participação em 70% das aulas é obrigatória para aprovação na disciplina. Faltas serão desconsideradas apenas com atestado médico emitido pelo HU/USP ([Portaria GR 3740/2007](http://leginf.usp.br/?portaria=portaria-gr-no-3740-de-29-de-marco-de-2007)), com permissão especial para eventual Covid. 
+
+O aluno pode faltar **no máximo** uma das duas provas (independentemente de atestado) e substituir a nota pela reaval, *sem precisar de justificativa*. (Naturalmente, a reaval cobre toda a matéria do curso.)
+
+**Ética.** Todas as provas são **individuais e sem consulta**. "Cola" em alguma das provas resultará em reprovação sumária no curso. Listas podem ser feitas em conjunto e/ou com auxílio do monitor, mas *devem ser escritas individualmente*.  Ensaios serão submetidos pelos alunos ao Turnitin, e devem ser *inteiramente* originais. (Citações não são permitidas.) Listas copiadas ou ensaios com similaridade implicarão renúncia de todas as atividades opcionais do curso.
+
+Note que essas punições ocorrerão sem prejuízo de eventual instauração de processo administrativo de acordo com o [Código de Ética da USP](http://leginf.usp.br/?resolucao=resolucao-no-4871-de-22-de-outubro-de-2001-3).
+
+**Revisões.** Junto com a correção das provas, enviarei gabaritos delas. Pedidos de revisão devem vir acompanhados de explicação precisa e especifica de onde a correção não seria coerente com o gabarito entregue e por que razão. Listas e ensaios não terão revisões de correção. Não há pedidos de revisão de média. [[Artigo 81, §§1-2 do RG/USP]](https://leginf.usp.br/?resolucao=consolidada-resolucao-no-3745-de-19-de-outubro-de-1990#t5)
+
+**Reavaliação.** Alunos que tiverem mais de 70% de presença e nota entre 3 e 5 ([Portaria CoG 3583/1989](https://leginf.usp.br/?resolucao=resolucao-cog-no-3583-de-29-de-setembro-de1989)) podem fazer uma segunda avaliação (prova reaval), tendo assim a sua média final na disciplina como a média aritmética simples da média do curso e da nota da reaval.
+
+**Outros.** Qualquer conflito com o docente que vocês não consigam (ou não queiram) resolver pessoalmente, recomendo que entrem em contato com a [Ouvidoria da FEA](https://www.fea.usp.br/fea/ouvidoria).
+
+### Conteúdo programático e cronograma
+
+O curso está dividido em duas partes. Na primeira parte do curso, estudaremos a parte do "gasto": quando e como o setor público deve intervir na economia. Na segunda parte do curso, estudaremos a "receita": como o governo deve desenhar os seu sistema de impostos de forma a minimizar distorções na economia e alcançar os seus objetivos (talvez principal entre eles redistribuir renda).
+
+#### Parte 1: Atuação governamental
+
+1. **Análise normativa**: @gruber, caps. 1 e 2 (revisão), @atkinson, cap. 11. [13/03, 15/03]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-1-introducao.html)
+2. **Formulação de políticas públicas I: custo-benefício**: @gruber, cap. 8, @finkelstein. [20/03, 22/03]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-2-custo-beneficio.html)
+3. **Formulação de políticas públicas II: economia política**: @gruber, cap. 9, @acemoglu. [27/03, 29/03]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-3-economia-politica.html)
+
+Semana santa.
+
+4. **Externalidades (aplicações)**: @gruber, caps. 5 (revisão) e 6. [10/04, 12/04]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-4-externalidades.html)
+5. **Bens públicos (aplicações)**: @gruber, caps. 7 (revisão) e 11. [17/04, 19/04]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-5-bens-publicos.html)
+6. **Seguridade social**: @gruber, cap. 12. [24/04, 26/04]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-6-seguridade-social.html)
+7. **Assistência social**: @gruber, cap. 17, @banerjee. [03/05, 08/05]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-7-assistencia-social.html)
+
+Prova de meio-termo: **10/05**. [[Lista 1]](https://www.pedroforquesato.com/files/eae0310_lista_1_2023.pdf) [[Prova de meio-termo 2022]](https://www.pedroforquesato.com/files/eae0310_prova_1_2022.pdf)
+
+#### Parte 2: Taxação na teoria e na prática
+
+8. **Introdução à taxação**: @gruber, cap. 18, @kleven. [15/05, 17/05]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-8-intro-taxacao.html)
+9. **Incidência de impostos**: @gruber, cap. 19, @allcott. [22/05, 24/05]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-9-incidencia.html)
+10. **Peso morto e taxação ótima de consumo**: @gruber, cap. 20. [29/05, 31/05]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-10-peso-morto.html)
+11. **Impostos sobre a renda do trabalho**: @gruber, cap. 21. [05/06, 07/06]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-11-imposto-renda.html)
+12. **Taxação de poupança**: @gruber, cap. 22. [12/06, 14/06]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-12-taxacao-poupanca.html)
+13. **Impostos sobre riqueza**: @gruber, cap. 23, @scheuer. [19/06, 21/06]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-13-imposto-riqueza.html)
+14. **Impostos corporativos**: @gruber, cap. 24, @zucman. [26/07, 28/07]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-14-imposto-corporativo.html)
+
+Prova final: **05/08**. [[Lista 2]](https://www.pedroforquesato.com/files/eae0310_lista_2_2023.pdf)  [[Prova final 2022]](https://www.pedroforquesato.com/files/eae0310_prova_2_2022.pdf)
+
+Reaval: **17/08**.
+
+A data limite de entrega das listas e dos ensaios está definida no Moodle. *A entrega das listas e ensaios será pelo próprio Moodle.*
+
+### Bibliografia do curso
+
+O livro-texto que vamos acompanhar de perto é o *Public Finance and Public Policy*, do Jonathan Gruber. A edição mais recente é a 6ª, de 2019, mas o curso está na maior parte baseado na 5ª edição, de 2016. 
+
+Capítulos de revisão são *opcionais* e cobrem material que vocês já aprenderam em matérias pré-requisito para essa, mas podem ser úteis para relembrar. Frequentemente os capítulos da bibliografia possuem uma seção explicando o sistema público americano. A leitura dessas seções é também opcional.
+
+Fora isso, é importante acompanhar os slides e anotações de aula, pois vou trazer dados para o Brasil que não estão no livro (como todos os outros, o livro-texto é americano), além de algumas derivações e modelos que eu ache importantes.
+
+Em várias semanas eu coloquei um artigo recente do Journal of Economic Perspectives (que é voltado a um público não técnico) para trazê-los mais próximos das discussões atuais em economia e discutirmos em aula. (Os artigos também fazem parte da leitura obrigatória; ou sendo mais explícito, também caem na prova.)
+
+#### Referências
