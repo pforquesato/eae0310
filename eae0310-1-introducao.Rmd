@@ -2,7 +2,7 @@
 title: "EAE-0310: ECONOMIA DO SETOR PÚBLICO"
 author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 217/FEA2 - pforquesato@usp.br"
 institute: "Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo"
-date: "Aula 1: Análise normativa<br/>2022/1"
+date: "Aula 1: Análise normativa<br/>2023/1"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -30,8 +30,8 @@ myBib <- ReadBib("./esp_bib.bib", check = FALSE)
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '50%', fig.align="center"}
-knitr::include_graphics("figs/syllabus.jpg")
+```{r, echo=FALSE, out.width = '90%', fig.align="center"}
+knitr::include_graphics("figs/syllabus2.jpg")
 ```
 
 ---
@@ -153,6 +153,16 @@ knitr::include_graphics("figs/eae0310-1-4.png")
 ```
 
 O Brasil é mais desigual que qualquer outra grande economia (5º maior do mundo/UNDP), embora o crescimento recente da desigualdade nos EUA tenha o aproximado do nosso país `r Citep(myBib, "souza2016")`
+
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '70%', fig.align="center"}
+knitr::include_graphics("figs/eae0310-1-16.jpg")
+```
+
+Enquanto no Brasil os 5% mais pobres tem a renda igual aos 5% mais pobres da Índia ou da área rural da China, os 1% mais ricos aqui tem a mesma renda do 1% mais ricos nos EUA [@BrankoMilan](https://twitter.com/BrankoMilan)
 
 ---
 class: middle
