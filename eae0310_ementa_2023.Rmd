@@ -14,14 +14,14 @@ output:
     df_print: paged
   pdf_document: default
 institute: Departamento de Economia<br/>Universidade de São Paulo
-bibliography: ./slides/esp_bib.bib
+bibliography: ./esp_bib.bib
 ---
 
 ### Objetivo Geral
 
-Em economias modernas mais de um terço do produto nacional é absorvido pelos governos na forma de impostos; eles empregam um de cada cinco trabalhadores (média da OCDE) e no Brasil o consumo governamental responde por quase 20% do PIB. É indiscutível, portanto, que o estudo do papel do setor público na economia é fundamental para o entendimento das sociedades modernas.
+Em economias modernas, mais de um terço do produto nacional é absorvido pelos governos na forma de impostos; eles empregam um de cada cinco trabalhadores (média da OCDE), e no Brasil o consumo governamental responde por quase 20% do PIB. É indiscutível, portanto, que o estudo do papel do setor público na economia é fundamental para o entendimento das sociedades modernas.
 
-Nesse curso estudaremos em que situações e de que forma o governo deve atuar na economia de forma a gerar o melhor bem-estar para a sociedade, e se de fato isso ocorre no mundo real (e por que não). Estudaremos também como deve ser organizado o sistema tributários dos países de forma a alcançar seus objetivos de redistribuição de renda, e como abordar dificuldades modernas na taxação de riqueza e grandes empresas.
+Neste curso estudaremos em que situações e de que forma o governo deve atuar na economia de forma a gerar o melhor bem-estar para a sociedade, e se de fato isso ocorre no mundo real (e por que não). Estudaremos também como deve ser organizado o sistema tributários dos países de forma a alcançar seus objetivos de redistribuição de renda, e como abordar dificuldades modernas na taxação de riqueza e grandes empresas.
 
 ### Objetivos de Aprendizagem
 
@@ -29,7 +29,6 @@ Nesse curso estudaremos em que situações e de que forma o governo deve atuar n
 2. Conhecer os principais modelos microeconômicos usados para explicar a ação governamental, resolvendo-os analiticamente e interpretando-os corretamente.  
 3. Argumentar de forma lógica e informada sobre o papel do governo e formulação de políticas públicas, desenvolvendo ensaios argumentativos defendendo adoção de políticas.
 4. Julgar a coerência lógica e condizência empírica de argumentos econômicos, avaliando criticamente os argumentos dos colegas de classe.
-<!-- participando ativamente da discussão em aula. -->
 
 ### Avaliação de Aprendizagem
 
@@ -37,7 +36,6 @@ Nesse curso estudaremos em que situações e de que forma o governo deve atuar n
 2. Prova final, cobrindo a segunda parte: 40-50% da média. (Objetivos de aprendizagem 1 e 2.)
 3. Duas listas de exercício: cada lista de exercício entregue *completamente* feita adiciona 0,5 ponto (**crédito extra**) na nota final (não há crédito parcial). (Objetivo de aprendizagem 2.) 
 4. Dois ensaios argumentativos (artigos de opinião) com correção por pares (6500 caracteres): até 10% da nota final cada um (**opcional**). Toda a nota virá da avaliação do ensaio do aluno, mas os ensaios apenas valerão crédito se *ambas* as atividades forem feitas adequadamente. (Objetivos de aprendizagem 3 e 4.)
-<!-- 4. Participação em aula: *até* 10% da nota final (opcional). (Objetivo de aprendizagem 3.) -->
 
 A não participação em uma atividade opcional (ensaio ou lista) **não** impede a participação do aluno em qualquer outra atividade. As provas envolvem perguntas conceituais sobre a matéria vista em aula e da bibliografia obrigatória, e uma questão escolhida dentre as questões da lista com algumas modificações. 
 
@@ -55,19 +53,17 @@ Meu nome é Pedro Forquesato, sou professor doutor do Departamento de Economia d
 
 ### Contato
 
-Dúvidas gerais sobre a matéria ou o curso podem (preferencialmente) ser perguntadas no fórum do Moodle. Para questões específicas e individuais me mandem um [e-mail](mailto:pforquesato@usp.br). Se quiserem conversar pessoalmente, podem marcar um horário de atendimento no link disponível na plataforma. A minha sala é a 217 no FEA2.
+Para questões específicas e individuais me mandem um [e-mail](mailto:pforquesato@usp.br). Se quiserem conversar pessoalmente, podem marcar um horário de atendimento no link disponível na plataforma. A minha sala é a 217 no FEA2.
 
 Por favor, sempre mandem e-mails claramente identificados, legíveis, *educados* e relativamente curtos. (Se o e-mail que vocês está escrevendo tem mais de 2 parágrafos, talvez valha a pena conversarmos pessoalmente.)
 
 ### Monitoria
 
-A monitora do curso será... Ela será responsável por uma monitoria semanal (definam entre si por favor um cronograma) e office-hours quando necessário. Estará disponível para ajudar por e-mail também. A monitoria é *parte importante* (mas não obrigatória) do curso.
+A monitora do curso será a [Fernanda Perón](mailto:fernandaperon@usp.br). Ela será responsável por uma monitoria semanal (definam entre si por favor um cronograma) e office-hours quando necessário. Estará disponível para ajudar por e-mail também. A monitoria é *parte importante* (mas não obrigatória) do curso.
 
 ### Políticas e regulamentos
 
-**Aulas.** As aulas serão segundas-feiras das 07h30 às 09h10 e quartas-feiras das 09h20 às 11h00 (turma 2023-121) e segundas das 09h20 às 11h00 e quartas das 7h30 às 09h10 (turma 2023-122) na sala **XX** do FEA 1.
-
-Como eu preciso deixar meu filho na creche antes do trabalho, e a creche só abre às 07h30, as aulas começarão sempre 07h40.
+**Aulas.** As aulas serão segundas-feiras das 07h30 às 09h10 e quartas-feiras das 09h20 às 11h00 (turma 2023-121) e segundas das 09h20 às 11h00 e quartas das 7h30 às 09h10 (turma 2023-122) na sala **G-02** do FEA 1.
 
 **Comunicação.** Toda a comunicação oficial por minha parte do curso será feita pelo [Moodle](https://edisciplinas.usp.br), incluindo listas, notas, presenças, trabalhos e avisos. O curso assume que o aluno acessa frequentemente a plataforma e checa diariamente os e-mails recebidos.
 
@@ -112,11 +108,11 @@ Prova de meio-termo: **10/05**. [[Lista 1]](https://www.pedroforquesato.com/file
 11. **Impostos sobre a renda do trabalho**: @gruber, cap. 21. [05/06, 07/06]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-11-imposto-renda.html)
 12. **Taxação de poupança**: @gruber, cap. 22. [12/06, 14/06]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-12-taxacao-poupanca.html)
 13. **Impostos sobre riqueza**: @gruber, cap. 23, @scheuer. [19/06, 21/06]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-13-imposto-riqueza.html)
-14. **Impostos corporativos**: @gruber, cap. 24, @zucman. [26/07, 28/07]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-14-imposto-corporativo.html)
+14. **Impostos corporativos**: @gruber, cap. 24, @zucman. [26/06, 28/06]. [[Slides]](https://www.pedroforquesato.com/eae0310/eae0310-14-imposto-corporativo.html)
 
-Prova final: **05/08**. [[Lista 2]](https://www.pedroforquesato.com/files/eae0310_lista_2_2023.pdf)  [[Prova final 2022]](https://www.pedroforquesato.com/files/eae0310_prova_2_2022.pdf)
+Prova final: **05/07**. [[Lista 2]](https://www.pedroforquesato.com/files/eae0310_lista_2_2023.pdf)  [[Prova final 2022]](https://www.pedroforquesato.com/files/eae0310_prova_2_2022.pdf)
 
-Reaval: **17/08**.
+Reaval: **17/07**.
 
 A data limite de entrega das listas e dos ensaios está definida no Moodle. *A entrega das listas e ensaios será pelo próprio Moodle.*
 
