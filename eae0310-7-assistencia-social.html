@@ -4,7 +4,7 @@
     <title>EAE-0310: ECONOMIA DO SETOR PÚBLICO</title>
     <meta charset="utf-8" />
     <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 217/FEA2 - pforquesato@usp.br" />
-    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.18/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -12,10 +12,18 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # EAE-0310: ECONOMIA DO SETOR PÚBLICO
+]
+.author[
 ### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 217/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
+]
+.institute[
 ### Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo
+]
+.date[
 ### Aula 7: Assistência social<br/>2022/1
+]
 
 ---
 
@@ -233,11 +241,11 @@ De fato, no Brasil nenhum programa social é universal na sua população alvo &
 class: middle
 ## Programa Bolsa Família
 
-Predecessores do PBF foram primeiro implementados em 1995, no DF e Campinas, e em 2001 no plano nacional, como 4 programas separados
-
-Em 2016, as despesas com o PBF representaram 0,44% do PIB (30x menos que a previdência e por volta do gasto com a ZFM)
+Predecessores do PBF foram primeiro implementados em 1995, no DF e Campinas, e em 2001 no plano nacional, como 4 programas separados &amp;mdash; em 2016, as despesas com o PBF representaram 0,44% do PIB (30x menos que a previdência e por volta do gasto com a ZFM)
 
 Existe uma enorme literatura examinando os efeitos (em geral benéficos) colaterais do programa [RSH17] &amp;mdash; por exemplo, [GNS21] encontram que o PBF *aumentou* o emprego local, por multiplicadores fiscais
+
+Na Colômbia, Attanasio et al encontraram [efeitos significativos](https://voxdev.org/topic/public-economics/long-term-effects-conditional-cash-transfer-programmes-evidence-colombia) em várias medidas importantes, como prisões, gravidez precoce, e drop-out 
 
 ---
 class: middle
@@ -563,6 +571,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

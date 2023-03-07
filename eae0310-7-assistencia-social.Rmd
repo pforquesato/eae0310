@@ -260,11 +260,11 @@ De fato, no Brasil nenhum programa social é universal na sua população alvo &
 class: middle
 ## Programa Bolsa Família
 
-Predecessores do PBF foram primeiro implementados em 1995, no DF e Campinas, e em 2001 no plano nacional, como 4 programas separados
-
-Em 2016, as despesas com o PBF representaram 0,44% do PIB (30x menos que a previdência e por volta do gasto com a ZFM)
+Predecessores do PBF foram primeiro implementados em 1995, no DF e Campinas, e em 2001 no plano nacional, como 4 programas separados &mdash; em 2016, as despesas com o PBF representaram 0,44% do PIB (30x menos que a previdência e por volta do gasto com a ZFM)
 
 Existe uma enorme literatura examinando os efeitos (em geral benéficos) colaterais do programa `r Citep(myBib, "ribeiro2017bolsa")` &mdash; por exemplo, `r Citep(myBib, "gerard2021cash")` encontram que o PBF *aumentou* o emprego local, por multiplicadores fiscais
+
+Na Colômbia, Attanasio et al encontraram [efeitos significativos](https://voxdev.org/topic/public-economics/long-term-effects-conditional-cash-transfer-programmes-evidence-colombia) em várias medidas importantes, como prisões, gravidez precoce, e drop-out 
 
 ---
 class: middle
