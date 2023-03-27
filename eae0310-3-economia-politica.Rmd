@@ -2,7 +2,7 @@
 title: "EAE-0310: ECONOMIA DO SETOR PÚBLICO"
 author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 217/FEA2 - pforquesato@usp.br"
 institute: "Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo"
-date: "Aula 3: Formulação de políticas públicas II - economia política<br/>2022/1"
+date: "Aula 3: Formulação de políticas públicas II - economia política<br/>2023/1"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -156,6 +156,27 @@ Então o resultado com *voto sincero* é: $(a:3, b:6, c:7, d:2)$. Mas Alice tem 
 class: inverse, middle, center
 
 # Economia Política
+
+---
+class: middle
+## O paradoxo do voto
+
+De um ponto de vista do processo eleitoral, ir votar só traz algum ganho se o indivíduo for **pivotal** para a eleição, isto é, se o voto dele alterar o resultado 
+
+Em uma eleição majoritária, isso ocorre se e somente se a diferença de votos entre os candidatos for no máximo 1! Problema: na medida que o número de eleitores aumenta, a probabilidade de ser pivotal diminui exponencialmente
+
+`r Citep(myBib, "myerson2000large")` calcula que em uma eleição com 5 milhões de eleitores, e uma probabilidade esperada de vitória de 50,1% (vs 49,9%), a probabilidade de um eleitor ser pivotal é de $8 \times 10^{-9}$
+
+
+---
+class: middle
+## O paradoxo do voto
+
+Isto implica que se o custo de votar é mero 1 centavo, então o benefício de seu candidato ganhar teria que ser ao menos R$ 85 milhões para valer a pena ir votar
+
+Mas ainda assim as pessoas votam! Esse é o **paradoxo do voto**: se fossem racionais, as pessoas deveriam saber que a chance do seu voto afetar o resultado é basicamente nula, e portanto não deveriam querer ir votar
+
+Várias teorias foram avançadas para tentar explicar esse comportamento "ilógico": dever cívico ou utilidade do voto, pressão social, e mobilização de grupos `r Citep(myBib, "feddersen2004rational")`
 
 ---
 class: middle

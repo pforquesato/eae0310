@@ -4,6 +4,7 @@
     <title>EAE-0310: ECONOMIA DO SETOR PÚBLICO</title>
     <meta charset="utf-8" />
     <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 217/FEA2 - pforquesato@usp.br" />
+    <script src="libs/header-attrs-2.18/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -11,10 +12,18 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # EAE-0310: ECONOMIA DO SETOR PÚBLICO
+]
+.author[
 ### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 217/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
+]
+.institute[
 ### Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo
-### Aula 3: Formulação de políticas públicas II - economia política<br/>2022/1
+]
+.date[
+### Aula 3: Formulação de políticas públicas II - economia política<br/>2023/1
+]
 
 ---
 
@@ -146,6 +155,27 @@ Então o resultado com *voto sincero* é: `\((a:3, b:6, c:7, d:2)\)`. Mas Alice 
 class: inverse, middle, center
 
 # Economia Política
+
+---
+class: middle
+## O paradoxo do voto
+
+De um ponto de vista do processo eleitoral, ir votar só traz algum ganho se o indivíduo for **pivotal** para a eleição, isto é, se o voto dele alterar o resultado 
+
+Em uma eleição majoritária, isso ocorre se e somente se a diferença de votos entre os candidatos for no máximo 1! Problema: na medida que o número de eleitores aumenta, a probabilidade de ser pivotal diminui exponencialmente
+
+[Mye00] calcula que em uma eleição com 5 milhões de eleitores, e uma probabilidade esperada de vitória de 50,1% (vs 49,9%), a probabilidade de um eleitor ser pivotal é de `\(8 \times 10^{-9}\)`
+
+
+---
+class: middle
+## O paradoxo do voto
+
+Isto implica que se o custo de votar é mero 1 centavo, então o benefício de seu candidato ganhar teria que ser ao menos R$ 85 milhões para valer a pena ir votar
+
+Mas ainda assim as pessoas votam! Esse é o **paradoxo do voto**: se fossem racionais, as pessoas deveriam saber que a chance do seu voto afetar o resultado é basicamente nula, e portanto não deveriam querer ir votar
+
+Várias teorias foram avançadas para tentar explicar esse comportamento "ilógico": dever cívico ou utilidade do voto, pressão social, e mobilização de grupos [Fed04]
 
 ---
 class: middle
@@ -422,9 +452,9 @@ _American Economic Review_ 99.4 (2009), pp. 1278-1308.
 accountability, and corruption: Evidence from US states". In: _American
 Economic Review_ 104.8 (2014), pp. 2456-81.
 
-[FF08] C. Ferraz and F. Finan. "Exposing corrupt politicians: the
-effects of Brazil's publicly released audits on electoral outcomes".
-In: _The Quarterly journal of economics_ 123.2 (2008), pp. 703-745.
+[Fed04] T. J. Feddersen. "Rational choice theory and the paradox of not
+voting". In: _Journal of Economic perspectives_ 18.1 (2004), pp.
+99-112.
 
 [FF11] C. Ferraz and F. Finan. "Electoral accountability and
 corruption: Evidence from the audits of local governments". In:
@@ -435,12 +465,19 @@ _American Economic Review_ 101.4 (2011), pp. 1274-1311.
 class:middle
 # Referências
 &lt;small&gt;
+[FF08] C. Ferraz and F. Finan. "Exposing corrupt politicians: the
+effects of Brazil's publicly released audits on electoral outcomes".
+In: _The Quarterly journal of economics_ 123.2 (2008), pp. 703-745.
+
 [FFM12] C. Ferraz, F. Finan, and D. B. Moreira. "Corrupting learning:
 Evidence from missing federal education funds in Brazil". In: _Journal
 of Public Economics_ 96.9-10 (2012), pp. 712-726.
 
 [Gru16] J. Gruber. _Public finance and public policy_. 5th ed.
 Macmillan, 2016.
+
+[Mye00] R. B. Myerson. "Large poisson games". In: _Journal of Economic
+Theory_ 94.1 (2000), pp. 7-45.
 
 [Nor+13] D. C. North, J. J. Wallis, S. B. Webb, et al. _In the shadow
 of violence: Politics, economics, and the problems of development_.
@@ -473,6 +510,7 @@ University Press, 1998.
 
 
 &lt;!-- O paradoxo de Sen só pode surgir quando indivíduos  --&gt;
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -520,6 +558,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
