@@ -2,7 +2,7 @@
 title: "EAE-0310: ECONOMIA DO SETOR PÚBLICO"
 author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 217/FEA2 - pforquesato@usp.br"
 institute: "Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo"
-date: "Aula 5: Bens públicos (aplicações)<br/>2022/1"
+date: "Aula 5: Bens públicos (aplicações)<br/>2023/1"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -162,7 +162,7 @@ Leilões competitivos são eficientes, mas pode haver conluio ou corrupção. Se
 
 A grande vantagem do setor privado para o público em atividades econômicas é que ele possui um **residual claimant** &mdash; o capitalista obtém todo o lucro excedente, o que mitiga problemas de *risco moral*
 
-[Barkley (2021)](https://www.aeaweb.org/research/government-outsourcing-dredging-industry) estima que terceirizar projetos para construtoras privadas poupa até 23% do custo nos EUA, especialmente onde a concorrência é maior
+[Barkley (2021)](https://www.aeaweb.org/research/government-outsourcing-dredging-industry) estima que terceirizar projetos para construtoras privadas poupa até 23% do custo nos EUA, especialmente onde a concorrência é maior &mdash; já `r Citep(myBib, "knutsson2022quality")` encontram que se a provisão privada de ambulâncias reduz custos e medidas contratuais, aumenta a mortalidade em 1,4%
 
 ---
 class: middle

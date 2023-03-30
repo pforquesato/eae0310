@@ -4,7 +4,7 @@
     <title>EAE-0310: ECONOMIA DO SETOR PÚBLICO</title>
     <meta charset="utf-8" />
     <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 217/FEA2 - pforquesato@usp.br" />
-    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.18/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -12,10 +12,18 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # EAE-0310: ECONOMIA DO SETOR PÚBLICO
+]
+.author[
 ### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 217/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
+]
+.institute[
 ### Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo
-### Aula 5: Bens públicos (aplicações)<br/>2022/1
+]
+.date[
+### Aula 5: Bens públicos (aplicações)<br/>2023/1
+]
 
 ---
 
@@ -151,7 +159,7 @@ Leilões competitivos são eficientes, mas pode haver conluio ou corrupção. Se
 
 A grande vantagem do setor privado para o público em atividades econômicas é que ele possui um **residual claimant** &amp;mdash; o capitalista obtém todo o lucro excedente, o que mitiga problemas de *risco moral*
 
-[Barkley (2021)](https://www.aeaweb.org/research/government-outsourcing-dredging-industry) estima que terceirizar projetos para construtoras privadas poupa até 23% do custo nos EUA, especialmente onde a concorrência é maior
+[Barkley (2021)](https://www.aeaweb.org/research/government-outsourcing-dredging-industry) estima que terceirizar projetos para construtoras privadas poupa até 23% do custo nos EUA, especialmente onde a concorrência é maior &amp;mdash; já [KT22] encontram que se a provisão privada de ambulâncias reduz custos e medidas contratuais, aumenta a mortalidade em 1,4%
 
 ---
 class: middle
@@ -495,6 +503,10 @@ class:middle
 [INE19] INEP. _Notas estatísticas - Censo da Educação Superior_. Tech.
 rep. 2019.
 
+[KT22] D. Knutsson and B. Tyrefors. "The Quality and Efficiency of
+Public and Private Firms: Evidence from Ambulance Services". In: _The
+Quarterly Journal of Economics_ 137.4 (2022), pp. 2213-2262.
+
 [Ost90] E. Ostrom. _Governing the commons: The evolution of
 institutions for collective action_. Cambridge university press, 1990.
 
@@ -552,6 +564,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

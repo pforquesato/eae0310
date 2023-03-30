@@ -166,6 +166,25 @@ Enquanto no Brasil os 5% mais pobres tem a renda igual aos 5% mais pobres da Ín
 
 ---
 class: middle
+
+```{r, echo=FALSE, out.width = '50%', fig.show="hold"}
+knitr::include_graphics("figs/eae0310-7-17.png")
+knitr::include_graphics("figs/eae0310-7-17b.png")
+```
+
+De forma coerente com a **curva de Gatsby**, o Brasil não apenas tem enorme desigualdade de renda, como também desigualdade intergeracional: uma criança nascida em família do quintil superior tem quase 50% de chance de se manter nele, assim como uma nascida no quintil inferior `r Citep(myBib, "gc2022intergenerational")`
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '70%', fig.align="center"}
+knitr::include_graphics("figs/eae0310-7-18.png")
+```
+
+A mobilidade intergeneracional é menor no Norte e Nordeste, e maior no Sul, Sudeste e Centro-oeste &mdash; mas é mais baixa nas capitais, como Rio e São Paulo `r Citep(myBib, "gc2022intergenerational")`
+
+---
+class: middle
 ## 2. Como o governo pode intervir na economia?
 
 Por exemplo, digamos que o governo queira incentivar a produção de bens desejáveis (e.g. saúde) ou desicentivar de indesejáveis, ele pode: 
