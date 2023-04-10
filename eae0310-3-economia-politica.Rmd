@@ -225,6 +225,25 @@ knitr::include_graphics("figs/eae0310-5-4.png")
 
 Há épocas em que o *eleitor mediano* explica bem a política, mas recentemente a polarização tem aumentado `r Citep(myBib, "gruber")`
 
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '85%'}
+knitr::include_graphics("figs/eae0310-3-18.png")
+```
+
+Tradicionalmente, o teorema do eleitor mediano é aplicado na escala direita-esquerda, e principalmente com base na renda: o gráfico mostra que pessoas mais ricas sempre votaram mais para partidos de direita &mdash; no passado, isso também era verdade para pessoas mais educadas, mas recentemente isso se inverteu `r Citep(myBib, "gethin2022brahmin")`
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '50%', fig.show='hold'}
+knitr::include_graphics("figs/eae0310-3-19a.png")
+knitr::include_graphics("figs/eae0310-3-19b.png")
+```
+
+Isso leva `r Citep(myBib, "gethin2022brahmin")` a propor uma escala *bidimensional* de conflito político: uma dimensão de "conflito de classes", direita vs esquerda (baseada na renda), e uma dimensão sociocultural, de "cosmopolita vs nativista" (baseada em educação), e dois tipos de elites: a "direita mercantil" e a "esquerda Brahmin"
+
 
 ---
 class: middle
