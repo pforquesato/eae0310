@@ -2,7 +2,7 @@
 title: "EAE-0310: ECONOMIA DO SETOR PÚBLICO"
 author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 217/FEA2 - pforquesato@usp.br"
 institute: "Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo"
-date: "Aula 6: Seguridade social<br/>2022/1"
+date: "Aula 6: Seguridade social<br/>2023/1"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -192,7 +192,7 @@ Casos extremos da seleção adversa: em (a) o resultado é eficiente, pois as em
 class: middle
 ## Seleção em mercados de seguros
 
-A solução canônica para a ineficiência gerada pela seleção adversa é obrigar a todos a comprar o seguro (mas note que se adicionarmos custos de administração, então não necessariamente a solução ótima envolve seguro completo)
+A solução canônica para a ineficiência gerada pela seleção adversa é obrigar a todos a comprar o seguro &mdash; mas note que se adicionarmos custos de administração, então não necessariamente a solução ótima envolve seguro completo
 
 Além disso, se assumirmos *heterogeneidade de preferências*, então agentes mais avessos ao risco podem ser (i) mais cuidadosos; e (ii) dispostos a pagar mais (**seleção vantajosa**)
 
@@ -200,33 +200,23 @@ Com custos de administração e seleção vantajosa, temos o *oposto* do caso us
 
 ---
 class: middle
-## Seguro público
-
-Vimos que a razão principal para o **seguro público** é resolver o problema de seleção adversa
+## Razões para o seguro público
 
 Outra razão é que se eu não tenho seguro de carro e bato em alguém, posso não ter dinheiro para cobrir seus danos, gerando uma *externalidade financeira* (por isso existe o DPVAT)
 
 Outro motivo é que governos podem não conseguir *se comprometer crivelmente* a não intervir no estado ruim da natureza caso o agente não compre seguro (**dilema do samaritano**)
 
+Também há o motivo redistributivo: frequentemente consumidores de maior risco também são os mais necessitados (ou são de maior risco *por serem* necessitados), e a solução eficiente de mercado envolveria eles pagar muito mais
+
 ---
 class: middle
 ## Seguro próprio
 
-Frequentemente consumidores de maior risco também são os mais necessitados (ou são de maior risco *por serem* necessitados), e a solução eficiente de mercado envolveria eles pagar muito mais
+Contratar seguro privado ou receber seguro público não são as únicas formas pelas quais os indivíduos podem se segurar em relação a choques
 
-Existem várias formas pelas quais famílias podem *suavizar o consumo* sem seguro formal: podem usar sua poupança, aumentar o trabalho do esposo, pegar emprestado de bancos ou familiares &mdash; um risco é que o seguro público faça **crowding out** no seguro próprio
+Existem várias formas pelas quais famílias podem *suavizar o consumo* sem seguro formal: podem usar sua poupança, aumentar o trabalho do esposo, pegar emprestado de bancos ou familiares &mdash; assim, um risco é que o seguro público faça **crowding out** no seguro próprio
 
 Na prática, famílias frequentemente agem de *forma miópica*, dando valor demais ao presente e poupando menos que o racional &mdash; governo pode agir para corrigir *internalidades*
-
----
-class: middle
-
-```{r, echo=FALSE, fig.show="hold", out.width="50%"}
-knitr::include_graphics("figs/eae0310-6-4.png")
-knitr::include_graphics("figs/eae0310-6-4b.png")
-```
-
-Diferença na duração do desemprego por valor de seguro-desemprego &mdash; quartil mais pobre (a) vs quartil mais rico (d): um menor seguro-desemprego faz os mais pobres acharem emprego mais rapidamente, mas não tem o mesmo efeito sobre os mais ricos, que plausivelmente conseguem já suavizar o consumo com poupança prévia `r Citep(myBib, "chetty2008moral")`
 
 ---
 class: middle
@@ -249,7 +239,7 @@ Sem risco moral o seguro ótimo seria total. Na realidade, o **nível ótimo de 
 
 ---
 class: middle
-## Seguro-desemprego ótimo com risco moral
+## Seguro-desemprego ótimo 
 
 Consideremos o caso do seguro-desemprego: queremos suavizar o consumo de quem recebe choque negativo de emprego, mas se **taxa de reposição** for 100%, ninguém procuraria emprego(*)
 
@@ -259,7 +249,7 @@ Então a sua utilidade é: $$\mathbb{E}U = (1 - p)u(c_e) + pu(c_u) = (1 - p)u(w 
  
 ---
 class: middle
-## Seguro-desemprego ótimo com risco moral
+## Seguro-desemprego ótimo sem risco moral
 
 Governo tem **orçamento balanceado**: $(1 - p)\cdot t = p \cdot b$, ou $t = b \cdot p/(1-p)$
 
@@ -277,6 +267,17 @@ Isso gera uma **externalidade fiscal**: quanto maior o seguro-desemprego, maior 
 
 $$\max_b \mathbb{E}U = (1 - p)u\left( w - b\frac{p(b)}{1 - p(b)} \right) + pu(b)$$
 O resultado iguala o benefício de suavização com o malefício do risco moral &mdash; seguro total não é mais ótimo: $$\frac{u^{\prime}(c_u) - u^{\prime}(c_e)}{u^{\prime}(c_e)} = \frac{1}{1 - p}\epsilon_{p,b} \text{ onde }\epsilon_{p,b} = \frac{b}{p}\frac{dp}{db}$$ 
+
+---
+class: middle
+
+```{r, echo=FALSE, fig.show="hold", out.width="50%"}
+knitr::include_graphics("figs/eae0310-6-4.png")
+knitr::include_graphics("figs/eae0310-6-4b.png")
+```
+
+Diferença na duração do desemprego por valor de seguro-desemprego &mdash; quartil mais pobre (a) vs quartil mais rico (d): um menor seguro-desemprego faz os mais pobres acharem emprego mais rapidamente, mas não tem o mesmo efeito sobre os mais ricos, que plausivelmente conseguem já suavizar o consumo com poupança prévia `r Citep(myBib, "chetty2008moral")`
+
 
 ---
 class: middle
@@ -304,7 +305,7 @@ Como vimos, nessas situações o governo pode fazer melhor que o mercado, pois e
 
 Mas na prática a principal razão para a aposentadoria é atacar *internalidades*: o fato que as pessoas em geral não poupam o quanto precisariam para ter uma vida decente na velhice
 
-Pesquisas na Itália e Reino Unido estimam que cada $1 de previdência social reduz poupança privada (**crowding out**) em 30-40¢
+Pesquisas na Itália e Reino Unido estimam que cada $1 de previdência social reduz poupança privada (**crowding out**) em 30-40¢ &mdash; se as pessoas agissem racionalmente, elas estariam poupando o seu valor ótimo, e esse crowding out deveria ser próximo de 1
 
 ---
 class: middle
@@ -322,7 +323,7 @@ class: middle
 Toda década volta ao debate público o problema da sustentabilidade do setor previdenciário e reformas. [A última foi em 2019](https://www.gov.br/inss/pt-br/assuntos/noticias/confira-as-principais-mudancas-da-nova-previdencia):
 
 1. A reforma entre outras coisas aumentou a idade mínima (65/62) e requer idade e tempo de contribuição (20/15)
-2. O pagamento agora é sobre a média dos salários (antes era dos 80% maiores): 60% + 2% por ano acima da idade mínima
+2. O pagamento agora é sobre a média dos salários (antes era dos 80% maiores): 60% + 2% por ano acima do tempo mínimo de contribuição
 3. A alíquota do INSS agora é progressiva: 7,5% para salário mínimo, até 14% (mas só até teto do RGPS), e até 22% no RPPS
 
 ---
@@ -407,7 +408,7 @@ class: middle
 
 Recebe seguro desemprego no Brasil *trabalhadores formais* demitidos (involutariamente) sem justa causa que trabalharam 12 meses nos últimos 18 (1a solicitação), 9/12 (2a) ou nos 6 últimos meses (3a+)
 
-Valor é 80-50% da média dos últimos 3 meses de trabalho (**taxa de reposição**), com máximo de $2.106 (2022), e o trabalhador recebe por 3 (até 1 ano), 4 (até 2) ou 5 meses (mais de 2 anos de trabalho)
+Valor é 80% (até R$ 1.968,36) a 50% (acima disso) da média dos últimos 3 meses de trabalho (**taxa de reposição**), com máximo de R$ 2.230,97 (2023), e o trabalhador recebe por 3 (até 1 ano), 4 (até 2) ou 5 meses (mais de 2 anos de trabalho)
 
 
 ---

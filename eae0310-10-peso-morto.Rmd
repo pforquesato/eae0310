@@ -297,7 +297,7 @@ class: middle
 
 Isto é, elas estariam dispostas a pagar £1,62 de transferência lump-sum por £1 arrecadado para acabar com essa taxação &mdash; em geral, o peso morto foi 13,4% da arrecadação: ainda 3-4x maior que outros tipos de impostos
 
-Mesmo com tudo isso, o imposto só foi retirado em 1851, quase 160 anos depois da instalação, o que demonstra que impostos muito eficientes podem durar muito tempo por motivos políticos
+Mesmo com tudo isso, o imposto só foi retirado em 1851, quase 160 anos depois da instalação, o que demonstra que impostos muito ineficientes podem durar muito tempo por motivos políticos
 
 ---
 class: inverse, middle, center
