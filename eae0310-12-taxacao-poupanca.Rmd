@@ -220,6 +220,16 @@ Nos Estados Unidos, a riqueza dos mais ricos também cresce de forma contínua a
 
 ---
 class: middle
+
+```{r, echo=FALSE, out.width = '95%'}
+knitr::include_graphics("figs/feapub8.png")
+```
+
+Taxa de poupança por classe de riqueza (Zucman)
+
+
+---
+class: middle
 ## Equivalência entre taxação de consumo e renda
 
 Considere agora um imposto sobre consumo $\tau_C$. A restrição orçamentária se torna $(1 + \tau_C) \left( c_1 + \frac{c_2}{1 + r} \right) = wl$

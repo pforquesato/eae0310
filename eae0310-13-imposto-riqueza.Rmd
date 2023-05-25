@@ -237,6 +237,18 @@ knitr::include_graphics("figs/eae0310-13-9.png")
 
 O fluxo anual de heranças como proporção do PIB na França era de 20% durante a Revolução Industrial, chegou a 1/4 na *belle époque*, desabou para 8% na 1GM e 4% no pós-guerra, mas tem voltado a subir `r Citep(myBib, "piketty2011long")`
 
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '95%'}
+knitr::include_graphics("figs/feapub7.png")
+```
+
+Composição da riqueza dos 90% "mais pobres" (Zucman)
+
+
+
 ---
 class: middle
 ## Imposto sobre propriedade
