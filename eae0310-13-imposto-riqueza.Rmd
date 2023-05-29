@@ -245,7 +245,7 @@ class: middle
 knitr::include_graphics("figs/feapub7.png")
 ```
 
-Composição da riqueza dos 90% "mais pobres" (Zucman)
+A riqueza dos 90% "mais pobres" tem uma composição muito diferente da dos 10% mais ricos, sendo quase inteiramente composta por riqueza previdenciária e propriedade imobiliária `r Citep(myBib, "saez2016wealth")` 
 
 
 

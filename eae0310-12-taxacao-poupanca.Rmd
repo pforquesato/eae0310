@@ -225,7 +225,7 @@ class: middle
 knitr::include_graphics("figs/feapub8.png")
 ```
 
-Taxa de poupança por classe de riqueza (Zucman)
+Fora na crise de 30, os mais ricos sempre tiveram taxa de poupança maior que os ricos e bem maior que a classe média e os mais pobres, que nos EUA poupam pouco quase nada `r Citep(myBib, "saez2016wealth")` 
 
 
 ---

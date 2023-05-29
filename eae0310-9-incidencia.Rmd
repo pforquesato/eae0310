@@ -2,7 +2,7 @@
 title: "EAE-0310: ECONOMIA DO SETOR PÚBLICO"
 author: "Pedro Forquesato<br/>http://www.pedroforquesato.com<br/>Sala 217/FEA2 - pforquesato@usp.br"
 institute: "Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo"
-date: "Aula 9: Incidência de impostos<br/>2022/1"
+date: "Aula 9: Incidência de impostos<br/>2023/1"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -84,6 +84,15 @@ knitr::include_graphics("figs/eae0310-9-1.png")
 ```
 
 Incidência em equilíbrio parcial &mdash; sem imposto, $p^p = p^c = p$ (Saez) 
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '85%'}
+knitr::include_graphics("figs/eae0310-9-15.png")
+```
+
+O imposto se aplicado sobre o consumidor (no mercado de trabalho, a firma) desloca a curva de demanda para baixo (pois agora o bem está mais caro); se aplicado sobre o produtor (oferta de trabalho) desloca a curva de oferta para cima ao aumentar o custo por unidade vendida: em micro o efeito final (a *incidência econômica*) é sempre exatamente o mesmo  
 
 ---
 class: middle
