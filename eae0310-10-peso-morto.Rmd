@@ -150,7 +150,7 @@ class: middle
 
 Esse peso morto surge **pela diminuição da quantidade**: os agentes respondem "fugindo" do imposto, mas isso tem um custo em termos de bem-estar que não gera arrecadação (ao contrário da transferência lump-sum)
 
-A definição de peso morto como variação equivalente é útil pois tem uma interpretação clara: é o quanto de perda  de renda *excessiva* (além da arrecadação do governo) que seria *equivalente* ao imposto implementado
+A definição de peso morto como variação equivalente é útil pois tem uma interpretação clara: é o quanto de perda (lump-sum) de renda *excessiva* (além da arrecadação do governo) que seria *equivalente* ao imposto implementado
 
 Então um peso morto de 10% quer dizer que para cada R$1,00 arrecadado, os consumidores e produtores estariam dispostos a pagar em vez disso R$1,10 se fosse sem distorcer preços (transferência lump-sum)
 
@@ -207,10 +207,10 @@ class: middle
 
 O **triângulo de Harberger** é um triângulo, e sob as condições do gráfico de oferta e demanda (equilíbrio parcial, sem efeito renda) podemos calcular a sua área por simples geometria
 
-$$\text{EB} = \frac{1}{2} dQ \times dt = \frac{1}{2} S^{\prime}(p) dp \times dt$$
+$$\text{EB} = \frac{1}{2} (-dQ) \times dt = \frac{1}{2} |S^{\prime}(p) dp| \times dt$$
 Onde usamos que $Q = S(p)$ e portanto $dQ = S^{\prime}(p)dp$. Multiplicando e dividindo por $pQdt$ e lembrando da aula passada que $\frac{dp}{dt} = \frac{\epsilon_D}{\epsilon_S - \epsilon_D}$:
 
-$$\text{EB} = \frac{1}{2} \frac{S^{\prime}(p) p}{Q} \frac{Q}{p} \frac{dp}{dt} \times (dt)^2 = \frac{1}{2}\frac{\epsilon_S \epsilon_D}{\epsilon_S - \epsilon_D} \frac{Q}{p} \times (dt)^2$$
+$$\text{EB} = \frac{1}{2} \frac{S^{\prime}(p) p}{Q} \frac{Q}{p} \left|\frac{dp}{dt}\right| \times (dt)^2 = \frac{1}{2}\left|\frac{\epsilon_S \epsilon_D}{\epsilon_S - \epsilon_D}\right| \frac{Q}{p} \times (dt)^2$$
 
 ---
 class: middle
@@ -225,7 +225,7 @@ O triângulo de Harberger nesse exemplo tem área $\frac{1}{2} 10 \times 0,50 = 
 class: middle
 ## A fórmula do peso morto
 
-$$\text{EB} = \frac{1}{2}\frac{\epsilon_S \epsilon_D}{\epsilon_S - \epsilon_D} \frac{Q}{p} \times (dt)^2$$
+$$\text{EB} = \frac{1}{2} \left| \frac{\epsilon_S \epsilon_D}{\epsilon_S - \epsilon_D} \right| \frac{Q}{p} \times (dt)^2$$
 O peso morto aumenta com o valor absoluto das elasticidades $\epsilon_S > 0$ e $- \epsilon_D > 0$ : *mais eficiente taxar bens inelásticos*
 
 
