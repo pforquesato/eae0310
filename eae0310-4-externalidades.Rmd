@@ -218,19 +218,20 @@ class: middle
 
 Nos EUA, de todos os adultos que fumam, 75% começam a fumar antes dos 19 anos &mdash; idade plausivelmente mais vulnerável a marketing e pressões sociais
 
-Uma pesquisa perguntou a adolescentes fumantes se estariam fumando em 5 anos e depois checaram. Daqueles que falaram que não estariam, 74% continuaram fumando
+Uma pesquisa perguntou a adolescentes fumantes se estariam fumando em 5 anos e depois checaram. Daqueles que falaram que não estariam, 74% continuaram fumando 
 
 8 em cada 10 fumantes querem parar de fumar, e o fumante médio tenta parar uma vez a cada 8 meses &mdash; **problema de auto-controle**
+
 
 ---
 class: middle
 ## Internalidades
 
-**Desconto hiperbólico:** pessoas preferem `$`100 hoje que `$`200 em 2 anos, mas preferem `$`200 em 8 anos que `$`100 em 6
-
-Outra evidência é a demanda por **instrumentos de comprometimento** &mdash; por exemplo, poupança compulsória ou anuidade em academia
+**Desconto hiperbólico:** pessoas preferem `$`100 hoje que `$`200 em 2 anos, mas preferem `$`200 em 8 anos que `$`100 em 6 &mdash; isso gera demanda por **instrumentos de comprometimento** &mdash; por exemplo, poupança compulsória ou anuidade em academia
 
 Se fumantes cometem erros quando jovens e gostariam de parar mas não conseguem, então o cigarro também gera uma **internalidade negativa**
+
+`r Citep(myBib, "FRIEDSON2023104877")` encontram que um aumento de 1 dólar no imposto de cigarros entre 14-17 diminui em 8% a chance de estar fumando quando adulto e em 4% a mortalidade &mdash; um efeito da *formação de hábitos*
 
 ---
 class: middle

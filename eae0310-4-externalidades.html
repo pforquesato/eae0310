@@ -4,6 +4,7 @@
     <title>EAE-0310: ECONOMIA DO SETOR PÚBLICO</title>
     <meta charset="utf-8" />
     <meta name="author" content="Pedro Forquesato http://www.pedroforquesato.com Sala 217/FEA2 - pforquesato@usp.br" />
+    <script src="libs/header-attrs-2.18/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -11,10 +12,18 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # EAE-0310: ECONOMIA DO SETOR PÚBLICO
+]
+.author[
 ### Pedro Forquesato<br/><a href="http://www.pedroforquesato.com" class="uri">http://www.pedroforquesato.com</a><br/>Sala 217/FEA2 - <a href="mailto:pforquesato@usp.br" class="email">pforquesato@usp.br</a>
+]
+.institute[
 ### Faculdade de Economia, Administração e Contabilidade<br/>Universidade de São Paulo
+]
+.date[
 ### Aula 4: Externalidades (aplicações)<br/>2022/1
+]
 
 ---
 
@@ -202,19 +211,20 @@ class: middle
 
 Nos EUA, de todos os adultos que fumam, 75% começam a fumar antes dos 19 anos &amp;mdash; idade plausivelmente mais vulnerável a marketing e pressões sociais
 
-Uma pesquisa perguntou a adolescentes fumantes se estariam fumando em 5 anos e depois checaram. Daqueles que falaram que não estariam, 74% continuaram fumando
+Uma pesquisa perguntou a adolescentes fumantes se estariam fumando em 5 anos e depois checaram. Daqueles que falaram que não estariam, 74% continuaram fumando 
 
 8 em cada 10 fumantes querem parar de fumar, e o fumante médio tenta parar uma vez a cada 8 meses &amp;mdash; **problema de auto-controle**
+
 
 ---
 class: middle
 ## Internalidades
 
-**Desconto hiperbólico:** pessoas preferem `$`100 hoje que `$`200 em 2 anos, mas preferem `$`200 em 8 anos que `$`100 em 6
-
-Outra evidência é a demanda por **instrumentos de comprometimento** &amp;mdash; por exemplo, poupança compulsória ou anuidade em academia
+**Desconto hiperbólico:** pessoas preferem `$`100 hoje que `$`200 em 2 anos, mas preferem `$`200 em 8 anos que `$`100 em 6 &amp;mdash; isso gera demanda por **instrumentos de comprometimento** &amp;mdash; por exemplo, poupança compulsória ou anuidade em academia
 
 Se fumantes cometem erros quando jovens e gostariam de parar mas não conseguem, então o cigarro também gera uma **internalidade negativa**
+
+[Fri+23] encontram que um aumento de 1 dólar no imposto de cigarros entre 14-17 diminui em 8% a chance de estar fumando quando adulto e em 4% a mortalidade &amp;mdash; um efeito da *formação de hábitos*
 
 ---
 class: middle
@@ -429,9 +439,12 @@ Accessed: 2021-10-29.
 [CW00] F. J. Chaloupka and K. E. Warner. "The economics of smoking".
 In: _Handbook of health economics_ 1 (2000), pp. 1539-1627.
 
-[Gru01] J. Gruber. "Tobacco at the crossroads: the past and future of
-smoking regulation in the United States". In: _Journal of Economic
-Perspectives_ 15.2 (2001), pp. 193-212.
+[Fri+23] A. Friedson, M. Li, K. Meckel, et al. "Cigarette taxes,
+smoking, and health in the long run". In: _Journal of Public Economics_
+222 (2023), p. 104877. ISSN: 0047-2727. DOI:
+[https://doi.org/10.1016/j.jpubeco.2023.104877](https://doi.org/https%3A%2F%2Fdoi.org%2F10.1016%2Fj.jpubeco.2023.104877).
+URL:
+[https://www.sciencedirect.com/science/article/pii/S0047272723000592](https://www.sciencedirect.com/science/article/pii/S0047272723000592).
 
 [Gru16] J. Gruber. _Public finance and public policy_. 5th ed.
 Macmillan, 2016.
@@ -445,6 +458,10 @@ gas emissions". In: _Journal of Economic Perspectives_ 32.4 (2018), pp.
 class:middle
 # Referências
 &lt;small&gt;
+[Gru01] J. Gruber. "Tobacco at the crossroads: the past and future of
+smoking regulation in the United States". In: _Journal of Economic
+Perspectives_ 15.2 (2001), pp. 193-212.
+
 [Man+89] W. G. Manning, E. B. Keeler, J. P. Newhouse, et al. "The taxes
 of sin: do smokers and drinkers pay their way?" In: _Jama_ 261.11
 (1989), pp. 1604-1609.
@@ -518,6 +535,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

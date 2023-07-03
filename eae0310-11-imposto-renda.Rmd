@@ -116,7 +116,18 @@ class: middle
 knitr::include_graphics("figs/eae0310-11-10.png")
 ```
 
-Já a *taxa marginal* $T^{\prime}(z)$ aumenta de forma discontínua (é uma *step function*), gerando **kinks** no gráfico de taxação, onde indivíduos agindo racionalmente tendem a se concentrar (Saez)
+Já a *taxa marginal* $T^{\prime}(z)$ aumenta de forma discontínua (é uma *step function*), gerando **kinks** no gráfico de taxação, onde indivíduos agindo racionalmente tendem a se concentrar (*bunch*) (Saez)
+
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '65%', fig.align='center'}
+knitr::include_graphics("figs/notch.jpg")
+```
+
+Já um **notch** é um aumento descontínuo na taxa média de impostos, como essa dedução de custos de childcare no Reino Unido para famílias até £100 mil: a renda após-impostos de famílias com dois filhos que ganham £99k/ano é *maior* que daquelas que ganham £100-140k/ano se contar custos de childcare
+
 
 ---
 class: middle

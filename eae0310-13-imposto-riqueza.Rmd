@@ -47,6 +47,14 @@ knitr::include_graphics("figs/eae0310-12-9.png")
 
 Ao contrário de uma percepção pública do "self-made man", a maior parte da riqueza mundial ainda hoje é herdada, nos EUA até mais que na Europa, e essa proporção tem crescido desde 1980 `r Citep(myBib, "alvaredo2017share")`
 
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '80%'}
+knitr::include_graphics("figs/eae0310-13-9.png")
+```
+
+O fluxo anual de heranças como proporção do PIB na França era de 20% durante a Revolução Industrial, chegou a 1/4 na *belle époque*, desabou para 8% na 1GM e 4% no pós-guerra, mas tem voltado a subir `r Citep(myBib, "piketty2011long")`
 
 ---
 class: middle
@@ -124,7 +132,7 @@ Agora considere uma taxação diretamente sobre o retorno do ativo arriscado: $$
 
 Domar e Musgrave já em 1944 perceberam que sob algumas hipóteses taxação de ativos arriscados $\tau_A$ *aumenta* a tomada de risco
 
-Pense que o ativo $x$ custe `$`100 e pague `$`120 no cenário positivo e `$`80 no cenário negativo (50% de chance cada) e que $r$ seja dinheiro sem inflação &mdash; então uma taxação de 50% no retorno do ativo com **compensação de perdas** vai fazer o ativo pagar `$`110 no cenário positivo e `$`90 no cenário negativo
+Pense que o ativo $x$ custe `$`100 e pague `$`140 no cenário positivo e `$`80 no cenário negativo (50% de chance cada) e que $r$ seja dinheiro sem inflação &mdash; então uma taxação de 50% no retorno do ativo com **compensação de perdas** vai fazer o ativo pagar `$`120 no cenário positivo e `$`90 no cenário negativo
 
 ---
 class: middle
@@ -231,22 +239,11 @@ Notem que mesmo que heranças monetárias fossem inteiramente taxadas, isso não
 ---
 class: middle
 
-```{r, echo=FALSE, out.width = '80%'}
-knitr::include_graphics("figs/eae0310-13-9.png")
+```{r, echo=FALSE, out.width = '65%', fig.align='center'}
+knitr::include_graphics("figs/inheritance.png")
 ```
 
-O fluxo anual de heranças como proporção do PIB na França era de 20% durante a Revolução Industrial, chegou a 1/4 na *belle époque*, desabou para 8% na 1GM e 4% no pós-guerra, mas tem voltado a subir `r Citep(myBib, "piketty2011long")`
-
-
----
-class: middle
-
-```{r, echo=FALSE, out.width = '95%'}
-knitr::include_graphics("figs/feapub7.png")
-```
-
-A riqueza dos 90% "mais pobres" tem uma composição muito diferente da dos 10% mais ricos, sendo quase inteiramente composta por riqueza previdenciária e propriedade imobiliária `r Citep(myBib, "saez2016wealth")` 
-
+Na China, elites pré-revolucionárias transmitem diferenças de renda aos seus netos por cultura, educação em casa, etc., mesmo que elas não tenham gerado renda aos filhos por causa do comunismo
 
 
 ---
@@ -258,6 +255,17 @@ A única razão para a taxação de propriedade (imóveis, carros, etc) é que e
 Uma visão é a de *benefits tax view*, o **modelo de Tiebout**: o imposto (local) sobre moradia é usado para pagar bens públicos locais, então é apenas um preço pago pelas amenidades do município &mdash; ele não redistribui renda
 
 A ideia é que no modelo de Tiebout as pessoas "votam com os pés", e por isso as cidades têm que manter o imposto local igual ao benefício de se morar lá
+
+
+---
+class: middle
+
+```{r, echo=FALSE, out.width = '95%'}
+knitr::include_graphics("figs/feapub7.png")
+```
+
+A riqueza dos 90% "mais pobres" tem uma composição muito diferente da dos 10% mais ricos, sendo quase inteiramente composta por riqueza previdenciária e propriedade imobiliária `r Citep(myBib, "saez2016wealth")` 
+
 
 ---
 class: middle
@@ -473,6 +481,16 @@ class:middle
 # Referências
 <small>
 ```{r refs2, echo=FALSE, results="asis"}
-PrintBibliography(myBib, start=6)
+PrintBibliography(myBib, start=6, end=10)
+```
+</small>
+
+
+---
+class:middle
+# Referências
+<small>
+```{r refs3, echo=FALSE, results="asis"}
+PrintBibliography(myBib, start=11)
 ```
 </small>
